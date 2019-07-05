@@ -1,4 +1,4 @@
-.carousel{
+.carousel {
     position: absolute;
     width: 100%;
     bottom: 50px;
@@ -23,7 +23,7 @@
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
         &-code {
@@ -33,7 +33,35 @@
         &-anim {
             background-color: red;
         }
+
+        &-illu {
+            background-color: pink;
+        }
+
+        &-ddd {
+            background-color: rgb(33, 58, 82);
+        }
+
+        &-vfx {
+            background-color: rgb(102, 36, 122);
+        }
+
+        &-grafika {
+            background-color: rgb(54, 39, 27);
+        }
+
+        &-story {
+            background-color: rgb(70, 70, 70);
+        }
+
+        &-concept {
+            background-color: rgb(141, 103, 211);
+        }
+
+        &-artdir {
+            background-color: rgb(0, 89, 255);
+        }
     }
 
-    
+
 }
