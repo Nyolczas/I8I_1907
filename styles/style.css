@@ -1,0 +1,12 @@
+.navbar.bg-dark {
+  border-color: #060606;
+}
+
+.navbar.bg-dark .nav-item > .nav-link {
+  color: #2A9FD6;
+}
+
+.navbar.bg-dark .active > .nav-link {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

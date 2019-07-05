@@ -1,0 +1,15 @@
+.navbar.bg-dark {
+    border-color: $colorBg;
+    .nav-item {
+        > .nav-link {
+            color: $colorPimaryBlue;
+        }
+    }
+
+    .active {
+        > .nav-link {
+            color: $colorWhite;
+        }
+    }
+    
+}
