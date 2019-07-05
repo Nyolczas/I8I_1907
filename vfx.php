@@ -1,6 +1,6 @@
 <?php
-$page = 'index';
-$title = 'Nyolczas István';
+$page = 'vfx';
+$title = 'VFX || Nyolczas István';
 
 include 'includes\head.php';
 ?>
@@ -9,7 +9,6 @@ include 'includes\head.php';
 
 <?php
 include 'includes\navbar.php';
-include 'includes\carousel.php';
 ?>
 
 </body>

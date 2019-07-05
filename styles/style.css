@@ -10,7 +10,54 @@
   color: #FF8800;
 }
 
+.navbar.bg-dark .active {
+  cursor: default;
+}
+
 .navbar.bg-dark .active > .nav-link {
   color: white;
+}
+
+.navbar.bg-dark .active:hover .nav-link {
+  color: white;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  left: 0;
+}
+
+.carousel-inner {
+  height: 60vh;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-bg-slogen {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-bg-code {
+  background-color: green;
+}
+
+.carousel-bg-anim {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */

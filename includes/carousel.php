@@ -1,26 +1,37 @@
+<?php include 'menuArray.php'; ?>
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="img\carousel\code.jpg" alt="First slide">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <?php
+            for($i = 2; $i < count($menuArray); $i++) { 
+                $cnt = $i - 1; 
+                echo '<li data-target="#carouselExampleIndicators" data-slide-to="'. $cnt .'"></li>';
+            }
+        ?>
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> -->
+
+    </ol>
+    <div class="carousel-inner">
+        <?php
+        for($i = 1; $i < count($menuArray); $i++) {
+            $extraClass = ($i == 1 ? "active" : "");
+            echo '<div class="carousel-item '. $extraClass .'">
+                    <div class="carousel-bg carousel-bg-' . $menuArray[$i]['pageName'] . '">
+                        <button type="button" class="btn btn-outline-primary carousel-bg-slogen" href="' . $menuArray[$i]['pageName'] . '.php">
+                        ' . $menuArray[$i]['slogan'] . '
+                        </button>
+                    </div>
+                </div>';
+            }
+        ?>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img\carousel\anim.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img\carousel\illu.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>

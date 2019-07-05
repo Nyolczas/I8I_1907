@@ -10,7 +10,11 @@
     }
 
     .active {
+        cursor: default;
         > .nav-link {
+            color: $colorWhite;
+        }
+        &:hover .nav-link{
             color: $colorWhite;
         }
     }
