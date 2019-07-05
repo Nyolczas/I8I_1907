@@ -6,6 +6,10 @@
   color: #2A9FD6;
 }
 
+.navbar.bg-dark .nav-item:hover .nav-link {
+  color: #FF8800;
+}
+
 .navbar.bg-dark .active > .nav-link {
   color: white;
 }

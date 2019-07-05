@@ -4,6 +4,9 @@
         > .nav-link {
             color: $colorPimaryBlue;
         }
+        &:hover .nav-link{
+            color: $colorSecondary;
+        }
     }
 
     .active {
