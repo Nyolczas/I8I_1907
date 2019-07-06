@@ -23,14 +23,13 @@
 }
 
 .carousel {
-  position: absolute;
+  position: relative;
   width: 100%;
-  bottom: 60px;
-  left: 0;
+  height: 100%;
 }
 
 .carousel-inner {
-  height: 60vh;
+  height: 100%;
 }
 
 .carousel-item {
@@ -94,6 +93,17 @@
   background-image: url(../img/carousel/artdir.jpg);
 }
 
+.index-body {
+  height: 100vh;
+}
+
+.midlerow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+
 .message {
   position: absolute;
   bottom: calc(60% + 60px);
@@ -116,8 +126,9 @@
 }
 
 .message-img {
-  width: 20vh;
-  height: 25vh;
+  width: 133px;
+  height: 133px;
+  border-radius: 100%;
   background-color: gold;
   position: absolute;
   right: 0;
@@ -127,13 +138,18 @@
 }
 
 .kapcsolat-box {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   height: 60px;
 }
 
 .kapcsolat-box > a {
   letter-spacing: 1px;
+}
+
+.contact-form {
+  max-width: 600px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

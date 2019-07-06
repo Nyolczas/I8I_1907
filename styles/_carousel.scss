@@ -1,11 +1,10 @@
 .carousel {
-    position: absolute;
+    position: relative;
     width: 100%;
-    bottom: $sizeButtonBoxHeight;
-    left: 0;
+    height: 100%;
 
     &-inner {
-        height: 60vh;
+        height: 100%;
     }
 
     &-item {

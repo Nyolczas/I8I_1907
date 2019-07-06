@@ -1,3 +1,12 @@
+.index-body {
+    height: 100vh;
+}
+
+.midlerow {
+    flex-grow: 1;
+    position: relative;
+}
+
 .message {
     position: absolute;
     bottom: calc(60% + #{$sizeButtonBoxHeight});
@@ -18,8 +27,9 @@
     }
 
     &-img {
-        width: 20vh;
-        height: 25vh;
+        width: 133px;
+        height: 133px;
+        border-radius: 100%;
         background-color: gold;
         position: absolute;
         right:0;
@@ -29,9 +39,7 @@
 }
 
 .kapcsolat-box {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
     height: $sizeButtonBoxHeight;
 
     >a {
