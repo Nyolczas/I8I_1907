@@ -2,7 +2,7 @@
 $pageNr = 1;
 include 'includes\menuArray.php';
 $page = $menuArray[$pageNr]['pageName'];
-$title = $menuArray[$pageNr]['bjutiName'] . ' || Nyolczas István';
+$title = $menuArray[$pageNr]['bjutiName'] . ' | Nyolczas István';
 
 include 'includes\head.php';
 ?>

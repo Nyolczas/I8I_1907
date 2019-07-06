@@ -1,7 +1,7 @@
 .carousel {
     position: absolute;
     width: 100%;
-    bottom: 50px;
+    bottom: $sizeButtonBoxHeight;
     left: 0;
 
     &-inner {
@@ -16,50 +16,55 @@
         width: 100%;
         height: 100%;
         position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 
         &-slogen {
             position: absolute;
-            bottom: 60px;
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translate(-50%, -50%);
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.75);
+            border: 1px solid $colorPrimaryBlue;
+            letter-spacing: 1px;
         }
 
         &-code {
-            background-color: green;
+            background-image: url(../img/carousel/code.jpg);
         }
 
         &-anim {
-            background-color: red;
+            background-image: url(../img/carousel/anim.jpg);
         }
 
         &-illu {
-            background-color: pink;
+            background-image: url(../img/carousel/illu.jpg);
         }
 
         &-ddd {
-            background-color: rgb(33, 58, 82);
+            background-image: url(../img/carousel/ddd.jpg);
         }
 
         &-vfx {
-            background-color: rgb(102, 36, 122);
+            background-image: url(../img/carousel/vfx.jpg);
         }
 
         &-grafika {
-            background-color: rgb(54, 39, 27);
+            background-image: url(../img/carousel/grafika.jpg);
         }
 
         &-story {
-            background-color: rgb(70, 70, 70);
+            background-image: url(../img/carousel/story.jpg);
         }
 
         &-concept {
-            background-color: rgb(141, 103, 211);
+            background-image: url(../img/carousel/concept.jpg);
         }
 
         &-artdir {
-            background-color: rgb(0, 89, 255);
+            background-image: url(../img/carousel/artdir.jpg);
         }
     }
 

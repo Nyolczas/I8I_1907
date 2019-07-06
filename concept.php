@@ -1,6 +1,8 @@
 <?php
-$page = 'concept';
-$title = 'Concept Art || Nyolczas István';
+$pageNr = 8;
+include 'includes\menuArray.php';
+$page = $menuArray[$pageNr]['pageName'];
+$title = $menuArray[$pageNr]['bjutiName'] . ' | Nyolczas István';
 
 include 'includes\head.php';
 ?>
@@ -9,6 +11,8 @@ include 'includes\head.php';
 
 <?php
 include 'includes\navbar.php';
+
+echo $menuArray[$pageNr]['slogan'];
 ?>
 
 </body>

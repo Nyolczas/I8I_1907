@@ -9,7 +9,6 @@
                 echo '<li data-target="#carouselExampleIndicators" data-slide-to="'. $cnt .'"></li>';
             }
         ?>
-        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> -->
 
     </ol>
     <div class="carousel-inner">
@@ -18,9 +17,9 @@
             $extraClass = ($i == 1 ? "active" : "");
             echo '<div class="carousel-item '. $extraClass .'">
                     <div class="carousel-bg carousel-bg-' . $menuArray[$i]['pageName'] . '">
-                        <button type="button" class="btn btn-outline-primary carousel-bg-slogen" href="' . $menuArray[$i]['pageName'] . '.php">
+                        <a class="btn btn-outline-primary btn-lg carousel-bg-slogen" href="' . $menuArray[$i]['pageName'] . '.php">
                         ' . $menuArray[$i]['slogan'] . '
-                        </button>
+                        </a>
                     </div>
                 </div>';
             }

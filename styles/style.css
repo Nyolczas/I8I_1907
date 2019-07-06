@@ -25,7 +25,7 @@
 .carousel {
   position: absolute;
   width: 100%;
-  bottom: 50px;
+  bottom: 60px;
   left: 0;
 }
 
@@ -41,51 +41,99 @@
   width: 100%;
   height: 100%;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-bg-slogen {
   position: absolute;
-  bottom: 60px;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid #2A9FD6;
+  letter-spacing: 1px;
 }
 
 .carousel-bg-code {
-  background-color: green;
+  background-image: url(../img/carousel/code.jpg);
 }
 
 .carousel-bg-anim {
-  background-color: red;
+  background-image: url(../img/carousel/anim.jpg);
 }
 
 .carousel-bg-illu {
-  background-color: pink;
+  background-image: url(../img/carousel/illu.jpg);
 }
 
 .carousel-bg-ddd {
-  background-color: #213a52;
+  background-image: url(../img/carousel/ddd.jpg);
 }
 
 .carousel-bg-vfx {
-  background-color: #66247a;
+  background-image: url(../img/carousel/vfx.jpg);
 }
 
 .carousel-bg-grafika {
-  background-color: #36271b;
+  background-image: url(../img/carousel/grafika.jpg);
 }
 
 .carousel-bg-story {
-  background-color: #464646;
+  background-image: url(../img/carousel/story.jpg);
 }
 
 .carousel-bg-concept {
-  background-color: #8d67d3;
+  background-image: url(../img/carousel/concept.jpg);
 }
 
 .carousel-bg-artdir {
-  background-color: #0059ff;
+  background-image: url(../img/carousel/artdir.jpg);
+}
+
+.message {
+  position: absolute;
+  bottom: calc(60% + 60px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+
+.message-txt {
+  letter-spacing: 1px;
+}
+
+.message-txt > p {
+  font-size: 1.25rem;
+}
+
+.message-txt > h1 {
+  font-size: 2.5rem;
+}
+
+.message-img {
+  width: 20vh;
+  height: 25vh;
+  background-color: gold;
+  position: absolute;
+  right: 0;
+  bottom: -3rem;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.kapcsolat-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+}
+
+.kapcsolat-box > a {
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=style.css.map */
