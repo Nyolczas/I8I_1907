@@ -25,9 +25,9 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.75);
+            background-color: $colorTransBlack;
             border: 1px solid $colorPrimaryBlue;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
         &-code {
@@ -66,6 +66,12 @@
             background-image: url(../img/carousel/artdir.jpg);
         }
     }
+}
 
-
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: $colorTransBlack;
+    padding: 15px;
+    background-size: 15px, 15px;
+    border-radius: 100%;
+    background-position: center;
 }

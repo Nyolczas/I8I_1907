@@ -1,8 +1,13 @@
 //--- colors
 $colorBg:  #060606;
+$colorTransBlack: rgba(0,0,0,0.8);
 $colorPrimaryBlue: #2A9FD6;
 $colorSecondary: #FF8800;
 $colorWhite: white;
 
-//--- sizes
-$sizeButtonBoxHeight: 60px;
+//--- font
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}

@@ -2,47 +2,80 @@
     height: 100vh;
 }
 
+$portreSize: 133px;
+
 .midlerow {
     flex-grow: 1;
     position: relative;
-}
+    overflow: hidden;
 
-.message {
-    position: absolute;
-    bottom: calc(60% + #{$sizeButtonBoxHeight});
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+    .container {
+        position: relative;
 
-    &-txt {
-        letter-spacing: 1px;
+        .message {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            display: flex;
 
-        >p {
-            font-size: 1.25rem;
+            &-txt {
+                letter-spacing: 1px;
+                position: relative;
+                padding: 15px 30px;
+
+                >p {
+                    font-size: 1.25rem;
+                }
+
+                >h1 {
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+
+                &::after {
+                    width: 2500px;
+                    height: 100%;
+                    content: '.';
+                    color: rgba(0, 0, 0, 0);
+                    display: block;
+                    background-color: $colorTransBlack;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    border-bottom: 2px solid $colorPrimaryBlue;
+                }
+            }
+
+            &-img-wrapper {
+                position: relative;
+                width: calc(#{$portreSize} + 15px);
+
+                .portre {
+                    width: $portreSize;
+                    height: $portreSize;
+                    border-radius: 100%;
+                    background-image: url(../img/nyolczas.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    position: absolute;
+                    right: 15px;
+                    top: 15px;
+                }
+            }
         }
 
-        >h1 {
-            font-size: 2.5rem;
-        }
-    }
-
-    &-img {
-        width: 133px;
-        height: 133px;
-        border-radius: 100%;
-        background-color: gold;
-        position: absolute;
-        right:0;
-        bottom: -3rem;
-        transform: translateX(100%);
     }
 }
 
 .kapcsolat-box {
 
-    height: $sizeButtonBoxHeight;
-
     >a {
+        margin: 15px;
         letter-spacing: 1px;
+        text-transform: uppercase;
     }
 }

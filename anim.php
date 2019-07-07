@@ -9,11 +9,8 @@ include 'includes\head.php';
 
 <body>
 
-<?php
-include 'includes\navbar.php';
+<?php include 'includes\contentHeader.php'; ?>
 
-echo $menuArray[$pageNr]['slogan'];
-?>
 
 </body>
 </html>

@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext");
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+
 .navbar.bg-dark {
   border-color: #060606;
 }
@@ -20,6 +25,47 @@
 
 .navbar.bg-dark .active:hover .nav-link {
   color: white;
+}
+
+.content-header > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.code-header {
+  background-color: #003057;
+}
+
+.anim-header {
+  background-color: #003057;
+}
+
+.illu-header {
+  background-color: #003057;
+}
+
+.ddd-header {
+  background-color: #003057;
+}
+
+.vfx-header {
+  background-color: #003057;
+}
+
+.grafika-header {
+  background-color: #003057;
+}
+
+.story-header {
+  background-color: #003057;
+}
+
+.concept-header {
+  background-color: #003057;
+}
+
+.artdir-header {
+  background-color: #003057;
 }
 
 .carousel {
@@ -52,9 +98,9 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid #2A9FD6;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .carousel-bg-code {
@@ -93,6 +139,14 @@
   background-image: url(../img/carousel/artdir.jpg);
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  background-size: 15px, 15px;
+  border-radius: 100%;
+  background-position: center;
+}
+
 .index-body {
   height: 100vh;
 }
@@ -102,47 +156,75 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   position: relative;
+  overflow: hidden;
 }
 
-.message {
+.midlerow .container {
+  position: relative;
+}
+
+.midlerow .container .message {
   position: absolute;
-  bottom: calc(60% + 60px);
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  top: 0;
+  right: 0;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.message-txt {
+.midlerow .container .message-txt {
   letter-spacing: 1px;
+  position: relative;
+  padding: 15px 30px;
 }
 
-.message-txt > p {
+.midlerow .container .message-txt > p {
   font-size: 1.25rem;
 }
 
-.message-txt > h1 {
-  font-size: 2.5rem;
+.midlerow .container .message-txt > h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.message-img {
+.midlerow .container .message-txt::after {
+  width: 2500px;
+  height: 100%;
+  content: '.';
+  color: rgba(0, 0, 0, 0);
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-bottom: 2px solid #2A9FD6;
+}
+
+.midlerow .container .message-img-wrapper {
+  position: relative;
+  width: calc(133px + 15px);
+}
+
+.midlerow .container .message-img-wrapper .portre {
   width: 133px;
   height: 133px;
   border-radius: 100%;
-  background-color: gold;
+  background-image: url(../img/nyolczas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: absolute;
-  right: 0;
-  bottom: -3rem;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-}
-
-.kapcsolat-box {
-  height: 60px;
+  right: 15px;
+  top: 15px;
 }
 
 .kapcsolat-box > a {
+  margin: 15px;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .contact-form {
