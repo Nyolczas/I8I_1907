@@ -27,7 +27,7 @@ include 'includes\head.php';
     </div>
 
     <div class="kapcsolat-box w-100 container d-flex justify-content-center align-items-center">
-        <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>
+        <a href="kapcsolat.php" class="btn btn-warning">Kapcsolat</a>
     </div>
     
 
