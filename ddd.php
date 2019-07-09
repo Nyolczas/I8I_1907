@@ -1,5 +1,5 @@
 <?php
-$pageNr = 4;
+$pageNr = 3;
 include 'includes\menuArray.php';
 $page = $menuArray[$pageNr]['pageName'];
 $title = $menuArray[$pageNr]['bjutiName'] . ' | Nyolczas István';

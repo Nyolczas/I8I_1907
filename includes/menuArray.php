@@ -12,29 +12,17 @@ $menuArray = [
         "bjutiName" => "Animáció",
         "slogan" => "2D - 3D animáció"
     ],[
-        "pageName" => "illu",
-        "bjutiName" => "Illusztráció",
-        "slogan" => "Illusztráció"
-    ],[
         "pageName" => "ddd",
-        "bjutiName" => "3D",
-        "slogan" => "General 3D"
-    ],[
-        "pageName" => "vfx",
-        "bjutiName" => "Vfx",
-        "slogan" => "Utómunka - Vfx"
+        "bjutiName" => "3D - Vfx",
+        "slogan" => "General 3D, Utómunka, Vfx"
     ],[
         "pageName" => "grafika",
-        "bjutiName" => "Grafika",
-        "slogan" => "Grafika, dizájn"
+        "bjutiName" => "Illusztráció - Grafika",
+        "slogan" => "Illusztráció, Grafika, dizájn"
     ],[
         "pageName" => "story",
-        "bjutiName" => "Storyboard",
-        "slogan" => "Storyboard"
-    ],[
-        "pageName" => "concept",
-        "bjutiName" => "Concept Art",
-        "slogan" => "Concept art, látványtervek"
+        "bjutiName" => "Concept és Storyboard",
+        "slogan" => "Storyboard és Concept Art"
     ],[
         "pageName" => "artdir",
         "bjutiName" => "Művészeti Vezetés",

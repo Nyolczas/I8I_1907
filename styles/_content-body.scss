@@ -1,0 +1,53 @@
+.img-row-6 {
+    >.col-6 {
+        >.card {
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+
+            >.prev-img {
+                height: 120px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                &-title{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 10px 15px;
+                    color: rgba($colorWhite, 0.8);
+                    background-color: rgba($colorGrey, 0.8);
+                    margin: 0;
+                    transform: translateY(100%);
+                    transition: all 0.3s;
+                }
+            }
+
+            &:hover .prev-img-title{
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+.modal{
+    
+    &-dialog {
+        max-width: 1234px;
+
+        &-xl {
+            max-width: 1954px;
+        }
+    }
+
+    
+    &-content {
+        .modal-body{
+            > img {
+                width: 100%;
+            }
+        }
+    }
+}
