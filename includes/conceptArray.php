@@ -47,7 +47,7 @@ $concepts = [
         "titl" => "Robotic Car Mapping",
         "path" => "concept/robotic",
         "desc" => "Car mapping show",
-        "sCls" => "modal-dialog-xl"
+        "sCls" => "modal-dialog"
     ],[
         "name" => ["s1", "s2"],
         "titl" => "Sloggi",

@@ -80,6 +80,10 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
 }
 
+.card > .prev-img-3 {
+  height: 240px;
+}
+
 .card > .prev-img-4 {
   height: 200px;
 }

@@ -35,7 +35,6 @@ function galleryCarousel($id, $names, $dir, $title){
         $extra = ($i == 0 ? ' active' : '');
         echo '<div class="carousel-item'. $extra . '">' . "\n" .
         '<div class="carousel-bg" style="background-image: url(img/' . $dir . '/' . $names[$i] . '.jpg); background-size: contain; background-position: center; "></div>'. "\n" .
-        //'<img class="d-block w-100" src="img/' . $dir . '/' . $names[$i] . '.jpg" alt="' . $names[$i] . '">' . "\n" .
         '</div>' . "\n";
     }
     carousel3($id); 

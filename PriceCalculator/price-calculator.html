@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Animation Price Calculator</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/price-calc.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Animation Price Guide</h1>
+                <h2>How much does animation cost to make?</h2>
+                <p class="lead text-muted">Estimate the cost of animation projects for different mediums, styles,
+                    quality and duration using our interactive instant animation price calculator. Use this price guide
+                    to calculate a ballpark figure for your next animation project.</p>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="medium">
+                    <h2 class="jumbotron-heading">1. Choose the medium</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img onclick="chooseMedium('3D_Anim','3D_styles')" class="cardMedium" id="3D_Anim" src="img/priceCalculator/D3_anim.jpg"
+                                    alt="3D Animation">
+                                <div class="card-body">
+                                    <p class="card-text">3D Animation & VFX</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img onclick="chooseMedium('MotionGraphics','MG_styles')" class="cardMedium" id="MotionGraphics"
+                                    src="img/priceCalculator/Motion.jpg" alt="Motion Graphics">
+                                <div class="card-body">
+                                    <p class="card-text">Motion Graphics</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img onclick="chooseMedium('2D_Anim','2D_styles')" class="cardMedium" id="2D_Anim" src="img/priceCalculator/D2_anim.jpg"
+                                    alt="2D Animation">
+                                <div class="card-body">
+                                    <p class="card-text">2D Animation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========================================= animation styles ========================================= -->
+                    <div class="animStyles" id="2D_styles">
+                        <h2 class="jumbotron-heading">2. Choose the 2D animation style</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img onclick="chooseAnimStyle('cutOut')" id="cutOut" class="cardAnimStyle" src="img/priceCalculator/D2_1.jpg" alt="Cut out style">
+                                    <div class="card-body">
+                                        <p class="card-text">Cut out style</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img onclick="chooseAnimStyle('vector2D')" id="vector2D" class="cardAnimStyle" src="img/priceCalculator/D2_2.jpg" alt="Rigged, vector based animation">
+                                    <div class="card-body">
+                                        <p class="card-text">Rigged, vector based animation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img onclick="chooseAnimStyle('traditional2D')" id="traditional2D" class="cardAnimStyle" src="img/priceCalculator/D2_3.jpg" alt="Traditional animation style">
+                                    <div class="card-body">
+                                        <p class="card-text">Traditional animation style</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animStyles" id="MG_styles">
+                        <h2 class="jumbotron-heading">2. Choose the Motion Graphics style</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img onclick="chooseAnimStyle('abstractMotion')" id="abstractMotion" class="cardAnimStyle" src="img/priceCalculator/M_1.jpg" alt="Abstract 2D - 3D">
+                                    <div class="card-body">
+                                        <p class="card-text">Abstract 2D - 3D</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img onclick="chooseAnimStyle('complex3DMotion')" id="complex3DMotion" class="cardAnimStyle" src="img/priceCalculator/M_2.jpg" alt="Complex 3D Scenes">
+                                    <div class="card-body">
+                                        <p class="card-text">Complex 3D Scenes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img onclick="chooseAnimStyle('realistic3DMotion')" id="realistic3DMotion" class="cardAnimStyle" src="img/priceCalculator/M_3.jpg" alt="Realistic 3D">
+                                    <div class="card-body">
+                                        <p class="card-text">Realistic 3D</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animStyles" id="3D_styles">
+                        <h2 class="jumbotron-heading">2. Choose the 3D animation style</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img onclick="chooseAnimStyle('visualisation3D')" id="visualisation3D" class="cardAnimStyle" src="img/priceCalculator/D3_1.jpg" alt="3D Visualisation">
+                                    <div class="card-body">
+                                        <p class="card-text">3D Visualisation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img onclick="chooseAnimStyle('cartoon3D')" id="cartoon3D" class="cardAnimStyle" src="img/priceCalculator/D3_2.jpg" alt="3D Cartoon">
+                                    <div class="card-body">
+                                        <p class="card-text">3D Cartoon</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img onclick="chooseAnimStyle('realistic3dCharacter')" id="realistic3dCharacter" class="cardAnimStyle" src="img/priceCalculator/D3_3.jpg" alt="3D Realistic">
+                                    <div class="card-body">
+                                        <p class="card-text">Realistic Character Animation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========================================= duration ========================================= -->
+                    <div class="rangecontainer">
+                        <h2 class="jumbotron-heading">3. Duration: <span id="demoDuration"></span> </h2>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="10800" value="300" class="slider" id="durationR">
+                        </div>
+                    </div>
+
+
+                    <!-- ========================================= quality ========================================= -->
+                    <div class="rangecontainer">
+                        <h2 class="jumbotron-heading">4. Production Quality: <span id="demoQuality"></span>
+                        </h2>
+                        <div class="quality-container">
+                            <h5 class="quality" id="Acceptable">Acceptable Quality</h5>
+                            <h5 class="quality" id="Appropriate">Appropriate Quality</h5>
+                            <h5 class="quality" id="Premium">Premium Quality</h5>
+                        </div>
+                        <div class="slidecontainer">
+                            <input type="range" min="100" max="300" value="200" class="slider" id="qualityR">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <div style="display: none;" id="inform"><span id="secondPrice"></span><span id="secondPrice"></span><span id="secondPrice"></span><span id="secondPrice"></span></div>
+                    
+                <h1 class="jumbotron-heading price" id="finalPrice">$XX,XXX</h1>
+                <p class="lead text-muted"> This price is to be used as a rough guide only and not as a definitive
+                    estimate.
+                    Voice over talent, music and sound effects can significantly increase overall costs.
+                    Costs vary greatly depending on the number of characters, environments and complexity.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/date-en-US.js"></script>
+    <script src="js/price-calc.js"></script>
+
+</body>
+
+</html>

@@ -24,32 +24,29 @@ include 'includes\head.php';
         </div>
     </div>
     <h3 class="mb-4">Concept-ek, látványtervek</h3>
-    <div class="row img-row-6 mb-4">
+    <div class="row mb-4">
         <!-- Button trigger modals -->
         <?php
             foreach ($concepts as $concept) {
-                modalButton(4, $concept['name'], $concept['path'], $concept['titl']);
+                modalButton(4, $concept['name'][0], $concept['path'], $concept['titl']);
             }
         ?> 
     </div>
     <h3 class="mb-4">Storyboard-ok</h3>
-    <div class="row img-row-6 mb-4">
+    <div class="row mb-4">
         <!-- Button trigger modals -->
         <?php
             foreach ($storyBoards as $storyBoard) {
-                modalButton(6, $storyBoard['name'], "story", $storyBoard['titl']);
+                modalButton(6, $storyBoard['name'][0], "story", $storyBoard['titl']);
             }
         ?>      
     </div>
-    <?php
-    //modalCarusel(["bodza1", "bodza2", "bodza3", "bodza4"], 'bodzavirág pina', 'concept/bodza');
-    ?>
 </div>
 
 <!-- Modals -->
 <?php
     foreach ($concepts as $concept) {
-        modalSimple($concept['path'], $concept['name'], $concept['titl'], $concept['desc'], "modal-dialog-xl", true);
+        modalSimple($concept['path'], $concept['name'], $concept['titl'], $concept['desc'], $concept['sCls'], true);
     }
 
     foreach ($storyBoards as $storyBoard) {

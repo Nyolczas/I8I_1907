@@ -14,11 +14,11 @@ $menuArray = [
     ],[
         "pageName" => "ddd",
         "bjutiName" => "3D - Vfx",
-        "slogan" => "General 3D, Utómunka, Vfx"
+        "slogan" => "Generál 3d, utómunka, vfx"
     ],[
         "pageName" => "grafika",
         "bjutiName" => "Illusztráció - Grafika",
-        "slogan" => "Illusztráció, Grafika, dizájn"
+        "slogan" => "Illusztráció, grafika, dizájn"
     ],[
         "pageName" => "story",
         "bjutiName" => "Concept és Storyboard",
