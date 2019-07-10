@@ -68,20 +68,27 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #003057;
 }
 
-.img-row-6 > .col-6 > .card {
+.card {
   overflow: hidden;
   cursor: pointer;
   position: relative;
 }
 
-.img-row-6 > .col-6 > .card > .prev-img {
-  height: 120px;
+.card > .prev-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.img-row-6 > .col-6 > .card > .prev-img-title {
+.card > .prev-img-4 {
+  height: 200px;
+}
+
+.card > .prev-img-6 {
+  height: 120px;
+}
+
+.card > .prev-img-title {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -96,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s;
 }
 
-.img-row-6 > .col-6 > .card:hover .prev-img-title {
+.card:hover .prev-img-title {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }

@@ -1,6 +1,7 @@
 <?php
 $pageNr = 0;
 include 'includes\menuArray.php';
+include 'includes\carousel.php';
 $page = $menuArray[$pageNr]['pageName'];
 $title = 'Nyolczas István';
 
@@ -23,7 +24,7 @@ include 'includes\head.php';
                 </div>
             </div>
         </div>
-        <?php include 'includes\carousel.php'; ?>
+        <?php  menuCarousel($menuArray);?>
     </div>
 
     <div class="kapcsolat-box w-100 container d-flex justify-content-center align-items-center">

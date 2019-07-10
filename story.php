@@ -28,12 +28,7 @@ include 'includes\head.php';
         <!-- Button trigger modals -->
         <?php
             foreach ($concepts as $concept) {
-                echo '<div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">' . "\n" . 
-                        '<div  class="card border-primary 100-h" data-toggle="modal" data-target="#' . $concept['name'][0] . 'Modal">' . "\n" .
-                            '<div class="prev-img " style="background-image: url(img/' . $concept['path'] . '/smalls/' . $concept['name'][0] . '.jpg);" ></div>'  . "\n" .
-                            '<h6 class="prev-img-title">' . $concept['titl'] . '</h6>' . "\n" .
-                        '</div>' . "\n" .
-                    '</div>' . "\n";
+                modalButton(4, $concept['name'], $concept['path'], $concept['titl']);
             }
         ?> 
     </div>
@@ -42,25 +37,23 @@ include 'includes\head.php';
         <!-- Button trigger modals -->
         <?php
             foreach ($storyBoards as $storyBoard) {
-                echo '<div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">' . "\n" . 
-                        '<div  class="card border-primary 100-h" data-toggle="modal" data-target="#' . $storyBoard['name'][0] . 'Modal">' . "\n" .
-                            '<div class="prev-img " style="background-image: url(img/story/smalls/' . $storyBoard['name'][0] . '.jpg);" ></div>'  . "\n" .
-                            '<h6 class="prev-img-title">' . $storyBoard['titl'] . '</h6>' . "\n" .
-                        '</div>' . "\n" .
-                    '</div>' . "\n";
+                modalButton(6, $storyBoard['name'], "story", $storyBoard['titl']);
             }
         ?>      
     </div>
+    <?php
+    //modalCarusel(["bodza1", "bodza2", "bodza3", "bodza4"], 'bodzavirág pina', 'concept/bodza');
+    ?>
 </div>
 
 <!-- Modals -->
 <?php
     foreach ($concepts as $concept) {
-        modalSimple($concept['path'], $concept['name'], $concept['titl'], $concept['desc'], "modal-dialog-xl");
+        modalSimple($concept['path'], $concept['name'], $concept['titl'], $concept['desc'], "modal-dialog-xl", true);
     }
 
     foreach ($storyBoards as $storyBoard) {
-        modalSimple('story', $storyBoard['name'], $storyBoard['titl'], $storyBoard['desc']);
+        modalSimple('story', $storyBoard['name'], $storyBoard['titl'], $storyBoard['desc'], '', false);
     }
 ?>
 
