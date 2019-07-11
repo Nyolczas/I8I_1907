@@ -125,6 +125,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1954px;
 }
 
+.modal-dialog-sm {
+  max-width: 1040px;
+}
+
 .modal-content .modal-body > img {
   width: 100%;
 }

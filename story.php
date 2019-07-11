@@ -11,7 +11,6 @@ include 'includes\head.php';
 ?>
 
 <body>
-
 <?php include 'includes\contentHeader.php'; ?>
 <div class="container my-4">
     <div class="row my-4">

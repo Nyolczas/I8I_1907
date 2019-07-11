@@ -49,12 +49,12 @@ $animVideos = [
         "name" => "maggiS",
         "titl" => "Maggi Gombócok",
         "desc" => "Generál 3D",
-        "link" => "https://www.youtube.com/watch?v=PElm5C7CD9I"
+        "link" => "https://www.youtube.com/embed/PElm5C7CD9I"
     ],[
         "name" => "pain",
         "titl" => "Fájdalom és Humorérzék",
         "desc" => "Rutkai Borival",
-        "link" => "https://www.youtube.com/watch?v=bu5MHq16tVM"
+        "link" => "https://www.youtube.com/embed/bu5MHq16tVM"
     ]    
 ];
 ?>

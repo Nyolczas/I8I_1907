@@ -32,25 +32,10 @@ include 'includes\head.php';
     </div>
     <?php
 
-    /*
-        $cnt = 0;
-        foreach ($animVideos as $video){
-            if($cnt == 0) {echo '<div class="row">';}
-            echo '<div class="col-sm">';
-                echo '<div class="card border-primary mb-3">';
-                    echo '<h5 class="card-header card-title">' . $video['name'] . '</h5>';
-                    echo '<div class="card-body">';
-                        echo '<h6 class="card-subtitle text-muted">' . $video['desc'] . '</h6>';
-                    echo '</div>';
-                    echo '<iframe src=' . $video['link'] . ' frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>'; 
-                echo '</div>';   
-            echo '</div>';    
-            $cnt++;
-            if($cnt == 3) {echo '</div>'; $cnt = 0;}
-        }
-        */
+    //<!-- Modals -->
+    foreach ($animVideos as $anim) {
+        videoModal($anim['name'], 'modal-dialog-sm', $anim['titl'], $anim['desc'], $anim['link']);
+    }
     ?>
 </div>
 
