@@ -1,6 +1,9 @@
 <?php
 $pageNr = 3;
 include 'includes\menuArray.php';
+include 'includes\dddArray.php';
+include 'includes\modalBuilder.php';
+
 $page = $menuArray[$pageNr]['pageName'];
 $title = $menuArray[$pageNr]['bjutiName'] . ' | Nyolczas István';
 
@@ -20,11 +23,32 @@ include 'includes\head.php';
         </div>
     </div>
     <h3 class="mb-4">3D Vfx</h3>
+    <div class="row">
+        <!-- Button trigger modals -->
+        <?php
+            foreach ($dddVideos as $ddd) {
+                modalButton(3, $ddd['name'], 'anim', $ddd['titl']);
+            }
+        ?> 
+    </div>
     <div class="row mb-4">
         <!-- Button trigger modals -->
         <?php
-            
+            foreach ($dddImages as $iamge) {
+                modalButton(4, $iamge['name'][0], $iamge['path'], $iamge['titl']);
+            }
         ?> 
     </div>
+    </div>    
+    <?php
+    //<!-- Modals -->
+    foreach ($dddVideos as $ddd) {
+        videoModal($ddd['name'], 'modal-dialog-sm', $ddd['titl'], $ddd['desc'], $ddd['link']);
+    }
+
+    foreach ($dddImages as $image) {
+        modalSimple($image['path'], $image['name'], $image['titl'], $image['desc'], '', true);
+    }
+    ?>
 </body>
 </html>

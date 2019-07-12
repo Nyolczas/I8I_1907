@@ -35,7 +35,7 @@ $dddImages = [
         "path" => "ddd/mattepaint",
         "desc" => "matte paintings",
     ],[
-        "name" => ["d1", "d2", "d3", "e4"],
+        "name" => ["v1", "v2", "v3", "v4", "v5", "v6", "v7"],
         "titl" => "3D - vfx",
         "path" => "ddd/vegyes",
         "desc" => "vegyes",

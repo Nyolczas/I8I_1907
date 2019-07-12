@@ -1,6 +1,9 @@
 <?php
 $pageNr = 4;
 include 'includes\menuArray.php';
+include 'includes\illuArray.php';
+include 'includes\modalBuilder.php';
+
 $page = $menuArray[$pageNr]['pageName'];
 $title = $menuArray[$pageNr]['bjutiName'] . ' | Nyolczas István';
 
@@ -19,14 +22,21 @@ include 'includes\head.php';
             <a href="kapcsolat.php" class="btn btn-warning">Kapcsolat</a>
         </div>
     </div>
-    <h3 class="mb-4">Grafikai munkák</h3>
+    <h3 class="mb-4">Illusztrációk, grafikai munkák</h3>
     <div class="row mb-4">
         <!-- Button trigger modals -->
         <?php
-            
+           foreach ($illuArray as $illu) {
+            modalButton(4, $illu['name'][0], $illu['path'], $illu['titl']);
+        }
         ?> 
     </div>
-    
 </div>
+<?php
+    //<!-- Modals -->
+       foreach ($illuArray as $illu) {
+        modalSimple($illu['path'], $illu['name'], $illu['titl'], $illu['desc'], '', true);
+    }
+    ?>
 </body>
 </html>

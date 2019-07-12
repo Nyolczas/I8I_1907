@@ -31,7 +31,6 @@ include 'includes\head.php';
         ?> 
     </div>
     <?php
-
     //<!-- Modals -->
     foreach ($animVideos as $anim) {
         videoModal($anim['name'], 'modal-dialog-sm', $anim['titl'], $anim['desc'], $anim['link']);
