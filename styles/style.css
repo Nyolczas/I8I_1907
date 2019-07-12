@@ -133,6 +133,25 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+.modal-max-height > .modal-content > .modal-body {
+  max-height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal-max-height > .modal-content > .modal-body > p {
+  width: 100%;
+}
+
+.modal-max-height > .modal-content > .modal-body > img {
+  width: auto;
+  height: 68vh;
+  margin: auto;
+}
+
 .carousel {
   position: relative;
   width: 100%;

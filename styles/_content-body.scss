@@ -68,4 +68,24 @@
             }
         }
     }
+
+    &-max-height {
+        > .modal-content {
+            > .modal-body{
+                max-height: 75vh;
+                display: flex;
+                flex-wrap: wrap;
+    
+                > p {
+                    width: 100%;
+                }
+    
+                > img {
+                    width: auto;
+                    height: 68vh;
+                    margin: auto;
+                }
+            }
+        }
+    }
 }

@@ -40,7 +40,7 @@ $illuArray = [
         "name" => ["r1", "r2", "r3", "r4", "r5", "r6"],
         "titl" => "Strings & Keys",
         "path" => "illu/Rozsa",
-        "desc" => "Élő show - háttérvetítés",
+        "desc" => "Élő komolyzenei show - hangreaktív háttérvetítés",
     ], [
         "name" => ["d_6"],
         "titl" => "Allianz",
@@ -62,7 +62,7 @@ $illuArray = [
         "path" => "illu/tanulmany",
         "desc" => "tanulmány",
     ], [
-        "name" => ["t1", "t2", "t3"],
+        "name" => ["tj1", "tj2", "tj3"],
         "titl" => "Magyar Tej Tv spot",
         "path" => "illu/tej",
         "desc" => "3d karakterdizájn és animáció",
@@ -72,7 +72,7 @@ $illuArray = [
         "path" => "illu/tfeCh",
         "desc" => "Karaktertervek",
     ], [
-        "name" => ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"],
+        "name" => ["ti1", "ti2", "ti3", "ti4", "ti5", "ti6", "ti7", "ti8", "ti9", "ti10"],
         "titl" => "Time for English",
         "path" => "illu/tfe_illuk",
         "desc" => "Designtervek",

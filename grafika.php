@@ -35,7 +35,9 @@ include 'includes\head.php';
 <?php
     //<!-- Modals -->
        foreach ($illuArray as $illu) {
-        modalSimple($illu['path'], $illu['name'], $illu['titl'], $illu['desc'], '', true);
+           $isSeq = (count($illu['name']) > 1 ? true : false);
+           $specialClass = (count($illu['name']) > 1 ? '' : 'modal-max-height');
+        modalSimple($illu['path'], $illu['name'], $illu['titl'], $illu['desc'], $specialClass, $isSeq);
     }
     ?>
 </body>
