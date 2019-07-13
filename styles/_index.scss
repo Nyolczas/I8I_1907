@@ -45,7 +45,7 @@ $portreSize: 133px;
                     top: 0;
                     left: 0;
                     z-index: -1;
-                    border-bottom: 2px solid $colorPrimaryBlue;
+                    border-bottom: 1px solid $colorBlue;
                 }
             }
 
@@ -72,10 +72,19 @@ $portreSize: 133px;
 }
 
 .kapcsolat-box {
-
     >a {
-        margin: 15px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+        margin: 15px 5px;
     }
+
+    >div {
+        >span {
+            font-size: 0.75rem;
+            letter-spacing: 0.05rem;
+        }
+    }
+}
+
+.btn-outline-warning {
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
 }

@@ -1,9 +1,13 @@
 .navbar.bg-dark {
     border-color: $colorBg;
+    
     .nav-item {
         > .nav-link {
             color: $colorPrimaryBlue;
+            font-weight: 600;
+            letter-spacing: 0.05rem;
         }
+
         &:hover .nav-link{
             color: $colorSecondary;
         }
@@ -17,6 +21,25 @@
         &:hover .nav-link{
             color: $colorWhite;
         }
-    }
-    
+    } 
 }
+
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba($colorBg, 0.8) !important;
+    z-index: 100;
+}
+@media (max-width: 991px) {
+    .navbar-fixed-top {
+        width: auto;
+        border-radius: 0 0 5px 5px;
+    }
+    .navbar-collapse {
+
+        > ul {
+            padding: 15px;
+        }
+    }
+ }

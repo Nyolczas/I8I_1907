@@ -50,5 +50,6 @@ include 'includes\head.php';
         modalSimple($image['path'], $image['name'], $image['titl'], $image['desc'], '', true);
     }
     ?>
+    <?php include 'includes\footer.php'; ?>
 </body>
 </html>

@@ -40,5 +40,6 @@ include 'includes\head.php';
         modalSimple($illu['path'], $illu['name'], $illu['titl'], $illu['desc'], $specialClass, $isSeq);
     }
     ?>
+    <?php include 'includes\footer.php'; ?>
 </body>
 </html>
