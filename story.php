@@ -27,7 +27,7 @@ include 'includes\head.php';
         <!-- Button trigger modals -->
         <?php
             foreach ($concepts as $concept) {
-                modalButton(4, $concept['name'][0], $concept['path'], $concept['titl']);
+                modalButton(4, $concept['name'][0], $concept['path'], $concept['titl'], $concept['desc']);
             }
         ?> 
     </div>
@@ -36,7 +36,7 @@ include 'includes\head.php';
         <!-- Button trigger modals -->
         <?php
             foreach ($storyBoards as $storyBoard) {
-                modalButton(6, $storyBoard['name'][0], "story", $storyBoard['titl']);
+                modalButton(6, $storyBoard['name'][0], "story", $storyBoard['titl'], $storyBoard['desc']);
             }
         ?>      
     </div>

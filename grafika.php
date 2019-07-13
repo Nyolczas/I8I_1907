@@ -27,7 +27,7 @@ include 'includes\head.php';
         <!-- Button trigger modals -->
         <?php
            foreach ($illuArray as $illu) {
-            modalButton(4, $illu['name'][0], $illu['path'], $illu['titl']);
+            modalButton(4, $illu['name'][0], $illu['path'], $illu['titl'], $illu['desc']);
         }
         ?> 
     </div>

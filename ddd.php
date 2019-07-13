@@ -27,7 +27,7 @@ include 'includes\head.php';
         <!-- Button trigger modals -->
         <?php
             foreach ($dddVideos as $ddd) {
-                modalButton(3, $ddd['name'], 'anim', $ddd['titl']);
+                modalButton(3, $ddd['name'], 'anim', $ddd['titl'], $ddd['desc']);
             }
         ?> 
     </div>
@@ -35,7 +35,7 @@ include 'includes\head.php';
         <!-- Button trigger modals -->
         <?php
             foreach ($dddImages as $iamge) {
-                modalButton(4, $iamge['name'][0], $iamge['path'], $iamge['titl']);
+                modalButton(4, $iamge['name'][0], $iamge['path'], $iamge['titl'], $iamge['desc']);
             }
         ?> 
     </div>

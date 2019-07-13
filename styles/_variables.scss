@@ -1,6 +1,8 @@
 //--- colors
 $colorBg:  #060606;
 $colorGrey: #282828;
+$colorLightGrey: #888;
+$colorLightenGray: #dadada;
 $colorTransBlack: rgba(0,0,0,0.8);
 $colorPrimaryBlue: #2A9FD6;
 $colorSecondary: #FF8800;
@@ -11,4 +13,5 @@ $colorWhite: white;
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
+    letter-spacing: 0.05rem;
 }

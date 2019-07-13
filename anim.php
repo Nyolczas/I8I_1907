@@ -26,7 +26,7 @@ include 'includes\head.php';
         <!-- Button trigger modals -->
         <?php
             foreach ($animVideos as $anim) {
-                modalButton(3, $anim['name'], 'anim', $anim['titl']);
+                modalButton(3, $anim['name'], 'anim', $anim['titl'], $anim['desc']);
             }
         ?> 
     </div>
@@ -37,7 +37,26 @@ include 'includes\head.php';
     }
     ?>
 </div>
+<script type="text/javascript">
+$(document).ready(function(){
+    var url = {};
+        <?php
+        foreach ($animVideos as $anim){
+            /* Get iframe src attribute value i.e. YouTube video url  and store it in a variable */
+            echo "url['" . $anim['name'] . "'] = $(\"#" . $anim['name'] . "Video\").attr('src');" . "\n";
 
+            /* Assign empty url value to the iframe src attribute when modal hide, which stop the video playing */
+            echo "$(\"#" . $anim['name'] . "Modal\").on('hide.bs.modal', function(){ 
+                $(\"#" . $anim['name'] . "Video\").attr('src', ''); 
+            });" . "\n";
 
+            /* Assign the initially stored url back to the iframe src attribute when modal is displayed again */
+            echo "$(\"#" . $anim['name'] . "Modal\").on('show.bs.modal', function(){ 
+                $(\"#" . $anim['name'] . "Video\").attr('src', url['" . $anim['name'] . "']);
+            });" . "\n";
+        }
+        ?>
+});
+</script>
 </body>
 </html>

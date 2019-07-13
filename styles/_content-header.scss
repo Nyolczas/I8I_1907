@@ -1,12 +1,13 @@
 .content-header {
-    >.container {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2.5rem !important;
 }
 
 .code-header {
-    background-color: rgb(0, 48, 87);
+    background-image: url(../img/carousel/code.jpg);
 }
 
 .anim-header {

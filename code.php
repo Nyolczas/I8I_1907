@@ -14,6 +14,7 @@ include 'includes\head.php';
 <?php include 'includes\contentHeader.php'; ?>
 
 <div class="container  my-4">
+    <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
     <div class="row my-4">
         <div class="col-sm-8">
             <p>Stabil Frontend fejlesztő ismeretekkel rendelkezem és a szerver oldali programozástól sem riadok vissza. Profi grafikusként örömömet lelem a webdesign készítésben.</p>
@@ -23,15 +24,15 @@ include 'includes\head.php';
             <p>Főbb készségek: Php, Sass, Javascript, AJAX, JQuery, Node.js, Asp.Net, MVC, Bootstrap, Html, Css, Git, SVN</p>
         </div>
         <div class="d-flex col-sm-4 align-self-end justify-content-end mb-4">
-            <a href="kapcsolat.php" class="btn btn-warning">Kapcsolat</a>
+            <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>
         </div>
     </div>
-    <h3 class="mb-4">Webes referenciák</h3>
+    <h3 class="mb-4 text-primary">Webes referenciák</h3>
     <div class="row mb-4">
         <!-- Button trigger modals -->
         <?php
             foreach ($webArr as $web) {
-                modalButton(3, $web['name'], 'web', $web['title'], $web['isImage'], $web['path']);
+                modalButton(3, $web['name'], 'web', $web['title'], $web['desc'], $web['isImage'], $web['path']);
             }
         ?> 
     </div>

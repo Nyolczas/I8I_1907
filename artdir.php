@@ -27,7 +27,7 @@ include 'includes\head.php';
         <!-- Button trigger modals -->
         <?php
             foreach ($arts as $art) {
-                modalButton(3, $art['name'], 'artdir', $art['titl']);
+                modalButton(3, $art['name'], 'artdir', $art['titl'], $art['desc']);
             }
         ?> 
     </div>

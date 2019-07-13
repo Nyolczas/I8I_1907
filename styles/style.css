@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext");
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
+  letter-spacing: 0.05rem;
 }
 
 .navbar.bg-dark {
@@ -27,13 +28,16 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.content-header > .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.content-header {
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2.5rem !important;
 }
 
 .code-header {
-  background-color: #003057;
+  background-image: url(../img/carousel/code.jpg);
 }
 
 .anim-header {
@@ -98,14 +102,20 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   padding: 10px 15px;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(40, 40, 40, 0.88);
+  color: white;
+  background-color: rgba(40, 40, 40, 0.93);
   margin: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-top: 1px solid #FF8800;
+  letter-spacing: 0.05rem;
+}
+
+.card > .prev-img-title > h5 {
+  color: #FF8800;
+  font-size: 1.35rem;
 }
 
 .card:hover .prev-img-title {

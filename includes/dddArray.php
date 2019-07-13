@@ -30,7 +30,7 @@ $dddImages = [
         "path" => "ddd/itk",
         "desc" => "ITK autóbuszbemutató show - háttérvetítés",
     ],[
-        "name" => ["d_7", "d_81", "d_82", "d_83", "d_9", "m"],
+        "name" => ["d_7", "d_81", "d_83", "d_82", "d_81", "d_9", "m"],
         "titl" => "MattePaint",
         "path" => "ddd/mattepaint",
         "desc" => "matte paintings",

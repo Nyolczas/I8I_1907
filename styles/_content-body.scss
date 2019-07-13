@@ -26,12 +26,18 @@
             left: 0;
             width: 100%;
             padding: 10px 15px;
-            color: rgba($colorWhite, 0.8);
-            background-color: rgba($colorGrey, 0.88);
+            color: $colorWhite;
+            background-color: rgba($colorGrey, 0.93);
             margin: 0;
             transform: translateY(100%);
             transition: all 0.3s;
             border-top: 1px solid $colorSecondary;
+            letter-spacing: 0.05rem;
+
+            > h5 {
+                color: $colorSecondary;
+                font-size: 1.35rem;
+            }
         }
     }
 

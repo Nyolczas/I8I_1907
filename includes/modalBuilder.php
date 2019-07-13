@@ -1,7 +1,7 @@
 <?php
 include 'includes\carousel.php';
 //<!-- Button trigger modals -->
-function modalButton($row, $name, $path, $titl, $isModal = true, $webPath = '') {
+function modalButton($row, $name, $path, $titl, $desc, $isModal = true, $webPath = '') {
 
     if($row == 3) {
         $columns = '<div class="col-sm-12 col-md-6 col-lg-4 mb-3">';
@@ -23,7 +23,10 @@ function modalButton($row, $name, $path, $titl, $isModal = true, $webPath = '') 
         echo '<a href="' . $webPath . '" target="_blank" class="card mb-3 border-primary 100-h">' . "\n";
     }    
        echo '<div class ="' . $imgClass .'" style="background-image: url(img/' . $path . '/smalls/' . $name . '.jpg);" ></div>'  . "\n" .
-            '<h6 class="prev-img-title">' . $titl . '</h6>' . "\n";
+            '<div class="prev-img-title">
+            <h5>' . $titl . '</h5>
+            <p>' . $desc . '</p>'. "\n" .
+            '</div>' . "\n" ;
     if($isModal) { echo '</div>' . "\n"; } else { echo '</a>' . "\n"; }
     echo '</div>' . "\n";
 }
@@ -40,15 +43,15 @@ function modalSimple($dir, $names, $title, $descr, $sizeClass, $isCarousel) {
         }
     }
 
-    modalFooter();                
+    modalFooter($names[0]);                
 }
-//<iframe width="1006" height="566" src="https://www.youtube.com/embed/PElm5C7CD9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 function videoModal($names, $sizeClass, $title, $descr, $link) {
     modalHead($names, $sizeClass, $title, $descr);
-    echo '<iframe width="1006" height="566" src="' . $link . '" frameborder="0"
+    echo '<iframe id="' . $names . 'Video" width="1006" height="566" src="' . $link . '?autoplay=1" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>'; 
-    modalFooter();     
+    modalFooter($names);     
 }
 
 function modalHead($name, $sizeClass, $title, $descr) {
@@ -65,7 +68,7 @@ function modalHead($name, $sizeClass, $title, $descr) {
                         '<p>' . $descr . '</p>' . "\n" ;
 }
 
-function modalFooter() {
+function modalFooter($name) {
     echo '</div>' . "\n" .
                     '<div class="modal-footer">'  . "\n" .
                         '<button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>' . "\n" .
@@ -73,6 +76,7 @@ function modalFooter() {
                 '</div>' . "\n" .
             '</div>' . "\n" .
         '</div>' . "\n";
+
 }
    
 ?>
