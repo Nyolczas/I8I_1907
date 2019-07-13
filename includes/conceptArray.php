@@ -13,6 +13,12 @@ $concepts = [
         "desc" => "Összművészeti show",
         "sCls" => "modal-dialog-xl"
     ],[
+        "name" => ["d1", "d2", "d3", "d4", "d5", "d6"],
+        "titl" => "Könnyű Attila - Duett",
+        "path" => "concept/duett",
+        "desc" => "Projection mapping dance show",
+        "sCls" => "modal-dialog-xl"
+    ],[
         "name" => ["c1", "c2", "c3", "c4", "c5"],
         "titl" => "Chinese New Year",
         "path" => "concept/chineseNy",

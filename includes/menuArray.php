@@ -2,7 +2,7 @@
 $menuArray = [ 
     [
         "pageName" => "index",
-        "bjutiName" => "8-I"
+        "bjutiName" => "(8)"
     ],[
         "pageName" => "code",
         "bjutiName" => "Webfejlesztés",
@@ -14,7 +14,7 @@ $menuArray = [
     ],[
         "pageName" => "ddd",
         "bjutiName" => "3D - Vfx",
-        "slogan" => "Generál 3d, utómunka, vfx"
+        "slogan" => "3D, utómunka, vfx"
     ],[
         "pageName" => "grafika",
         "bjutiName" => "Illusztráció - Grafika",

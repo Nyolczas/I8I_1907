@@ -13,6 +13,7 @@ include 'includes\head.php';
 <?php include 'includes\contentHeader.php'; ?>
 <div class="body-container">
     <div class="container my-4">
+        <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
             <div class="col-sm-8">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -22,7 +23,7 @@ include 'includes\head.php';
                 <a href="kapcsolat.php" class="btn btn-warning">Kapcsolat</a>
             </div>
         </div>
-        <h3 class="mb-4">Animációs referenciák</h3>
+        <h3 class="mb-4 text-primary">Animációs referenciák</h3>
         <div class="row mb-4">
             <!-- Button trigger modals -->
             <?php
@@ -38,28 +39,11 @@ include 'includes\head.php';
         }
         ?>
     </div>
+    <?php include 'includes\footer.php'; ?>
 </div>
-<?php include 'includes\footer.php'; ?>
-<script type="text/javascript">
-$(document).ready(function(){
-    var url = {};
-        <?php
-        foreach ($animVideos as $anim){
-            /* Get iframe src attribute value i.e. YouTube video url  and store it in a variable */
-            echo "url['" . $anim['name'] . "'] = $(\"#" . $anim['name'] . "Video\").attr('src');" . "\n";
-
-            /* Assign empty url value to the iframe src attribute when modal hide, which stop the video playing */
-            echo "$(\"#" . $anim['name'] . "Modal\").on('hide.bs.modal', function(){ 
-                $(\"#" . $anim['name'] . "Video\").attr('src', ''); 
-            });" . "\n";
-
-            /* Assign the initially stored url back to the iframe src attribute when modal is displayed again */
-            echo "$(\"#" . $anim['name'] . "Modal\").on('show.bs.modal', function(){ 
-                $(\"#" . $anim['name'] . "Video\").attr('src', url['" . $anim['name'] . "']);
-            });" . "\n";
-        }
-        ?>
-});
-</script>
+<?php 
+$videos = $animVideos;
+include 'includes\modalVideoHandler.php';
+?>
 </body>
 </html>

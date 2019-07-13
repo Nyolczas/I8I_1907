@@ -77,6 +77,5 @@ function modalFooter($name) {
             '</div>' . "\n" .
         '</div>' . "\n";
 
-}
-   
+}   
 ?>

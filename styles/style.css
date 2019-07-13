@@ -52,57 +52,67 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.content-header {
+.content-header, .content-footer {
   position: fixed;
-  top: 55px;
   z-index: -100;
   height: 20vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 2.5rem !important;
 }
 
-.code-header {
+.content-header {
+  top: 55px;
+  background-position: top;
+}
+
+.content-footer {
+  bottom: 0;
+  background-position: bottom;
+}
+
+.code-header, .code-footer {
   background-image: url(../img/carousel/code.jpg);
 }
 
 .anim-header {
-  background-color: #003057;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 38, 49, 0.4)), to(rgba(0, 11, 49, 0.4))), url(../img/ddd/itk/i5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 38, 49, 0.4), rgba(0, 11, 49, 0.4)), url(../img/ddd/itk/i5.jpg);
+  background-position: center;
 }
 
-.illu-header {
-  background-color: #003057;
+.anim-footer {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 38, 49, 0.4)), to(rgba(0, 11, 49, 0.4))), url(../img/ddd/itk/i6.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 38, 49, 0.4), rgba(0, 11, 49, 0.4)), url(../img/ddd/itk/i6.jpg);
+  background-position: center;
 }
 
 .ddd-header {
+  background-image: url(../img/ddd/mattepaint/d_81.jpg);
+  background-position: center;
+}
+
+.ddd-footer {
+  background-image: url(../img/ddd/mattepaint/d_83.jpg);
+  background-position: center;
+}
+
+.grafika-header, .grafika-footer {
   background-color: #003057;
 }
 
-.vfx-header {
-  background-color: #003057;
+.story-header, .story-footer {
+  background-image: url(../img/concept/chris/06.jpg);
 }
 
-.grafika-header {
-  background-color: #003057;
-}
-
-.story-header {
-  background-color: #003057;
-}
-
-.concept-header {
-  background-color: #003057;
-}
-
-.artdir-header {
-  background-color: #003057;
+.artdir-header, .artdir-footer {
+  background-image: url(../img/carousel/treOf.jpg);
 }
 
 .body-container {
   background-color: #060606;
-  margin-top: 20vh;
-  padding-top: 30px;
+  margin: 20vh 0;
+  padding: 30px 0;
 }
 
 .card {
@@ -239,28 +249,16 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(../img/carousel/anim.jpg);
 }
 
-.carousel-bg-illu {
-  background-image: url(../img/carousel/illu.jpg);
-}
-
 .carousel-bg-ddd {
   background-image: url(../img/carousel/ddd.jpg);
 }
 
-.carousel-bg-vfx {
-  background-image: url(../img/carousel/vfx.jpg);
-}
-
 .carousel-bg-grafika {
-  background-image: url(../img/carousel/grafika.jpg);
+  background-image: url(../img/illu/tfe_illuk/ti3.jpg);
 }
 
 .carousel-bg-story {
-  background-image: url(../img/carousel/story.jpg);
-}
-
-.carousel-bg-concept {
-  background-image: url(../img/carousel/concept.jpg);
+  background-image: url(../img/concept/chris/05.jpg);
 }
 
 .carousel-bg-artdir {
