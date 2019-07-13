@@ -8,6 +8,8 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
+    border-color: $colorGrey !important;
+    transition: all 0.3s;
 
     >.prev-img {
         background-repeat: no-repeat;
@@ -37,11 +39,11 @@
             margin: 0;
             transform: translateY(100%);
             transition: all 0.3s;
-            border-top: 1px solid $colorSecondary;
+            border-top: 1px solid $colorPrimary;
             letter-spacing: 0.05rem;
 
             > h5 {
-                color: $colorSecondary;
+                color: $colorPrimary;
                 font-size: 1.35rem;
             }
         }
@@ -52,11 +54,9 @@
     }
 
     &:hover {
-        border-color: $colorSecondary !important;
+        border-color: $colorPrimary !important;
     }
 }
-
-
 
 .modal {
 

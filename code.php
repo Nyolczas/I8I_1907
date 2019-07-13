@@ -22,7 +22,7 @@ include 'includes\head.php';
                 <p>A tervezéstől kezdve a frontend és backend programozásig koplett módon, egy személyben elkészítem a weboldaladat.</p>
                 <p>Ismereteimet folyamatosan bővítem, napi rendszerességgel tanulok. <br>
                  A célom, hogy tudásom a legújabb webes technológiákból, mindig naprakész legyen.</p>
-                <p>Főbb készségek: Php, Sass, Javascript, AJAX, JQuery, Node.js, Asp.Net, MVC, Bootstrap, Html, Css, Git, SVN</p>
+                <p>Főbb készségek: Php, Sass, Javascript, JQuery, AJAX, Node.js, Asp.Net, MVC, Bootstrap, Html, Css, Git, SVN, WordPress, Elementor</p>
             </div>
             <div class="d-flex col-sm-4 align-self-end justify-content-end mb-4">
                 <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>

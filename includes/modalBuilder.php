@@ -18,9 +18,9 @@ function modalButton($row, $name, $path, $titl, $desc, $isModal = true, $webPath
 
     echo $columns . "\n";
     if($isModal) {
-        echo '<div  class="card mb-3 border-primary 100-h" data-toggle="modal" data-target="#' . $name . 'Modal">' . "\n";
+        echo '<div  class="card mb-3 100-h" data-toggle="modal" data-target="#' . $name . 'Modal">' . "\n";
     } else {
-        echo '<a href="' . $webPath . '" target="_blank" class="card mb-3 border-primary 100-h">' . "\n";
+        echo '<a href="' . $webPath . '" target="_blank" class="card mb-3 100-h">' . "\n";
     }    
        echo '<div class ="' . $imgClass .'" style="background-image: url(img/' . $path . '/smalls/' . $name . '.jpg);" ></div>'  . "\n" .
             '<div class="prev-img-title">

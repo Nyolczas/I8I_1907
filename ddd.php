@@ -17,8 +17,10 @@ include 'includes\head.php';
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
             <div class="col-sm-8">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Főállású grafikusként, több mint tizenöt éve foglalkozom 3D grafikával. Több éven keresztül dolgoztam 3D generalist-ként különböző filmes utómunka stúdiókban. Szaktudásommal többek között a Post Edison és a FocusFox stúdió csapatát is több évig erősítettem.</p>
+                <p>Az összes 3D-s munkafolyamatban komoly gyakorlattal rendelkezem, de különösen a modellezés, textúrázás és az animáció áll hozzám legközelebb.</p>
+                <p>A 3d-s munkáimhoz elsősorban Maya és ZBrush szoftvereket használok. A kompozithoz - az aktuális stúdiós igényekhez igazodva - sok évig használtam Nuke-ot, Fusion-t és After Effects-et is.  </p>
+                <p> </p>
             </div>
             <div class="d-flex col-sm-4 align-self-end justify-content-end mb-4">
                 <a href="kapcsolat.php" class="btn btn-warning">Kapcsolat</a>
