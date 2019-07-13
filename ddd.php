@@ -23,7 +23,7 @@ include 'includes\head.php';
                 <p> </p>
             </div>
             <div class="d-flex col-sm-4 align-self-end justify-content-end mb-4">
-                <a href="kapcsolat.php" class="btn btn-warning">Kapcsolat</a>
+                <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>
             </div>
         </div>
         <h3 class="mb-4  text-primary">3D Vfx</h3>

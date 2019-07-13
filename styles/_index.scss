@@ -2,7 +2,19 @@
     height: 100vh;
 }
 
-$portreSize: 133px;
+$portreSize-xs: 88px;
+$portreSize-sm: 97px;
+$portreSize-md: 106px;
+$portreSize-lg: 121px;
+$portreSize-xl: 133px;
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
 
 .midlerow {
     flex-grow: 1;
@@ -11,6 +23,20 @@ $portreSize: 133px;
 
     .container {
         position: relative;
+        height: 144px;
+
+        @media (min-width: 474px) {
+            height: 106px;
+        }
+
+        @media (min-width: 548px) {
+            height: 90px;
+        }
+
+        @media (min-width: 576px) {
+            height: 0;
+        }
+
 
         .message {
             position: absolute;
@@ -18,20 +44,72 @@ $portreSize: 133px;
             right: 0;
             z-index: 2;
             display: flex;
+            max-width: 100%;
 
             &-txt {
                 letter-spacing: 1px;
                 position: relative;
-                padding: 15px 30px;
+                padding: 10px 20px;
+                max-width: calc(100% - #{$portreSize-xs});
+
+                @media (min-width: 576px) {
+                    max-width: calc(100% - #{$portreSize-sm});
+                }
+
+                @media (min-width: 768px) {
+                    max-width: calc(100% - #{$portreSize-md});
+                    padding: 12px 25px;
+                }
+
+                @media (min-width: 992px) {
+                    max-width: calc(100% - #{$portreSize-lg});
+                }
+
+                @media (min-width: 1200px) {
+                    max-width: calc(100% - #{$portreSize-xl});
+                    padding: 15px 30px;
+                }
 
                 >p {
-                    font-size: 1.25rem;
+                    font-size: 1rem;
+
+                    @media (min-width: 576px) {
+                        font-size: 1.06rem;
+                    }
+
+                    @media (min-width: 768px) {
+                        font-size: 1.12rem;
+                    }
+
+                    @media (min-width: 992px) {
+                        font-size: 1.19rem;
+                    }
+
+                    @media (min-width: 1200px) {
+                        font-size: 1.25rem;
+                    }
                 }
 
                 >h1 {
-                    font-size: 3rem;
+                    font-size: 2rem;
                     text-transform: uppercase;
                     letter-spacing: 2px;
+
+                    @media (min-width: 576px) {
+                        font-size: 2.25rem;
+                    }
+
+                    @media (min-width: 768px) {
+                        font-size: 2.5rem;
+                    }
+
+                    @media (min-width: 992px) {
+                        font-size: 2.75rem;
+                    }
+
+                    @media (min-width: 1200px) {
+                        font-size: 3rem;
+                    }
                 }
 
                 &::after {
@@ -51,11 +129,28 @@ $portreSize: 133px;
 
             &-img-wrapper {
                 position: relative;
-                width: calc(#{$portreSize} + 15px);
+                width: calc(#{$portreSize-xs} + 15px);
+
+                @media (min-width: 576px) {
+                    width: calc(#{$portreSize-sm} + 15px);
+                }
+
+                @media (min-width: 768px) {
+                    width: calc(#{$portreSize-md} + 15px);
+                }
+
+                @media (min-width: 992px) {
+                    width: calc(#{$portreSize-lg} + 15px);
+                }
+
+                @media (min-width: 1200px) {
+                    width: calc(#{$portreSize-xl} + 15px);
+                }
+
 
                 .portre {
-                    width: $portreSize;
-                    height: $portreSize;
+                    width: $portreSize-xs;
+                    height: $portreSize-xs;
                     border-radius: 100%;
                     background-image: url(../img/nyolczas.jpg);
                     background-repeat: no-repeat;
@@ -64,12 +159,50 @@ $portreSize: 133px;
                     position: absolute;
                     right: 15px;
                     top: 15px;
+
+                    @media (min-width: 576px) {
+                        width: $portreSize-sm;
+                        height: $portreSize-sm;
+                    }
+
+                    @media (min-width: 768px) {
+                        width: $portreSize-md;
+                        height: $portreSize-md;
+                    }
+
+                    @media (min-width: 992px) {
+                        width: $portreSize-lg;
+                        height: $portreSize-lg;
+                    }
+
+                    @media (min-width: 1200px) {
+                        width: $portreSize-xl;
+                        height: $portreSize-xl;
+                    }
                 }
             }
         }
 
     }
+
+    #indexCarousel {
+        height: calc(100% - 144px);
+
+        @media (min-width: 474px) {
+            height: calc(100% - 106px);
+        }
+
+        @media (min-width: 548px) {
+            height: calc(100% - 90px);
+        }
+
+        @media (min-width: 576px) {
+            height: 100%;
+        }
+    }
 }
+
+
 
 .kapcsolat-box {
     >a {
@@ -88,3 +221,5 @@ $portreSize: 133px;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
 }
+
+@media (max-width: 575px) {}

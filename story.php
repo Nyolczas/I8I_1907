@@ -21,7 +21,7 @@ include 'includes\head.php';
                 <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
             <div class="d-flex col-sm-4 align-self-end justify-content-end mb-4">
-                <a href="kapcsolat.php" class="btn btn-warning">Kapcsolat</a>
+                <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>
             </div>
         </div>
         <h3 class="mb-4  text-primary">Concept-ek, látványtervek</h3>

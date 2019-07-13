@@ -39,11 +39,11 @@
             margin: 0;
             transform: translateY(100%);
             transition: all 0.3s;
-            border-top: 1px solid $colorPrimary;
+            border-top: 1px solid $colorPrimaryBlue;
             letter-spacing: 0.05rem;
 
             > h5 {
-                color: $colorPrimary;
+                color: $colorPrimaryBlue;
                 font-size: 1.35rem;
             }
         }
@@ -54,7 +54,7 @@
     }
 
     &:hover {
-        border-color: $colorPrimary !important;
+        border-color: $colorPrimaryBlue !important;
     }
 }
 
