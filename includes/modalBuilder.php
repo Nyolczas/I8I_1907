@@ -50,7 +50,7 @@ function videoModal($names, $sizeClass, $title, $descr, $link) {
     modalHead($names, $sizeClass, $title, $descr);
     echo '<iframe id="' . $names . 'Video" width="1006" height="566" src="' . $link . '?autoplay=1" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>'; 
+        allowfullscreen style="max-width: 100%; height: auto;"></iframe>'; 
     modalFooter($names);     
 }
 
