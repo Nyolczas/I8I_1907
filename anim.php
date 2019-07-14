@@ -16,8 +16,10 @@ include 'includes\head.php';
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
             <div class="col-sm-8">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Az első animációs munkámat a főiskolai évek alatt készítettem, mikor a festészet és a független filmezés mellett felfedeztem a rajzfimkészítésben rejlő izgalmas lehetőségeket.</p>
+                <p>2005-ben fiatal alkotóként részt vettem a drezdai „Perspectives for Animated Film” nemzetközi animációs csereprogramon.</p>
+                <p>Az első munkahelyem a Loonland Animációs stúdióban volt, majd rövidesen a Varga Stúdióba kerültem. A flash animációk készítése és a háttérfestés mellett lehetőségem nyílt a trdícionális rajzfilmgyártás minden technikáját megtanulni, és ezt az alapot felhasználva a digitális és 3D animációval kezdtem komolyabban foglalkozni.</p>
+                <p></p>
             </div>
             <div class="d-flex col-sm-4 align-self-end justify-content-end mb-4">
                 <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>

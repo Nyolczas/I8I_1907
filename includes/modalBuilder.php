@@ -24,8 +24,8 @@ function modalButton($row, $name, $path, $titl, $desc, $isModal = true, $webPath
     }    
        echo '<div class ="' . $imgClass .'" style="background-image: url(img/' . $path . '/smalls/' . $name . '.jpg);" ></div>'  . "\n" .
             '<div class="prev-img-title">
-            <h5>' . $titl . '</h5>
-            <p>' . $desc . '</p>'. "\n" .
+            <h6 class="text-primary">' . $titl . '</h6>
+            <p><small>' . $desc . '</small></p>'. "\n" .
             '</div>' . "\n" ;
     if($isModal) { echo '</div>' . "\n"; } else { echo '</a>' . "\n"; }
     echo '</div>' . "\n";
@@ -46,11 +46,21 @@ function modalSimple($dir, $names, $title, $descr, $sizeClass, $isCarousel) {
     modalFooter($names[0]);                
 }
 
+function modalWeb($dir, $names, $title, $descr, $sizeClass, $images){
+    modalHead($names[0], $sizeClass, $title, $descr);
+
+    webCarousel($names[0] . "carousel", $images, $dir, $title);
+
+    modalFooter($names[0]);  
+}
+
 function videoModal($names, $sizeClass, $title, $descr, $link) {
     modalHead($names, $sizeClass, $title, $descr);
-    echo '<iframe id="' . $names . 'Video" width="1006" height="566" src="' . $link . '?autoplay=1" frameborder="0"
+    echo '<div class="embed-responsive embed-responsive-16by9">
+        <iframe class="class="embed-responsive-item" id="' . $names . 'Video"  src="' . $link . '?autoplay=1" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen style="max-width: 100%; height: auto;"></iframe>'; 
+        allowfullscreen></iframe>
+        </div>'; 
     modalFooter($names);     
 }
 

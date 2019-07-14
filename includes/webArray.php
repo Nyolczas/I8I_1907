@@ -1,7 +1,7 @@
 <?php
 $webArr = [
     [
-        'name' => 'bijo',
+        'name' => ['bijo'],
         'isImage' => true,
         'path' => 'web/bijo',
         'images' => [
@@ -45,31 +45,31 @@ $webArr = [
         'title' => 'Bijo webáruház',
         'desc' => 'webdesign'
     ],[
-        'name' => 'ue',
+        'name' => ['ue'],
         'isImage' => false, 
         'path' => 'http://utasellatokavehaz.hu/',
         'title' => 'Utasellátó Kávéház',
         'desc' => 'Weboldal - webdesign és sitebuild'
     ],[
-        'name' => 'priceCalc',
+        'name' => ['priceCalc'],
         'isImage' => false, 
         'path' => 'PriceCalculator\price-calculator.html',
-        'title' => 'Price Calculator',
+        'title' => 'Freelusion Price Calculator',
         'desc' => 'Javascript - animációs gyártási költség kalkulátor'
     ],[
-        'name' => 'priceList',
+        'name' => ['priceList'],
         'isImage' => false, 
         'path' => 'Pricelist01\premium-dance-shows.html',
         'title' => 'Freelusion Price List',
         'desc' => 'Árlista katalógus - webdesign és sitebuild'
     ],[
-        'name' => 'budget',
+        'name' => ['budget'],
         'isImage' => false, 
         'path' => 'myBudgety\budget.html',
         'title' => 'Költségvetés számoló',
         'desc' => 'Javascript - Havi költségvetés számoló'
     ],[
-        'name' => 'sugi',
+        'name' => ['sugi'],
         'isImage' => true,
         'path' => 'web/sugi',
         'images' => [
@@ -121,7 +121,7 @@ $webArr = [
         'title' => 'Bijo webáruház',
         'desc' => 'webdesign'
     ],[
-        'name' => 'pig',
+        'name' => ['pig'],
         'isImage' => false, 
         'path' => 'pigGame\pigGame.html',
         'title' => 'Kockajáték',

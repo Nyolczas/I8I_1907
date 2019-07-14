@@ -40,6 +40,23 @@ function galleryCarousel($id, $names, $dir, $title){
     carousel3($id); 
 }
 
+function webCarousel($id, $images, $dir, $title){
+    carousel1($id, "height: 73vh;");
+    for($i = 1; $i < count($images); $i++) { 
+        $cnt = $i - 1; 
+        echo '<li data-target="#' . $id . '" data-slide-to="'. $cnt .'"></li>' . "\n";
+    }
+    echo '</ol>
+    <div class="carousel-inner overflow-auto">';
+    for($i = 0; $i < count($images); $i++){
+        $extra = ($i == 0 ? ' active' : '');
+        echo '<div class="carousel-item'. $extra . '">' . "\n" .
+        '<img src="img/' . $dir . '/' . $images[$i]['name'] . '.jpg" alt="' . $title . '" style="display: block; margin: auto;">' . "\n" .
+        '</div>' . "\n";
+    }
+    carousel3($id, 'right: 15px;'); 
+}
+
 function carousel1($id, $style = ''){
     echo '<div id="' . $id . '" class="carousel slide" data-ride="carousel" style = "' . $style . '">
     <ol class="carousel-indicators">
@@ -52,14 +69,14 @@ function carousel2(){
     <div class="carousel-inner">';
 }
 
-function carousel3($id){
+function carousel3($id, $specialStyle = ''){
     echo
     '</div>
     <a class="carousel-control-prev" href="#' . $id . '" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#' . $id . '" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#' . $id . '" role="button" data-slide="next" style="' . $specialStyle . '">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>

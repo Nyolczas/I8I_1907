@@ -1,7 +1,9 @@
 .body-container {
     background-color: $colorBg;
-    margin: 20vh 0;
+    margin: 19.9vh 0;
     padding: 30px 0;
+    border-top: 1px solid $colorBlue;
+    border-bottom: 1px solid $colorBlue;
 }
 
 .card {
@@ -33,7 +35,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 10px 15px;
+            padding: 10px 15px 0 15px;
             color: $colorWhite;
             background-color: rgba($colorGrey, 0.93);
             margin: 0;
@@ -41,10 +43,10 @@
             transition: all 0.3s;
             border-top: 1px solid $colorPrimaryBlue;
             letter-spacing: 0.05rem;
+            line-height: 1rem;
 
-            > h5 {
-                color: $colorPrimaryBlue;
-                font-size: 1.35rem;
+            > p {
+                margin-bottom: 0.5rem;
             }
         }
     }
@@ -97,7 +99,21 @@
                     height: 68vh;
                     margin: auto;
                 }
+
+                > .iframe {
+                    width: 100%; 
+                    height: auto;
+                    
+
+                    @media (min-width: 1055px) {
+                        width: 1006px;
+                        height: 566px;
+                    }
+                }
             }
         }
     }
+}
+.strong {
+    color: $colorPrimaryBlue;
 }

@@ -23,16 +23,13 @@
 
 .anim-header {
     background-image: linear-gradient(to right bottom,
-    rgba(0, 38, 49, 0.4), rgba(0, 11, 49, 0.4)),
+    rgba(0, 38, 49, 0.0), rgba(0, 27, 70, 0.25)),
     url(../img/ddd/itk/i5.jpg);
     background-position: center;
 }
 
 .anim-footer {
-    background-image: linear-gradient(to right bottom,
-    rgba(0, 38, 49, 0.4), rgba(0, 11, 49, 0.4)),
-    url(../img/ddd/itk/i6.jpg);
-    background-position: center;
+    background-image:  url(../img/carousel/dragon.jpg);
 }
 
 .ddd-header {
@@ -41,7 +38,7 @@
 }
 
 .ddd-footer {
-    background-image: url(../img/ddd/mattepaint/d_83.jpg);
+    background-image: url(../img/ddd/vegyes/v4.jpg);
     background-position: center;
 }
 

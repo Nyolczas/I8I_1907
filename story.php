@@ -18,7 +18,7 @@ include 'includes\head.php';
         <div class="row my-4">
             <div class="col-sm-8">
                 <p>Gyermekkoromtól kezdve imádok képregényeket rajzoni, ezért mindig örülök, ha munkám során storyboard rajzolásra van szükség.</p>
-                <p>Képzőművészeti és festészeti tanulmányaimnak a látványtervek és concept munkák készítésében is hasznát veszem.</p>
+                <p>Képzőművészeti és festészeti tanulmányaimnak a látványtervek és concept munkák készítésében is hasznát veszem. </p>
             </div>
             <div class="d-flex col-sm-4 align-self-end justify-content-end mb-4">
                 <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>

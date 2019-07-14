@@ -76,15 +76,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .anim-header {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 38, 49, 0.4)), to(rgba(0, 11, 49, 0.4))), url(../img/ddd/itk/i5.jpg);
-  background-image: linear-gradient(to right bottom, rgba(0, 38, 49, 0.4), rgba(0, 11, 49, 0.4)), url(../img/ddd/itk/i5.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 38, 49, 0)), to(rgba(0, 27, 70, 0.25))), url(../img/ddd/itk/i5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 38, 49, 0), rgba(0, 27, 70, 0.25)), url(../img/ddd/itk/i5.jpg);
   background-position: center;
 }
 
 .anim-footer {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 38, 49, 0.4)), to(rgba(0, 11, 49, 0.4))), url(../img/ddd/itk/i6.jpg);
-  background-image: linear-gradient(to right bottom, rgba(0, 38, 49, 0.4), rgba(0, 11, 49, 0.4)), url(../img/ddd/itk/i6.jpg);
-  background-position: center;
+  background-image: url(../img/carousel/dragon.jpg);
 }
 
 .ddd-header {
@@ -93,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ddd-footer {
-  background-image: url(../img/ddd/mattepaint/d_83.jpg);
+  background-image: url(../img/ddd/vegyes/v4.jpg);
   background-position: center;
 }
 
@@ -111,8 +109,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .body-container {
   background-color: #060606;
-  margin: 20vh 0;
+  margin: 19.9vh 0;
   padding: 30px 0;
+  border-top: 1px solid #0646b6;
+  border-bottom: 1px solid #0646b6;
 }
 
 .card {
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 10px 15px;
+  padding: 10px 15px 0 15px;
   color: white;
   background-color: rgba(40, 40, 40, 0.93);
   margin: 0;
@@ -157,11 +157,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s;
   border-top: 1px solid #2A9FD6;
   letter-spacing: 0.05rem;
+  line-height: 1rem;
 }
 
-.card > .prev-img-title > h5 {
-  color: #2A9FD6;
-  font-size: 1.35rem;
+.card > .prev-img-title > p {
+  margin-bottom: 0.5rem;
 }
 
 .card:hover .prev-img-title {
@@ -206,6 +206,22 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
   height: 68vh;
   margin: auto;
+}
+
+.modal-max-height > .modal-content > .modal-body > .iframe {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1055px) {
+  .modal-max-height > .modal-content > .modal-body > .iframe {
+    width: 1006px;
+    height: 566px;
+  }
+}
+
+.strong {
+  color: #2A9FD6;
 }
 
 .carousel {

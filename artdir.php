@@ -17,10 +17,14 @@ include 'includes\head.php';
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
             <div class="col-sm-8">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Alapvetően kézműves típus vagyok, leginkább az alkotás folyamatát élvezem, és mindig az ilyen jellegű szakmai kihívásokat keresem. Pályafutásom során azonban elő szokott fordulni, hogy <span class="strong">vezetőként van nagyobb szükség a munkámra</span>, így mára ezen a területen is értékes tudást és tapasztalatot gyűjtöttem emberileg és szakmailag egyaránt.</p>
+
+                <p>2003-ban a Varga Stúdióban, 6 darab epizód <span class="strong"> art directoraként</span> hozzájárultam a <span class="strong">Mr. Bean</span> animációs sorozat máig kimagasló hazai és nemzetközi sikeréhez és népszerűségéhez.</p>
+
+                <p>2015-ben a Cinemon Animációs stúdió <span class="strong">animációs rendezőjeként és művészeti vezetőjeként</span> fontos szerepet vállaltam a <span class="strong">Time for English</span> 12 részes, angol nyelvoktató rajzfilmsorozat elkészítésében. A rendezés és művészeti vezetés mellett a produkció teljes designját, és a produkciót kísérő könyvsorozat és mobil applikáció grafikai anyagát is én terveztem. A 12 darab - egyenként 10 perces - epizód, Ázsiától Afrikáig számos gyermeknek segít az angoltanulásban.</p>
+                <p>A Freelusion csapatában 2018-ban, <span class="strong">concept artist-ként, látványtervezőként és az animációs gyártás művészeti vezetőjeként </span> részt vettem a Magyar Állami Operaház 3D-s vetítéssel felturbózott <span class="strong">Carmina Burana</span> előadásának színrevitelében. A Bogányi Tibor által vezényelt, tánccal ötvözött interaktív látványvetítés és összművészeti show vizuális alapját az általam készített storyboardok és digitális festmények szolgáltatják.</p>
             </div>
-            <div class="d-flex col-sm-4 align-self-end justify-content-end mb-4">
+            <div class="d-flex col-sm-4 align-self-start justify-content-end mb-4">
                 <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>
             </div>
         </div>
