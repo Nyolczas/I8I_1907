@@ -45,7 +45,7 @@
             letter-spacing: 0.05rem;
             line-height: 1rem;
 
-            > p {
+            >p {
                 margin-bottom: 0.5rem;
             }
         }
@@ -78,32 +78,33 @@
     &-content {
         .modal-body {
             >img {
-                width: 100%;
+                max-width: 100%;
+                height: auto !important;
             }
         }
     }
 
     &-max-height {
-        > .modal-content {
-            > .modal-body{
+        >.modal-content {
+            >.modal-body {
                 max-height: 75vh;
                 display: flex;
                 flex-wrap: wrap;
-    
-                > p {
+
+                >p {
                     width: 100%;
                 }
-    
-                > img {
+
+                >img {
                     width: auto;
                     height: 68vh;
                     margin: auto;
                 }
 
-                > .iframe {
-                    width: 100%; 
+                >.iframe {
+                    width: 100%;
                     height: auto;
-                    
+
 
                     @media (min-width: 1055px) {
                         width: 1006px;
@@ -114,6 +115,7 @@
         }
     }
 }
+
 .strong {
     color: $colorPrimaryBlue;
 }
