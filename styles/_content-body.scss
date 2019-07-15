@@ -119,3 +119,23 @@
 .strong {
     color: $colorPrimaryBlue;
 }
+
+.blockquote-footer::before {
+    content: "";
+}
+
+.nyil{
+    min-width: 135px;
+    max-width: 100%;
+    .nyil-img {
+        width: 100%;
+        height: 100%;
+        background-image:  url(../img/arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.link {
+    text-decoration: underline;
+}

@@ -18,13 +18,11 @@ include 'includes\head.php';
         <div class="row my-4">
             <div class="col-sm-8">
                 <p><span class="strong">Több, mint 30 000 órás szakmai tapasztalattal</span> rendelkezem a digitális képalkotás teljes területén.</p>
-                <p>Gyakorlatilag szinte minden stílusban, szinte minden felületre készítettem már illusztrációt, grafikát, vagy reklám anyagot. Az animációs filmek és karakterek tervezésén kívül, jelentős gyakorlattal rendelkezem reklámügynökségi munkák készítésében is, beleértve a nyomtatott és az online megjelenéseket egyaránt.</p>
-                <p>Grafikai tervezéshez használt szoftverek: <span class="strong">Illusztrator, Photoshop, InDesign,</span> <br>
-                webdesign: <span class="strong">AdobeXD</span>, vagy Figma<p>
+                <p>Gyakorlatilag szinte minden stílusban, minden felületre készítettem már illusztrációt, grafikát, vagy reklám anyagot. Az <span class="strong">animációs filmek és karakterek</span> tervezésén kívül, jelentős gyakorlattal rendelkezem <span class="strong">reklámügynökségi munkák</span> készítésében is, beleértve a <span class="strong">nyomtatott, a televíziós</span> és az <span class="strong">online</span> megjelenéseket egyaránt.</p>
+                <p>Grafikai tervezéshez használt szoftverek: <span class="strong">Illustrator, Photoshop, InDesign,</span> <br>
+                webdesign, UI design: <span class="strong">AdobeXD</span>, vagy <span class="strong">Figma</span><p>
             </div>
-            <div class="d-flex col-sm-4 align-self-start justify-content-end mb-4">
-                <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>
-            </div>
+            <?php include 'includes\callToAction.php'; ?>
         </div>
         <h3 class="mb-4  text-primary">Illusztrációk, grafikai munkák</h3>
         <div class="row mb-4">

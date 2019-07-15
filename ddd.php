@@ -17,14 +17,11 @@ include 'includes\head.php';
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
             <div class="col-sm-8">
-                <p>Főállású grafikusként, több mint tizenöt éve foglalkozom 3D grafikával. Több éven keresztül dolgoztam 3D generalist-ként különböző filmes utómunka stúdiókban. Szaktudásommal többek között a Post Edison és a FocusFox stúdió csapatát is több évig erősítettem.</p>
-                <p>Az összes 3D-s munkafolyamatban komoly gyakorlattal rendelkezem, de különösen a modellezés, textúrázás és az animáció áll hozzám legközelebb.</p>
-                <p>A 3d-s munkáimhoz elsősorban Maya és ZBrush szoftvereket használok. A kompozithoz - az aktuális stúdiós igényekhez igazodva - sok évig használtam Nuke-ot, Fusion-t és After Effects-et is.  </p>
-                <p> </p>
+                <p>3D-s pályafutásomat a <span class="strong">3DS Max</span>-szal kezdtem, majd miután 2006-ban és 2007-ben a Mesharray-ben elvégeztem egy <span class="strong">Maya</span> Mesterkurzust és egy <span class="strong">ZBrush</span> tanfolyamot, azóta főleg Mayával és ZBrush-sal 3D-zek. Vfx-hez gyakran használok <span class="strong">Nuke, Fusion</span> vagy <span class="strong">After Effects</span> 3D-t, utóbbit <span class="strong">Element3D</span> pluginnal. Speciális feladatokhoz további célszoftvereket is szoktam használni. </p> 
+                <p>Az összes 3D-s munkafolyamatban komoly gyakorlattal rendelkezem, legfőképp a modellezés, textúrázás és az animáció áll hozzám legközelebb, továbbá nagyon szeretem a motion design műfajt és a kompozitos feladatokat is.</p>
+                <p>Büszke vagyok rá, hogy 2009-2010-ben, Art Designerként és 3D Generalist-ként hozzájárulhattam M.Tóth Géza <span class="strong">Mama</span> c. rövidfilmjének, és Hajdú Szabolcs <span class="strong">Bibliotheque Pascal</span> c. filmjének hazai és nemzetközi sikereihez és díjaihoz. </p>
             </div>
-            <div class="d-flex col-sm-4 align-self-end justify-content-end mb-4">
-                <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>
-            </div>
+            <?php include 'includes\callToAction.php'; ?>
         </div>
         <h3 class="mb-4  text-primary">3D Vfx</h3>
         <div class="row">

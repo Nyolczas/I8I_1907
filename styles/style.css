@@ -225,6 +225,27 @@ h1, h2, h3, h4, h5, h6 {
   color: #2A9FD6;
 }
 
+.blockquote-footer::before {
+  content: "";
+}
+
+.nyil {
+  min-width: 135px;
+  max-width: 100%;
+}
+
+.nyil .nyil-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.link {
+  text-decoration: underline;
+}
+
 .carousel {
   position: relative;
   width: 100%;

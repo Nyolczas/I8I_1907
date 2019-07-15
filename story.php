@@ -20,9 +20,7 @@ include 'includes\head.php';
                 <p>Gyermekkoromtól kezdve imádok képregényeket rajzoni, ezért mindig örülök, ha munkám során storyboard rajzolásra van szükség.</p>
                 <p>Képzőművészeti és festészeti tanulmányaimnak a látványtervek és concept munkák készítésében is hasznát veszem. </p>
             </div>
-            <div class="d-flex col-sm-4 align-self-end justify-content-end mb-4">
-                <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>
-            </div>
+            <?php include 'includes\callToAction.php'; ?>
         </div>
         <h3 class="mb-4  text-primary">Concept-ek, látványtervek</h3>
         <div class="row mb-4">

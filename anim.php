@@ -16,14 +16,13 @@ include 'includes\head.php';
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
             <div class="col-sm-8">
-                <p>Az első animációs munkámat a főiskolai évek alatt készítettem, mikor a festészet és a független filmezés mellett felfedeztem a rajzfimkészítésben rejlő izgalmas lehetőségeket.</p>
-                <p>2005-ben fiatal alkotóként részt vettem a drezdai „Perspectives for Animated Film” nemzetközi animációs csereprogramon.</p>
-                <p>Az első munkahelyem a Loonland Animációs stúdióban volt, majd rövidesen a Varga Stúdióba kerültem. A flash animációk készítése és a háttérfestés mellett lehetőségem nyílt a trdícionális rajzfilmgyártás minden technikáját megtanulni, és ezt az alapot felhasználva a digitális és 3D animációval kezdtem komolyabban foglalkozni.</p>
-                <p></p>
+                <p>A <span class="strong">tradicionális rajzfilmkészítést</span> a LoonLand Animációs stúdió, majd a Varga Stúdió alkotójaként tanultam közvetlenül a főiskolai művészeti tanulmányaim befejezése után. Érdeklődésem ezután a digitális 2D és a 3D animáció irányába fordult.</p>
+                <p>2005-ben fiatal alkotóként részt vettem a drezdai <span class="strong">„Perspectives for Animated Film”</span> nemzetközi animációs csereprogramon, majd elvégeztem a Mesharray <span class="strong">3D Animáció Mesterkurzusát</span>.
+                Az igazán komoly szakmai tapasztalatot azonban ezután, munka közben szereztem.</p> 
+                <p>Az elmúlt másfél évtizedben rengeteg reklám - , játék - és animációsfilm készítésében vettem részt. Dolgoztam TV-re, webre és mozivászonra egyaránt. <span class="strong">3D grafikusként számos hazai reklám- és animációs stúdió</span>, többek között a <a class="link" href="http://postedison.hu" target="_blank">PostEdison</a>  és a <a class="link" href="http://focusfox.hu" target="_blank">FocusFox</a> munkatársa voltam.</p>
+                <p>Mára professzionális szaktudással rendelkezem a 2D, a 3D és webes animáció teljes területén.</p>
             </div>
-            <div class="d-flex col-sm-4 align-self-end justify-content-end mb-4">
-                <a href="kapcsolat.php" class="btn btn-outline-warning">Kapcsolat</a>
-            </div>
+            <?php include 'includes\callToAction.php'; ?>
         </div>
         <h3 class="mb-4 text-primary">Animációs referenciák</h3>
         <div class="row mb-4">
