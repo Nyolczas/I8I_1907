@@ -1,15 +1,15 @@
 <?php
 
-include 'includes\menuArray.php';
+include './includes/menuArray.php';
 $page = "kapcsolat";
 $title = 'Kapcsolat | Nyolczas István';
 
-include 'includes\head.php';
+include './includes/head.php';
 ?>
 
 <body>
 
-<?php include 'includes\navbar.php';?>
+<?php include './includes/navbar.php';?>
 <div class="container d-flex justify-content-center">
 <?php
 if (isset($_REQUEST['email'])) {

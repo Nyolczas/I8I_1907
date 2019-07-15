@@ -1,5 +1,5 @@
 <?php
-include 'includes\carousel.php';
+include './includes/carousel.php';
 //<!-- Button trigger modals -->
 function modalButton($row, $name, $path, $titl, $desc, $isModal = true, $webPath = '') {
 

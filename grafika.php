@@ -1,17 +1,17 @@
 <?php
 $pageNr = 4;
-include 'includes\menuArray.php';
-include 'includes\illuArray.php';
-include 'includes\modalBuilder.php';
+include './includes/menuArray.php';
+include './includes/illuArray.php';
+include './includes/modalBuilder.php';
 
 $page = $menuArray[$pageNr]['pageName'];
 $title = $menuArray[$pageNr]['bjutiName'] . ' | Nyolczas István';
 
-include 'includes\head.php';
+include './includes/head.php';
 ?>
 
 <body>
-<?php include 'includes\contentHeader.php'; ?>
+<?php include './includes/contentHeader.php'; ?>
 <div class="body-container">
     <div class="container my-4">
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
@@ -22,7 +22,7 @@ include 'includes\head.php';
                 <p>Grafikai tervezéshez használt szoftverek: <span class="strong">Illustrator, Photoshop, InDesign,</span> <br>
                 webdesign, UI design: <span class="strong">AdobeXD</span>, vagy <span class="strong">Figma</span><p>
             </div>
-            <?php include 'includes\callToAction.php'; ?>
+            <?php include './includes/callToAction.php'; ?>
         </div>
         <h3 class="mb-4  text-primary">Illusztrációk, grafikai munkák</h3>
         <div class="row mb-4">
@@ -42,7 +42,7 @@ include 'includes\head.php';
             modalSimple($illu['path'], $illu['name'], $illu['titl'], $illu['desc'], $specialClass, $isSeq);
         }
         ?>
-    <?php include 'includes\footer.php'; ?>
+    <?php include './includes/footer.php'; ?>
 </div>
 </body>
 </html>

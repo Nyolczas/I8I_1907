@@ -1,16 +1,16 @@
 <?php
 $pageNr = 0;
-include 'includes\menuArray.php';
-include 'includes\carousel.php';
+include './includes/menuArray.php';
+include './includes/carousel.php';
 $page = $menuArray[$pageNr]['pageName'];
 $title = 'Nyolczas István';
 
-include 'includes\head.php';
+include './includes/head.php';
 ?>
 
 <body class="index-body d-flex flex-column align-items-stretch">
 
-    <?php include 'includes\navbar.php'; ?>
+    <?php include './includes/navbar.php'; ?>
 
     <div class="midlerow">
         <div class="container">
@@ -27,7 +27,7 @@ include 'includes\head.php';
         <?php  menuCarousel($menuArray);?>
     </div>
 
-    <?php include 'includes\footer.php'; ?>
+    <?php include './includes/footer.php'; ?>
     
 
 </body>

@@ -1,17 +1,17 @@
 <?php
 $pageNr = 5;
-include 'includes\menuArray.php';
+include './includes/menuArray.php';
 $page = $menuArray[$pageNr]['pageName'];
 $title = $menuArray[$pageNr]['bjutiName'] . ' | Nyolczas István';
 
-include 'includes\storyboardsArray.php';
-include 'includes\conceptArray.php';
-include 'includes\modalBuilder.php';
-include 'includes\head.php';
+include './includes/storyboardsArray.php';
+include './includes/conceptArray.php';
+include './includes/modalBuilder.php';
+include './includes/head.php';
 ?>
 
 <body>
-<?php include 'includes\contentHeader.php'; ?>
+<?php include './includes/contentHeader.php'; ?>
 <div class="body-container"> 
     <div class="container my-4">
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
@@ -21,7 +21,7 @@ include 'includes\head.php';
                 <span class="strong">Képzőművészeti és festészeti tanulmányaimnak</span> köszönhetően a látványtervek és concept munkák készítésében mindig sikerélményem volt. </p>
                 <p>2016-tól a <a class="link" href="https://freelusion.com/" target="_blank">Freelusion</a> <span class="strong">concept artistjaként</span> már a munkám jelentős részét a látványtervezés tette ki, és csak a fennmaradó időmben segítettem be az animációs gyártásba senior 3d grafikusként és animátorként. Ebben az időszakban elsősorban élő tánc show-k interaktív látványvetítéseihez készítettem koncepteket.</p>
             </div>
-            <?php include 'includes\callToAction.php'; ?>
+            <?php include './includes/callToAction.php'; ?>
         </div>
         <h3 class="mb-4  text-primary">Concept-ek, látványtervek</h3>
         <div class="row mb-4">
@@ -54,7 +54,7 @@ include 'includes\head.php';
         }
     ?>
     
-    <?php include 'includes\footer.php'; ?>
+    <?php include './includes/footer.php'; ?>
 </div>
 </body>
 </html>

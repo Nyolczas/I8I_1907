@@ -1,17 +1,17 @@
 <?php
 $pageNr = 3;
-include 'includes\menuArray.php';
-include 'includes\dddArray.php';
-include 'includes\modalBuilder.php';
+include './includes/menuArray.php';
+include './includes/dddArray.php';
+include './includes/modalBuilder.php';
 
 $page = $menuArray[$pageNr]['pageName'];
 $title = $menuArray[$pageNr]['bjutiName'] . ' | Nyolczas István';
 
-include 'includes\head.php';
+include './includes/head.php';
 ?>
 
 <body>
-<?php include 'includes\contentHeader.php'; ?>
+<?php include './includes/contentHeader.php'; ?>
 <div class="body-container"> 
     <div class="container my-4">
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
@@ -21,7 +21,7 @@ include 'includes\head.php';
                 <p>Az összes 3D-s munkafolyamatban komoly gyakorlattal rendelkezem, legfőképp a modellezés, textúrázás és az animáció áll hozzám legközelebb, továbbá nagyon szeretem a motion design műfajt és a kompozitos feladatokat is.</p>
                 <p>Büszke vagyok rá, hogy 2009-2010-ben, Art Designerként és 3D Generalist-ként hozzájárulhattam M.Tóth Géza <span class="strong">Mama</span> c. rövidfilmjének, és Hajdú Szabolcs <span class="strong">Bibliotheque Pascal</span> c. filmjének hazai és nemzetközi sikereihez és díjaihoz. </p>
             </div>
-            <?php include 'includes\callToAction.php'; ?>
+            <?php include './includes/callToAction.php'; ?>
         </div>
         <h3 class="mb-4  text-primary">3D Vfx</h3>
         <div class="row">
@@ -51,11 +51,11 @@ include 'includes\head.php';
         modalSimple($image['path'], $image['name'], $image['titl'], $image['desc'], '', true);
     }
     ?>
-<?php include 'includes\footer.php'; ?>
+<?php include './includes/footer.php'; ?>
 </div>
 <?php 
 $videos = $dddVideos;
-include 'includes\modalVideoHandler.php';
+include './includes/modalVideoHandler.php';
 ?>
 </body>
 </html>

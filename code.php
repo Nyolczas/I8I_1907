@@ -1,17 +1,17 @@
 <?php
 $pageNr = 1;
-include 'includes\menuArray.php';
-include 'includes\webArray.php';
-include 'includes\modalBuilder.php';
+include './includes/menuArray.php';
+include './includes/webArray.php';
+include './includes/modalBuilder.php';
 
 $page = $menuArray[$pageNr]['pageName'];
 $title = $menuArray[$pageNr]['bjutiName'] . ' | Nyolczas István';
 
-include 'includes\head.php';
+include './includes/head.php';
 ?>
 <body>
 
-<?php include 'includes\contentHeader.php'; ?>
+<?php include './includes/contentHeader.php'; ?>
 
 <div class="body-container">
     <div class="container my-4">
@@ -26,7 +26,7 @@ include 'includes\head.php';
                 <p>Főbb készségek: <span class="strong">Php, Sass, Javascript, JQuery, AJAX, JSON, MySQL, Node.js, Asp.Net, MVC, Bootstrap, Html, Css, Git, SVN</span></p>
                 <p>Ha gyorsan kell valami, akkor: <span class="strong">WordPress, Elementor</span></p>
             </div>
-            <?php include 'includes\callToAction.php'; ?>
+            <?php include './includes/callToAction.php'; ?>
         </div>
         <h3 class="mb-4 text-primary">Webes referenciák</h3>
         <div class="row mb-4">
@@ -47,7 +47,7 @@ include 'includes\head.php';
             }
         }
     ?>
-    <?php include 'includes\footer.php'; ?>
+    <?php include './includes/footer.php'; ?>
 </div>
 
 

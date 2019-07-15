@@ -1,17 +1,17 @@
 <?php
 $pageNr = 6;
-include 'includes\menuArray.php';
-include 'includes\artDirArray.php';
-include 'includes\modalBuilder.php';
+include './includes/menuArray.php';
+include './includes/artDirArray.php';
+include './includes/modalBuilder.php';
 
 $page = $menuArray[$pageNr]['pageName'];
 $title = $menuArray[$pageNr]['bjutiName'] . ' | Nyolczas István';
 
-include 'includes\head.php';
+include './includes/head.php';
 ?>
 
 <body>
-<?php include 'includes\contentHeader.php'; ?>
+<?php include './includes/contentHeader.php'; ?>
 <div class="body-container"> 
     <div class="container my-4">
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
@@ -26,7 +26,7 @@ include 'includes\head.php';
                 <p>2015-ben a <a class="link" href="http://cinemon.hu/" target="_blank">Cinemon</a>  Animációs stúdió <span class="strong">animációs rendezőjeként</span>  és  <span class="strong">művészeti vezetőjeként</span> fontos szerepet vállaltam a <span class="strong">Time for English</span> 12 részes, angol nyelvoktató rajzfilmsorozat elkészítésében. A rendezés és művészeti vezetés mellett a produkció teljes designját, és a produkciót kísérő könyvsorozat és mobil applikáció grafikai anyagát is én terveztem. A 12 darab - egyenként 10 perces - epizód, Ázsiától Afrikáig számos gyermeknek segít az angoltanulásban.</p>
                 <p>A <a class="link" href="https://freelusion.com/" target="_blank">Freelusion</a> csapatában 2018-ban, <span class="strong">concept artist-ként, látványtervezőként és az animációs gyártás művészeti vezetőjeként </span> részt vettem a Magyar Állami Operaház 3D-s vetítéssel felturbózott <span class="strong">Carmina Burana</span> előadásának színrevitelében. A Bogányi Tibor által vezényelt, tánccal ötvözött interaktív látványvetítés és összművészeti show vizuális alapját az általam készített storyboardok és digitális festmények szolgáltatják.</p>
             </div>
-            <?php include 'includes\callToAction.php'; ?>
+            <?php include './includes/callToAction.php'; ?>
         </div>
         <h3 class="mb-4 text-primary">Referenciák</h3>
         <div class="row mb-4">
@@ -45,11 +45,11 @@ include 'includes\head.php';
         }
         ?>
     </div>
-    <?php include 'includes\footer.php'; ?>
+    <?php include './includes/footer.php'; ?>
 </div>
 <?php 
 $videos = $arts;
-include 'includes\modalVideoHandler.php';
+include './includes/modalVideoHandler.php';
 ?>
 </body>
 </html>
