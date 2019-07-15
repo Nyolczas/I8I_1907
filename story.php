@@ -17,8 +17,9 @@ include 'includes\head.php';
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
             <div class="col-sm-8">
-                <p>Gyermekkoromtól kezdve imádok képregényeket rajzoni, ezért mindig örülök, ha munkám során storyboard rajzolásra van szükség.</p>
-                <p>Képzőművészeti és festészeti tanulmányaimnak a látványtervek és concept munkák készítésében is hasznát veszem. </p>
+                <p>Kissebb stúdiók 3D generalistjaként, egy-egy tv spot gyártását gyakran a <span class="strong">storyboard-rajzolástól kezdve</span> a compozitig egy személyben én készítettem. Mivel gyermekkoromtól kezdve imádok képregényeket rajzoni, ezért az előzetes tervezés, mindig élvezetes része volt az alkotási folyamatnak. <br>
+                <span class="strong">Képzőművészeti és festészeti tanulmányaimnak</span> köszönhetően a látványtervek és concept munkák készítésében mindig sikerélményem volt. </p>
+                <p>2016-tól a <a class="link" href="https://freelusion.com/" target="_blank">Freelusion</a> <span class="strong">concept artistjaként</span> már a munkám jelentős részét a látványtervezés tette ki, és csak a fennmaradó időmben segítettem be az animációs gyártásba senior 3d grafikusként és animátorként. Ebben az időszakban elsősorban élő tánc show-k interaktív látványvetítéseihez készítettem koncepteket.</p>
             </div>
             <?php include 'includes\callToAction.php'; ?>
         </div>
