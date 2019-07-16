@@ -20,7 +20,7 @@ include './includes/head.php';
                 <p><span class="strong">Több, mint 30 000 órás szakmai tapasztalattal</span> rendelkezem a digitális képalkotás teljes területén.</p>
                 <p>Gyakorlatilag szinte minden stílusban, minden felületre készítettem már illusztrációt, grafikát, vagy reklám anyagot. Az <span class="strong">animációs filmek és karakterek</span> tervezésén kívül, jelentős gyakorlattal rendelkezem <span class="strong">reklámügynökségi munkák</span> készítésében is, beleértve a <span class="strong">nyomtatott, a televíziós</span> és az <span class="strong">online</span> megjelenéseket egyaránt.</p>
                 <p>Grafikai tervezéshez használt szoftverek: <span class="strong">Illustrator, Photoshop, InDesign,</span> <br>
-                webdesign, UI design: <span class="strong">AdobeXD</span>, vagy <span class="strong">Figma</span><p>
+                webdesignhoz és UI-UX designhoz: <span class="strong">AdobeXD</span>, vagy <span class="strong">Figma</span><p>
             </div>
             <?php include './includes/callToAction.php'; ?>
         </div>

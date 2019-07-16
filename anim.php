@@ -19,8 +19,8 @@ include './includes/head.php';
                 <p>A <span class="strong">tradicionális rajzfilmkészítést</span> a LoonLand Animációs stúdió, majd a Varga Stúdió alkotójaként tanultam közvetlenül a főiskolai művészeti tanulmányaim befejezése után. Érdeklődésem ezután a digitális 2D és a 3D animáció irányába fordult.</p>
                 <p>2005-ben fiatal alkotóként részt vettem a drezdai <span class="strong">„Perspectives for Animated Film”</span> nemzetközi animációs csereprogramon, majd elvégeztem a Mesharray <span class="strong">3D Animáció Mesterkurzusát</span>.
                 Az igazán komoly szakmai tapasztalatot azonban ezután, munka közben szereztem.</p> 
-                <p>Az elmúlt másfél évtizedben rengeteg reklám - , játék - és animációsfilm készítésében vettem részt. Dolgoztam TV-re, webre és mozivászonra egyaránt. <span class="strong">3D grafikusként számos hazai reklám- és animációs stúdió</span>, többek között a <a class="link" href="http://postedison.hu" target="_blank">PostEdison</a>  és a <a class="link" href="http://focusfox.hu" target="_blank">FocusFox</a> munkatársa voltam.</p>
-                <p>Mára professzionális szaktudással rendelkezem a 2D, a 3D és webes animáció teljes területén.</p>
+                <p>Az elmúlt másfél évtizedben rengeteg <span class="strong">reklám - , játék - és animációsfilm</span> készítésében vettem részt. Dolgoztam tv-re, webre és mozivászonra egyaránt. 3D grafikusként számos hazai reklám- és animációs stúdió, többek között a <a class="link" href="http://postedison.hu" target="_blank">PostEdison</a>  és a <a class="link" href="http://focusfox.hu" target="_blank">FocusFox</a> munkatársa voltam.</p>
+                <p>Mára professzionális szaktudással rendelkezem a 2D, és a 3D animáció teljes területén.</p>
             </div>
             <?php include './includes/callToAction.php'; ?>
         </div>
