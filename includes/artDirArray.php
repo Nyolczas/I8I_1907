@@ -9,7 +9,7 @@ $arts = [
         'name' => 'tfe',
         'titl' => 'Time for English',
         'desc' => 'Concept art, illusztráció, művészeti vezetés, animációs rendezés.',
-        'link' => "https://www.youtube.com/embed/y9Terke0hvc?list=PLL8Jb98F33TG-Qt8kqDX-4XrzLN5MNAOm"
+        'link' => "https://www.youtube.com/embed/kMTSbt1mIkw"
     ],[
         'name' => 'bean',
         'titl' => 'Mr. Bean',
