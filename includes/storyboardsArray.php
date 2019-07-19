@@ -1,6 +1,11 @@
 <?php
 $storyBoards = [
     [
+        "name" => ["profecia"],
+        "titl" => "Amar The Lighthunter - Prófécia",
+        "desc" => "Freelusion show - storyboard részlet",
+        "sCls" => ""
+    ],[
         "name" => ["inTaberna"],
         "titl" => "Carmina Burana - In Taberna",
         "desc" => "összművészeti show - storyboard részlet",
