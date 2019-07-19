@@ -15,5 +15,10 @@ $arts = [
         'titl' => 'Mr. Bean',
         'desc' => 'Háttérfestés (számos epizód), művészeti vezetés (6db. epizód).',
         'link' => "https://www.youtube.com/embed/2rbfQOunmfk"
-    ]
+    ],[
+        'name' => 'chinese',
+        'titl' => 'Freelusion Show - Celebrating New Year in Singapore',
+        'desc' => 'concept art, művészeti vezetés, 2d animáció',
+        'link' => "https://www.youtube.com/embed/9h9pJhCsluo"
+    ],
 ];

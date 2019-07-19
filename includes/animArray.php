@@ -3,12 +3,12 @@ $animVideos = [
     [
         "name" => "reel14",
         "titl" => "Showreel 2014",
-        "desc" => "showreel",
+        "desc" => "3D - Vfx reel, 2014",
         "link" => "https://www.youtube.com/embed/3HcETldc8ZE"
     ],[
         "name" => "reel16",
         "titl" => "Projection mapping reel",
-        "desc" => "showreel",
+        "desc" => "Projection mapping reel 2016",
         "link" => "https://www.youtube.com/embed/Tcey9BVfn7o"
     ],[
         "name" => "iceTea",
@@ -16,15 +16,15 @@ $animVideos = [
         "desc" => "2D animáció",
         "link" => "https://www.youtube.com/embed/aYXhNiaWIfQ"
     ],[
+        "name" => "amar",
+        "titl" => "Freelusion - Amar the Lighthunter",
+        "desc" => "3D animáció, storyboard, concept",
+        "link" => "https://www.youtube.com/embed/lEFFka0FZxg"
+    ],[
         "name" => "maggiK",
         "titl" => "Maggi Kockák TV spot",
         "desc" => "2D animáció, vfx",
         "link" => "https://www.youtube.com/embed/EDYWGerZ7WM"
-    ],[
-        "name" => "westend",
-        "titl" => "Westend Karácsony TV spot",
-        "desc" => "3D general, vfx",
-        "link" => "https://www.youtube.com/embed/YuOEB5fNETo"
     ],[
         "name" => "tej",
         "titl" => "Magyar Tej TV spot",
@@ -38,7 +38,7 @@ $animVideos = [
     ],[
         "name" => "reel7",
         "titl" => "Showreel 2007",
-        "desc" => "showreel",
+        "desc" => "Showreel 2007",
         "link" => "https://www.youtube.com/embed/WUBKIFR_FwM"
     ],[
         "name" => "pain",
