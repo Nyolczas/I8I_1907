@@ -10,6 +10,7 @@ include './includes/head.php';
 <body>
 
 <?php include './includes/navbar.php';?>
+<div class="kapcsolat-container">
 <div class="container d-flex justify-content-center">
 <?php
 if (isset($_REQUEST['email'])) {
@@ -57,6 +58,6 @@ if (isset($_REQUEST['email'])) {
 }
 ?>
 </div>
-
+</div>
 </body>
 </html>

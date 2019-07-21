@@ -115,6 +115,14 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #0646b6;
 }
 
+.kapcsolat-container {
+  height: calc(100vh - 55px);
+  background-image: url(../img/kapcsolat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .card {
   overflow: hidden;
   cursor: pointer;

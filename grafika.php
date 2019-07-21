@@ -16,7 +16,7 @@ include './includes/head.php';
     <div class="container my-4">
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
-            <div class="col-sm-8">
+            <div class="col-sm-10">
                 <p><span class="strong">Több, mint 30 000 órás szakmai tapasztalattal</span> rendelkezem a digitális képalkotás teljes területén.</p>
                 <p>Gyakorlatilag szinte minden stílusban, minden felületre készítettem már illusztrációt, grafikát, vagy reklám anyagot. Az <span class="strong">animációs filmek és karakterek</span> tervezésén kívül, jelentős gyakorlattal rendelkezem <span class="strong">reklámügynökségi munkák</span> készítésében is, beleértve a <span class="strong">nyomtatott, a televíziós</span> és az <span class="strong">online</span> megjelenéseket egyaránt.</p>
                 <p>Grafikai tervezéshez használt szoftverek: <span class="strong">Illustrator, Photoshop, InDesign,</span> <br>

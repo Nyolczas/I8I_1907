@@ -15,7 +15,7 @@ include './includes/head.php';
     <div class="container my-4">
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
-            <div class="col-sm-8">
+            <div class="col-sm-10">
                 <p>A <span class="strong">tradicionális rajzfilmkészítést</span> a LoonLand Animációs stúdió, majd a Varga Stúdió alkotójaként tanultam közvetlenül a főiskolai művészeti tanulmányaim befejezése után. Érdeklődésem ezután a digitális 2D és a 3D animáció irányába fordult.</p>
                 <p>2005-ben fiatal alkotóként részt vettem a drezdai <span class="strong">„Perspectives for Animated Film”</span> nemzetközi animációs csereprogramon, majd elvégeztem a Mesharray <span class="strong">3D Animáció Mesterkurzusát</span>.
                 Az igazán komoly szakmai tapasztalatot azonban ezután, munka közben szereztem.</p> 

@@ -17,7 +17,7 @@ include './includes/head.php';
     <div class="container my-4">
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
-            <div class="col-sm-8">
+            <div class="col-sm-10">
                 <p>Erős frontend fejlesztő ismeretekkel rendelkezem és a szerver oldali programozástól sem riadok vissza. 
                     <br> Profi grafikusként örömömet lelem a webdesign készítésben.<br>
                 <span class="strong">A tervezéstől kezdve, a frontend fejlesztésen keresztül a backend programozásig</span> koplett módon elkészítek egy weboldalt, vagy egy egyszerű webes applikációt.</p>

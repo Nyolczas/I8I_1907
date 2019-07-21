@@ -16,7 +16,7 @@ include './includes/head.php';
     <div class="container my-4">
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
-            <div class="col-sm-8">
+            <div class="col-sm-10">
                 <p>3D-s pályafutásomat a <span class="strong">3DS Max</span>-szal kezdtem, majd miután 2006-ban és 2007-ben a Mesharray-ben elvégeztem egy <span class="strong">Maya</span> Mesterkurzust és egy <span class="strong">ZBrush</span> tanfolyamot, azóta főleg Mayával és ZBrush-sal 3D-zek. Vfx-hez gyakran használok <span class="strong">Nuke, Fusion</span> vagy <span class="strong">After Effects</span> 3D-t, utóbbit <span class="strong">Element3D</span> pluginnal. Speciális feladatokhoz további célszoftvereket is szoktam használni. </p> 
                 <p>Az összes 3D-s munkafolyamatban komoly gyakorlattal rendelkezem, legfőképp a modellezés, textúrázás és az animáció áll hozzám legközelebb, továbbá nagyon szeretem a motion design műfajt és a kompozitos feladatokat is.</p>
                 <p>Büszke vagyok rá, hogy 2009-2010-ben, Art Designerként és 3D Generalist-ként hozzájárulhattam <span class="strong">M.Tóth Géza Mama</span> c. rövidfilmjének, és <span class="strong">Hajdú Szabolcs Bibliotheque Pascal</span> c. filmjének hazai és nemzetközi sikereihez és díjaihoz. </p>

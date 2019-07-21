@@ -6,6 +6,14 @@
     border-bottom: 1px solid $colorBlue;
 }
 
+.kapcsolat-container {
+    height: calc(100vh - 55px);
+    background-image:  url(../img/kapcsolat.jpg);
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+
 .card {
     overflow: hidden;
     cursor: pointer;
