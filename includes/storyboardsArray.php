@@ -11,16 +11,6 @@ $storyBoards = [
         "desc" => "összművészeti show - storyboard részlet",
         "sCls" => ""
     ],[
-        "name" => ["carmina"],
-        "titl" => "Carmina Burana",
-        "desc" => "összművészeti show - színpadkép térszervezés",
-        "sCls" => ""
-    ],[
-        "name" => ["nyolcvanNap"],
-        "titl" => "80 nap alatt a föld körül",
-        "desc" => "projection mapping dance show - storyboard részlet",
-        "sCls" => ""
-    ],[
         "name" => ["balfi"],
         "titl" => "Balfi ásványvíz",
         "desc" => "TV spot - storyboard",
@@ -29,6 +19,11 @@ $storyBoards = [
         "name" => ["saballo"],
         "titl" => "Saballo",
         "desc" => "TV spot - storyboard",
+        "sCls" => ""
+    ],[
+        "name" => ["nyolcvanNap"],
+        "titl" => "80 nap alatt a föld körül",
+        "desc" => "projection mapping dance show - storyboard részlet",
         "sCls" => ""
     ],[
         "name" => ["bpOstroma"],
@@ -85,6 +80,11 @@ $storyBoards = [
         "titl" => "Design 9-től 5-ig",
         "desc" => "Tv műsor főcím - storyboard",
         "sCls" => ""
-    ]
+    ],[
+        "name" => ["carmina"],
+        "titl" => "Carmina Burana",
+        "desc" => "összművészeti show - színpadkép térszervezés",
+        "sCls" => ""
+    ],
 ];
 ?>
