@@ -51,11 +51,41 @@ $webArr = [
         'title' => 'Utasellátó Kávéház',
         'desc' => 'Weboldal - webdesign és sitebuild'
     ],[
+        'name' => ['rap'],
+        'isImage' => false, 
+        'path' => 'https://www.rapcity.hu/',
+        'title' => 'RapCity',
+        'desc' => 'Weboldal karbantartás'
+    ],[
+        'name' => ['grube'],
+        'isImage' => false, 
+        'path' => 'https://www.grube.hu/',
+        'title' => 'Grube',
+        'desc' => 'Weboldal karbantartás - grafikai munkák'
+    ],[
+        'name' => ['jkh'],
+        'isImage' => false, 
+        'path' => 'https://shop.jkh.hu/',
+        'title' => 'JKH',
+        'desc' => 'Weboldal karbantartás'
+    ],[
+        'name' => ['vectra'],
+        'isImage' => false, 
+        'path' => 'https://vectraline.hu/hu',
+        'title' => 'Vectraline',
+        'desc' => 'Weboldal karbantartás'
+    ],[
+        'name' => ['hellopinky'],
+        'isImage' => false, 
+        'path' => 'http://hellopinky.hu/',
+        'title' => 'Hello Pinky',
+        'desc' => 'Weboldal karbantartás'
+    ],[
         'name' => ['priceCalc'],
         'isImage' => false, 
         'path' => 'PriceCalculator\price-calculator.html',
         'title' => 'Freelusion Price Calculator',
-        'desc' => 'Javascript - animációs gyártási költség kalkulátor'
+        'desc' => 'webfejlesztés - sitebuild'
     ],[
         'name' => ['priceList'],
         'isImage' => false, 
