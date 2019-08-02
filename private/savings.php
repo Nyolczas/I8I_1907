@@ -1,5 +1,5 @@
 <?php
-$pageNr = 0;
+$pageNr = 1;
 include './includes/menuArray.php';
 $page = $menuArray[$pageNr]['pageName'];
 $title = $menuArray[$pageNr]['bjutiName'];
@@ -14,4 +14,3 @@ include 'includes/navbar.php';
 </div>
 
 <?php include 'includes/foot.php'; ?>
-    
