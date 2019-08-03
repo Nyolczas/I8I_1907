@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap&subset=latin-ext');
 
- body {
-    font-family: 'Lato', sans-serif;
- }   
+body {
+   font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 1200px) {
+   .container {
+      max-width: 1140px;
+   }
+}
+
+@media (min-width: 1450px) {
+   .container {
+      max-width: 1390px;
+   }
+}
+
+@media (min-width: 1700px) {
+   .container {
+      max-width: 1638px;
+   }
+}

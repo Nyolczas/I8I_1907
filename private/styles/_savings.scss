@@ -1,0 +1,19 @@
+.oszlop {
+    padding: 0 !important;
+
+    &-top {
+        margin-top: -190px;
+    }
+}
+
+.clr-round {
+    content: '';
+    width: 26px;
+    height: 26px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+td:last-child {
+    min-width: 100px;
+}

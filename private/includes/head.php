@@ -29,5 +29,3 @@ if(isset($_SESSION['name'])) {
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/style.css">
-  </head>
-  <body>
