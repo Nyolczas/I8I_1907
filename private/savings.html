@@ -101,28 +101,36 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="w-100 px-3">
+                <div class="w-100 px-3 mt-1">
                     <div id="chart-kiadas-bevetel-preview"></div>
                     <div class="p3 d-flex justify-content-around">
                         <p class="text-danger text-center flex-fill mr-2"><small>kiadás</small></p>
                         <p class="text-success text-center flex-fill ml-2"><small>bevétel</small></p>
                     </div>
                 </div>
-                <form action="process.php" method="post">
-                    <input type="hidden" name="id" value="">
-                    <input type="hidden" name="position" value="">
-                    <div class="form-group">
-                        <label for="name">Összeg</label>
-                        <input type="text" name="name" id="name" class="form-control" value="" placeholder="8 888 888">
-                    </div>
-                    <div class="form-group">
-                        <label for="location">Tétel</label>
-                        <input type="text" name="location" id="location" class="form-control" value=""
-                            placeholder="Hol lakik?">
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" name="save" class="btn btn-success">Mentés</button>
-                    </div>
+                <form action="process.php" method="post" class="card bg-light">
+                    <fieldset class="p-3">
+                        <legend class="pt-3">Új számlaesemény rögzítése</legend>
+                        <input type="hidden" name="id" value="">
+                        <input type="hidden" name="position" value="">
+                        <div class="form-group">
+                            <label for="name">Összeg</label>
+                            <input type="text" name="name" id="name" class="form-control" value="" placeholder="8 888 888">
+                        </div>
+                        <div class="form-group">
+                            <label for="tetel">Tétel:</label>
+                            <select class="form-control" id="tetel">
+                              <option>Bevétel</option>
+                              <option>Befektetés</option>
+                              <option>Étkezés</option>
+                              <option>Család</option>
+                              <option>Lakás előtakarékosság</option>
+                            </select>
+                          </div>
+                        <div class="form-group">
+                            <button type="submit" name="save" class="btn btn-secondary btn-lg btn-block my-4">Mentés</button>
+                        </div>
+                    </fieldset>
                 </form>
             </div>
         </div>
