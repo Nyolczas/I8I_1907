@@ -3,6 +3,11 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.chart {
+  width: 100%;
+  min-height: 450px;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -29,12 +34,21 @@ body {
   margin-top: -190px;
 }
 
+.oszlop-1 {
+  border-top: none;
+}
+
 .clr-round {
   content: '';
   width: 26px;
   height: 26px;
   border: 1px solid white;
   border-radius: 100%;
+}
+
+.table {
+  overflow: hidden;
+  border-radius: 0.25rem 0.25rem 0 0;
 }
 
 td:last-child {

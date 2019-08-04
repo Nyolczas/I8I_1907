@@ -4,6 +4,11 @@ body {
    font-family: 'Lato', sans-serif;
 }
 
+.chart {
+   width: 100%; 
+   min-height: 450px;
+ }
+
 @media (min-width: 1200px) {
    .container {
       max-width: 1140px;

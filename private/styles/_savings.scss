@@ -4,6 +4,10 @@
     &-top {
         margin-top: -190px;
     }
+
+    &-1 {
+        border-top: none;
+    }
 }
 
 .clr-round {
@@ -14,6 +18,12 @@
     border-radius: 100%;
 }
 
+.table {
+    overflow: hidden;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
 td:last-child {
     min-width: 100px;
 }
+
