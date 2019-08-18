@@ -38,6 +38,10 @@ body {
   border-top: none;
 }
 
+.oszlop-2 {
+  margin-right: 30px;
+}
+
 .clr-round {
   content: '';
   width: 26px;
@@ -55,10 +59,6 @@ td:last-child {
   min-width: 100px;
 }
 
-.oszlop-2 {
-  margin-right: 30px;
-}
-
 .icon-check {
   width: 32px;
   height: 32px;
@@ -71,5 +71,19 @@ td:last-child {
   height: 17px;
   background-repeat: no-repeat;
   background-image: url(../img/trash-alt-solid.svg);
+}
+
+.barchart path {
+  stroke: #2C3E50;
+  stroke-width: 2;
+  fill: none;
+}
+
+.barchart .axis path,
+.barchart .axis line {
+  fill: none;
+  stroke: grey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
 }
 /*# sourceMappingURL=style.css.map */
