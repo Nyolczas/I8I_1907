@@ -54,4 +54,22 @@ body {
 td:last-child {
   min-width: 100px;
 }
+
+.oszlop-2 {
+  margin-right: 30px;
+}
+
+.icon-check {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url(../img/check-circle.svg);
+}
+
+.icon-trash {
+  width: 15px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-image: url(../img/trash-alt-solid.svg);
+}
 /*# sourceMappingURL=style.css.map */
