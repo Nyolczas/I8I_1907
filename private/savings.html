@@ -163,15 +163,23 @@
                 <div class="border-secondary chart bevetelkiadasLineChart h-50"></div>
             </div>
         </div>
+        <div class="d-flex">
+            <div class="col-12 col-lg-6"></div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 
     <script> var bevetelKiadasDataset = [380000, 250000, 0, 580000, 650000]; </script>
     <script src="js/bevetelkiadasBars.js"></script>
-    <script> var megtakaritasBarDataset = [{ date: '2018-09', actual: 58.13, average: 7.41 }, { date: '2018-10', actual: 53.98, average: 45.55 }, { date: '2018-11', actual: 67.00, average: 11.78}];
+    <script> var megtakaritasBarDataset = [
+        { date: '2018-09', actual: 58.13, average: 7.41 }, 
+        { date: '2018-10', actual: 53.98, average: 45.55 }, 
+        { date: '2018-11', actual: 67.00, average: 11.78}
+    ];
     </script>
-    <script src="js/megtakaritasBars.js"></script>
+    <script src="js/barChartWithAverageLine.js"></script>
+    <script> barChartWithAverageLine('.megtakaritasBarChart', megtakaritasBarDataset); </script>
 
     <!-- savings page content END -->
 
