@@ -115,20 +115,22 @@
                         <input type="hidden" name="position" value="">
                         <div class="form-group">
                             <label for="name">Összeg</label>
-                            <input type="text" name="name" id="name" class="form-control" value="" placeholder="8 888 888">
+                            <input type="text" name="name" id="name" class="form-control" value=""
+                                placeholder="8 888 888">
                         </div>
                         <div class="form-group">
                             <label for="tetel">Tétel:</label>
                             <select class="form-control" id="tetel">
-                              <option>Bevétel</option>
-                              <option>Befektetés</option>
-                              <option>Étkezés</option>
-                              <option>Család</option>
-                              <option>Lakás előtakarékosság</option>
+                                <option>Bevétel</option>
+                                <option>Befektetés</option>
+                                <option>Étkezés</option>
+                                <option>Család</option>
+                                <option>Lakás előtakarékosság</option>
                             </select>
-                          </div>
+                        </div>
                         <div class="form-group">
-                            <button type="submit" name="save" class="btn btn-secondary btn-lg btn-block my-4">Mentés</button>
+                            <button type="submit" name="save"
+                                class="btn btn-secondary btn-lg btn-block my-4">Mentés</button>
                         </div>
                     </fieldset>
                 </form>
@@ -141,21 +143,21 @@
                 <div class="kiadasok-lista-wrapper">
                     <ul class="list-group">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                          <span class="badge badge-danger badge-pill">-1 200</span>
-                             Étkezés
-                          <div class="icon-trash"></div>
+                            <span class="badge badge-danger badge-pill">-1 200</span>
+                            Étkezés
+                            <div class="icon-trash"></div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <span class="badge badge-success badge-pill">961 200</span>
-                             Fizetés
-                          <div class="icon-trash"></div>
+                            Fizetés
+                            <div class="icon-trash"></div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <span class="badge badge-danger badge-pill">-14 200</span>
-                             Ajándék
-                          <div class="icon-trash"></div>
+                            Ajándék
+                            <div class="icon-trash"></div>
                         </li>
-                      </ul>
+                    </ul>
                 </div>
             </div>
             <div class="col-12 col-lg-4 col-xl-6 mb-4 oszlop">
@@ -170,16 +172,57 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 
-    <script> var bevetelKiadasDataset = [380000, 250000, 0, 580000, 650000]; </script>
+    <script>
+        var bevetelKiadasDataset = [380000, 250000, 0, 580000, 650000];
+    </script>
     <script src="js/bevetelkiadasBars.js"></script>
-    <script> var megtakaritasBarDataset = [
-        { date: '2018-09', actual: 58.13, average: 7.41 }, 
-        { date: '2018-10', actual: 53.98, average: 45.55 }, 
-        { date: '2018-11', actual: 67.00, average: 11.78}
-    ];
+    <script>
+        var megtakaritasBarDataset = [{
+                date: '2018-12',
+                actual: 135750,
+                average: 193810
+            },
+            {
+                date: '2019-1',
+                actual: 80600,
+                average: 177977
+            },
+            {
+                date: '2019-2',
+                actual: 80600,
+                average: 159643
+            },
+            {
+                date: '2019-3',
+                actual: 40300,
+                average: 154202
+            },
+            {
+                date: '2019-4',
+                actual: -331487,
+                average: 106258
+            },
+            {
+                date: '2019-5',
+                actual: 20150,
+                average: 99771
+            },
+            {
+                date: '2019-6',
+                actual: 20150,
+                average: 87650
+            },
+            {
+                date: '2019-7',
+                actual: 20150,
+                average: 71786
+            }
+        ];
     </script>
     <script src="js/barChartWithAverageLine.js"></script>
-    <script> barChartWithAverageLine('.megtakaritasBarChart', megtakaritasBarDataset); </script>
+    <script>
+        barChartWithAverageLine('.megtakaritasBarChart', megtakaritasBarDataset);
+    </script>
 
     <!-- savings page content END -->
 
@@ -194,7 +237,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    
+
 </body>
 
 </html>
