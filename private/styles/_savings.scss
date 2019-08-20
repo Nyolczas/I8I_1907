@@ -12,6 +12,15 @@
     &-2 {
         margin-right: 30px;
     }
+
+    &-3 {
+        padding-right: 30px;
+
+        & > .chart{
+            min-height: 300px !important;
+        }
+        
+    }
 }
 
 .clr-round {
@@ -43,21 +52,4 @@ td:last-child {
     height: 17px;
     background-repeat: no-repeat;
     background-image: url(../img/trash-alt-solid.svg);
-}
-
-.barchart {
-
-    path {
-        stroke: #2C3E50;
-        stroke-width: 2;
-        fill: none;
-    }
-
-    .axis path,
-    .axis line {
-        fill: none;
-        stroke: grey;
-        stroke-width: 1;
-        shape-rendering: crispEdges;
-    }
 }

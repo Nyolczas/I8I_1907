@@ -42,6 +42,14 @@ body {
   margin-right: 30px;
 }
 
+.oszlop-3 {
+  padding-right: 30px;
+}
+
+.oszlop-3 > .chart {
+  min-height: 300px !important;
+}
+
 .clr-round {
   content: '';
   width: 26px;
@@ -71,19 +79,5 @@ td:last-child {
   height: 17px;
   background-repeat: no-repeat;
   background-image: url(../img/trash-alt-solid.svg);
-}
-
-.barchart path {
-  stroke: #2C3E50;
-  stroke-width: 2;
-  fill: none;
-}
-
-.barchart .axis path,
-.barchart .axis line {
-  fill: none;
-  stroke: grey;
-  stroke-width: 1;
-  shape-rendering: crispEdges;
 }
 /*# sourceMappingURL=style.css.map */
