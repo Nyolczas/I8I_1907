@@ -6,20 +6,39 @@
     }
 
     &-1 {
-        border-top: none;
+        &>.card {
+            border-top: none;
+            margin: 0 0 0 30px;
+        }
     }
 
     &-2 {
-        margin-right: 30px;
+        &>.card {
+            height: 100%;
+            margin: 0 0 0 30px;
+        }
     }
 
     &-3 {
         padding-right: 30px;
 
-        & > .chart{
+        &>.chart {
             min-height: 300px !important;
         }
-        
+
+    }
+
+    &-4 {
+        .osszetetel-lista {
+            font-size: 12px;
+
+            &-item {
+                background-color: $colorGrayLight;
+                padding: 12px 0;
+                margin: 2px 0;
+                >div {}
+            }
+        }
     }
 }
 

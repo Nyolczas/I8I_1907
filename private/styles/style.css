@@ -34,12 +34,14 @@ body {
   margin-top: -190px;
 }
 
-.oszlop-1 {
+.oszlop-1 > .card {
   border-top: none;
+  margin: 0 0 0 30px;
 }
 
-.oszlop-2 {
-  margin-right: 30px;
+.oszlop-2 > .card {
+  height: 100%;
+  margin: 0 0 0 30px;
 }
 
 .oszlop-3 {
@@ -48,6 +50,16 @@ body {
 
 .oszlop-3 > .chart {
   min-height: 300px !important;
+}
+
+.oszlop-4 .osszetetel-lista {
+  font-size: 12px;
+}
+
+.oszlop-4 .osszetetel-lista-item {
+  background-color: #ECF0F1;
+  padding: 12px 0;
+  margin: 2px 0;
 }
 
 .clr-round {
