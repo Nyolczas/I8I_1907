@@ -1,4 +1,4 @@
-<?php 
+<?php /*
 include './includes/roots.php';
 session_start();
 if(isset($_SESSION['name'])) {
@@ -16,7 +16,7 @@ if(isset($_SESSION['name'])) {
     }
 } else {
     header("location:login.php");
-}
+}*/
 ?>
 <!doctype html>
 <html lang="en">

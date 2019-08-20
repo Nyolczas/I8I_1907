@@ -36,7 +36,65 @@
                 background-color: $colorGrayLight;
                 padding: 12px 0;
                 margin: 2px 0;
-                >div {}
+                .clr {
+                    width: 26px;
+                    height: 26px;
+                    border: 2px solid white;
+                    border-radius: 100%;
+                    margin-left: -7px;
+
+                    &-bankKoltseg {
+                        background-color: $bankKoltseg;
+                    }
+                    &-befektetesek {
+                        background-color: $befektetesek;
+                    }
+                    &-lakasElotak {
+                        background-color: $lakasElotak;
+                    }
+                    &-lakas {
+                        background-color: $lakas;
+                    }
+                    &-csalad {
+                        background-color: $csalad;
+                    }
+                    &-egeszseg {
+                        background-color: $egeszseg;
+                    }
+                    &-szorakozas {
+                        background-color: $szorakozas;
+                    }
+                    &-etkezes {
+                        background-color: $etkezes;
+                    }
+                    &-ado {
+                        background-color: $ado;
+                    }
+                    &-keszpenz {
+                        background-color: $keszpenz;
+                    }
+                    &-trade {
+                        background-color: $trade;
+                    }
+                    &-ajandek {
+                        background-color: $ajandek;
+                    }
+                    &-kozlekedes {
+                        background-color: $kozlekedes;
+                    }
+                    &-internet {
+                        background-color: $internet;
+                    }
+                    &-ruhazkodas {
+                        background-color: $ruhazkodas;
+                    }
+                    &-onkepzes {
+                        background-color: $onkepzes;
+                    }
+                    &-onmegvalositas {
+                        background-color: $onmegvalositas;
+                    }
+                }
             }
         }
     }

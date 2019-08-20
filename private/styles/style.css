@@ -62,6 +62,82 @@ body {
   margin: 2px 0;
 }
 
+.oszlop-4 .osszetetel-lista-item .clr {
+  width: 26px;
+  height: 26px;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin-left: -7px;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-bankKoltseg {
+  background-color: #1F4547;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-befektetesek {
+  background-color: #3498DB;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-lakasElotak {
+  background-color: #F7C068;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-lakas {
+  background-color: #B98B46;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-csalad {
+  background-color: #EF9288;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-egeszseg {
+  background-color: #A36B11;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-szorakozas {
+  background-color: #597A1F;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-etkezes {
+  background-color: #18BC9C;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-ado {
+  background-color: #212529;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-keszpenz {
+  background-color: #7EBDE8;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-trade {
+  background-color: #E74C3C;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-ajandek {
+  background-color: #89DDCC;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-kozlekedes {
+  background-color: #628685;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-internet {
+  background-color: #0474CA;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-ruhazkodas {
+  background-color: #065A91;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-onkepzes {
+  background-color: #F39C12;
+}
+
+.oszlop-4 .osszetetel-lista-item .clr-onmegvalositas {
+  background-color: #910404;
+}
+
 .clr-round {
   content: '';
   width: 26px;

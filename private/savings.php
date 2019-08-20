@@ -3,8 +3,10 @@ $pageNr = 1;
 include './includes/menuArray.php';
 $page = $menuArray[$pageNr]['pageName'];
 $title = $menuArray[$pageNr]['bjutiName'];
-include 'includes/head.php';
-include 'includes/navbar.php';
+include './includes/head.php';
+include './includes/navbar.php';
+include './includes/savings/osszetetelLista.php';
+
 ?>
 
 <div class="jumbotron">
@@ -146,108 +148,16 @@ include 'includes/navbar.php';
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4 oszlop oszlop-4">
                     <div id="osszetetelPieChart" class="chart"></div>
                     <div class="osszetetel-lista">
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
+                        <? foreach($osszetetelListaItemArray as $key => $value): ?>
+                        <div class="osszetetel-lista-item d-flex justify-content-between align-items-center">
+                            <div class="col-1">
+                                <div class="clr clr-<? echo $key; ?>"></div>
+                            </div>
+                            <div class="col-5 kategoria"><? echo $value['kategoria']; ?></div>
+                            <div class="col-3 aktual"><? echo $value['aktual']; ?></div>
+                            <div class="col-3 atlag"><? echo $value['atlag']; ?></div>
                         </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
-                        <div class="osszetetel-lista-item d-flex justify-content-between">
-                            <div class="col-1 clr clr-bankKoltseg"></div>
-                            <div class="col-5 kategoria"> Bank költség </div>
-                            <div class="col-3 aktual"> 280 000</div>
-                            <div class="col-3 atlag"> (280 000)</div>
-                        </div>
+                        <? endforeach; ?>
                     </div>
             </div>
         </div>
