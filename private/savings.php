@@ -90,10 +90,9 @@ include './includes/savings/osszetetelLista.php';
                                 <label for="tetel">Tétel:</label>
                                 <select class="form-control" id="tetel">
                                     <option>Bevétel</option>
-                                    <option>Befektetés</option>
-                                    <option>Étkezés</option>
-                                    <option>Család</option>
-                                    <option>Lakás előtakarékosság</option>
+                                    <? foreach($osszetetelListaItemArray as $key => $value): ?>
+                                    <option><? echo $value['kategoria']; ?></option>
+                                    <? endforeach; ?>
                                 </select>
                             </div>
                             <div class="form-group">
