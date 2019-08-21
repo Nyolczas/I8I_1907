@@ -1,4 +1,6 @@
-<?php /*
+<?php
+date_default_timezone_set('Europe/Budapest');
+/*
 include './includes/roots.php';
 session_start();
 if(isset($_SESSION['name'])) {

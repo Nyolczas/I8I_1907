@@ -6,6 +6,7 @@ $title = $menuArray[$pageNr]['bjutiName'];
 include './includes/head.php';
 include './includes/navbar.php';
 include './includes/savings/osszetetelLista.php';
+require_once './includes/savings/processSavings.php';
 
 ?>
 
@@ -76,22 +77,26 @@ include './includes/savings/osszetetelLista.php';
                             <p class="text-success text-center flex-fill ml-2"><small>bevétel</small></p>
                         </div>
                     </div>
-                    <form action="process.php" method="post" class="card bg-light">
+                    <form action="./includes/savings/processSavings.php" method="POST" class="card bg-light">
                         <fieldset class="p-3">
                             <legend class="pt-3">Új számlaesemény rögzítése</legend>
                             <input type="hidden" name="id" value="">
                             <input type="hidden" name="position" value="">
                             <div class="form-group">
-                                <label for="name">Összeg</label>
-                                <input type="text" name="name" id="name" class="form-control" value=""
+                                <label for="datum">Gyűjtő hónap</label>
+                                <input type="text" name="datum" id="datum" class="form-control" value="<? echo date('Y') . ' ' . date('m'); ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="osszeg">Összeg</label>
+                                <input type="text" name="osszeg" id="osszeg" class="form-control" value=""
                                     placeholder="8 888 888">
                             </div>
                             <div class="form-group">
                                 <label for="tetel">Tétel:</label>
                                 <select class="form-control" id="tetel">
-                                    <option>Bevétel</option>
+                                    <option value="1">Bevétel</option>
                                     <? foreach($osszetetelListaItemArray as $key => $value): ?>
-                                    <option><? echo $value['kategoria']; ?></option>
+                                    <option value="<? echo $key; ?>"><? echo $value['kategoria']; ?></option>
                                     <? endforeach; ?>
                                 </select>
                             </div>
