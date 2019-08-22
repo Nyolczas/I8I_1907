@@ -15,8 +15,6 @@ $lastData = json_decode($current_data, true);
 $current_data = file_get_contents('./data/savings/savingsCurrent.json');
 $savingsCurrent = json_decode($current_data, true);
 
-    echo $savingsCurrent['merleg'] . '<br>';
-
 ?>
 
 <div class="jumbotron">
