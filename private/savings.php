@@ -84,7 +84,7 @@ require_once './includes/savings/processSavings.php';
                             <input type="hidden" name="position" value="">
                             <div class="form-group">
                                 <label for="datum">Gyűjtő hónap</label>
-                                <input type="text" name="datum" id="datum" class="form-control" value="<? echo date('Y') . ' ' . date('m'); ?>">
+                                <input type="text" name="datum" id="datum" class="form-control" value="<?php echo date('Y') . ' ' . date('m'); ?>">
                             </div>
                             <div class="form-group">
                                 <label for="osszeg">Összeg</label>
@@ -93,11 +93,11 @@ require_once './includes/savings/processSavings.php';
                             </div>
                             <div class="form-group">
                                 <label for="tetel">Tétel:</label>
-                                <select class="form-control" id="tetel">
+                                <select class="form-control" name="tetel" id="tetel">
                                     <option value="1">Bevétel</option>
-                                    <? foreach($osszetetelListaItemArray as $key => $value): ?>
-                                    <option value="<? echo $key; ?>"><? echo $value['kategoria']; ?></option>
-                                    <? endforeach; ?>
+                                    <?php foreach($osszetetelListaItemArray as $key => $value): ?>
+                                    <option value="<?php echo $key; ?>"><?php echo $value['kategoria']; ?></option>
+                                    <?php endforeach; ?>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -152,16 +152,16 @@ require_once './includes/savings/processSavings.php';
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4 oszlop oszlop-4">
                     <div id="osszetetelPieChart" class="chart"></div>
                     <div class="osszetetel-lista">
-                        <? foreach($osszetetelListaItemArray as $key => $value): ?>
+                        <?php foreach($osszetetelListaItemArray as $key => $value): ?>
                         <div class="osszetetel-lista-item d-flex justify-content-between align-items-center">
                             <div class="col-1">
-                                <div class="clr clr-<? echo $key; ?>"></div>
+                                <div class="clr clr-<?php echo $key; ?>"></div>
                             </div>
-                            <div class="col-5 kategoria"><? echo $value['kategoria']; ?></div>
-                            <div class="col-3 aktual"><? echo $value['aktual']; ?></div>
-                            <div class="col-3 atlag"><? echo $value['atlag']; ?></div>
+                            <div class="col-5 kategoria"><?php echo $value['kategoria']; ?></div>
+                            <div class="col-3 aktual"><?php echo $value['aktual']; ?></div>
+                            <div class="col-3 atlag"><?php echo $value['atlag']; ?></div>
                         </div>
-                        <? endforeach; ?>
+                        <?php endforeach; ?>
                     </div>
             </div>
         </div>
