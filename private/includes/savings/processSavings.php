@@ -14,7 +14,8 @@ if(isset($_POST['save'])) {
     file_put_contents($tetelek, $newData);
 
     // utolsó rögzítés idejének mentése
-    $last_data = json_encode(date('Y. m. d.'), JSON_UNESCAPED_UNICODE);
+    $extraObj->date = date('Y. m. d.');
+    $last_data = json_encode($extraObj, JSON_UNESCAPED_UNICODE);
     file_put_contents('../../data/savings/utolsoRogzites.json', $last_data);
 
     header("location:../../savings.php");

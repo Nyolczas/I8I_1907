@@ -8,6 +8,15 @@ include './includes/navbar.php';
 include './includes/savings/osszetetelLista.php';
 require_once './includes/savings/processSavings.php';
 
+$current_data = file_get_contents('./data/savings/tetelek.json');
+$tetelek = json_decode($current_data, true);
+$current_data = file_get_contents('./data/savings/utolsoRogzites.json');
+$lastData = json_decode($current_data, true);
+$current_data = file_get_contents('./data/savings/savingsCurrent.json');
+$savingsCurrent = json_decode($current_data, true);
+
+    echo $savingsCurrent['merleg'] . '<br>';
+
 ?>
 
 <div class="jumbotron">
@@ -116,21 +125,27 @@ require_once './includes/savings/processSavings.php';
                     </div>
                     <div class="kiadasok-lista-wrapper">
                         <ul class="list-group">
+                            <?php 
+                            if(sizeof($tetelek) == 0):
+                            ?>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <span class="badge badge-danger badge-pill">-1 200</span>
-                                Étkezés
+                                <span class="badge badge-secondary badge-pill"><?php echo $lastData['osszeg']; ?></span>
+                                <?php echo $lastData['tetel']; ?>
+                                <div><?php echo $lastData['date']; ?></div>
+                            </li>
+                            <?php else: ?>
+                            <?php foreach($tetelek as $tetel): ?>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <?php 
+                                $osszeg = $tetel['osszeg'];
+                                $badgeColor = ($osszeg > 0 ? 'badge-success' : 'badge-danger');
+                                ?>
+                                <span class="badge <?php echo $badgeColor; ?> badge-pill"> <?php echo $osszeg; ?></span>
+                                <?php echo $tetel['tetel']; ?>   
                                 <div class="icon-trash"></div>
                             </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <span class="badge badge-success badge-pill">961 200</span>
-                                Fizetés
-                                <div class="icon-trash"></div>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <span class="badge badge-danger badge-pill">-14 200</span>
-                                Ajándék
-                                <div class="icon-trash"></div>
-                            </li>
+                            <?php endforeach; ?>
+                            <?php endif; ?>
                         </ul>
                     </div>
                </div>
