@@ -30,51 +30,17 @@ $savingsCurrent = json_decode($current_data, true);
                 <div class="card border-secondary">
                     <table class="table">
                         <tbody>
-                            <tr class=" table-primary">
+                        <?php foreach($foListaArray as $key => $value): ?>
+                            <tr class=" table-<?php echo $value['clr']; ?>">
                                 <th scope="row" class="pt-3">
                                     <div class="clr-round align-middle"></div>
                                 </th>
-                                <td class="align-middle">Mérleg</td>
-                                <td><strong>280 000</strong> <br>
-                                    <small>(265 000)</small>
+                                <td class="align-middle"><?php echo $value['bjuti']; ?></td>
+                                <td><strong><?php echo $value['aktual']; ?></strong> <br>
+                                    <small><?php echo $value['atlag']; ?></small>
                                 </td>
                             </tr>
-                            <tr class="table-danger">
-                                <th scope="row" class="pt-3">
-                                    <div class="clr-round align-middle"></div>
-                                </th>
-                                <td class="align-middle">Kiadás</td>
-                                <td><strong>350 000</strong> <br>
-                                    <small>(360 000)</small>
-                                </td>
-                            </tr>
-                            <tr class="table-success">
-                                <th scope="row" class="pt-3">
-                                    <div class="clr-round align-middle"></div>
-                                </th>
-                                <td class="align-middle">Bevétel</td>
-                                <td><strong>680 000</strong> <br>
-                                    <small>(565 000)</small>
-                                </td>
-                            </tr>
-                            <tr class="table-info">
-                                <th scope="row" class="pt-3">
-                                    <div class="clr-round align-middle"></div>
-                                </th>
-                                <td class="align-middle">Kp állomány</td>
-                                <td><strong>1 840 000</strong> <br>
-                                    <small>(1 620 000)</small>
-                                </td>
-                            </tr>
-                            <tr class="table-warning">
-                                <th scope="row" class="pt-3">
-                                    <div class="clr-round align-middle"></div>
-                                </th>
-                                <td class="align-middle">Havi megtakarítás</td>
-                                <td><strong>320 000</strong> <br>
-                                    <small>(240 000)</small>
-                                </td>
-                            </tr>
+                        <?php endforeach; ?>
                         </tbody>
                     </table>
                     <div class="w-100 px-3 mt-1">
