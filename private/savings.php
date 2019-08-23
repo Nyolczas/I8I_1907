@@ -6,8 +6,8 @@ $title = $menuArray[$pageNr]['bjutiName'];
 include './includes/head.php';
 include './includes/navbar.php';
 
-include './includes/savings/osszetetelLista.php';
 include './includes/savings/processSavings.php';
+include './includes/savings/osszetetelLista.php';
 
 $current_data = file_get_contents('./data/savings/tetelek.json');
 $tetelek = json_decode($current_data, true);
@@ -18,7 +18,7 @@ $savings = json_decode($current_data, true);
 $current_data = file_get_contents('./data/savings/savingsCurrent.json');
 $savingsCurrent = json_decode($current_data, true);
 $lastOfArray = sizeof($savings);
-var_dump($foListaArray);
+echo (null + 2);
 ?>
 
 <div class="jumbotron">
@@ -98,7 +98,7 @@ var_dump($foListaArray);
                             ?>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <span class="badge badge-secondary badge-pill"><?php echo $lastData['osszeg']; ?></span>
-                                <?php echo $lastData['tetel']; ?>
+                                <?php echo $osszetetelListaItemArray[$lastData['tetel']]['kategoria']; ?>
                                 <div><?php echo $lastData['date']; ?></div>
                             </li>
                             <?php else: ?>
@@ -109,7 +109,7 @@ var_dump($foListaArray);
                                 $badgeColor = ($osszeg > 0 ? 'badge-success' : 'badge-danger');
                                 ?>
                                 <span class="badge <?php echo $badgeColor; ?> badge-pill"> <?php echo $osszeg; ?></span>
-                                <?php echo $tetel['tetel']; ?>   
+                                <?php echo $osszetetelListaItemArray[$tetel['tetel']]['kategoria'] ; ?>   
                                 <div class="icon-trash"></div>
                             </li>
                             <?php endforeach; ?>

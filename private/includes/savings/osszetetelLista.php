@@ -26,7 +26,7 @@ function uploadAverageData($id) {
 }
 
 function calcAverage($id) {
-    $res = null;
+    $res = 0;
     global $savings;
     global $savingsCurrent;
     $sum = 0;
@@ -35,8 +35,8 @@ function calcAverage($id) {
         global $length;
         $length = sizeof($savings); 
     }
-    for($i = sizeof($savings); $i > 0; $i--) {
-        $sum += $savings[$id];
+    for($i = 0; $i < $length; $i++) {
+        $sum += $savings[$i][$id];
     }
     $sum += $savingsCurrent[$id];
     $dataCnt = sizeof($savings) + 1;

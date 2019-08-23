@@ -1,5 +1,7 @@
 <?php
-$tetelek = '../../data/savings/tetelek.json';
+$currentJson = '../../data/savings/savingsCurrent.json';
+$tetelekJson = '../../data/savings/tetelek.json';
+
 if(isset($_POST['save'])) {
 
     $extraObj->datum = $_POST['datum'];
@@ -7,11 +9,18 @@ if(isset($_POST['save'])) {
     $extraObj->tetel = $_POST['tetel'];
 
     // számlatétel kiírása 
-    $current_data = file_get_contents($tetelek);
+    $current_data = file_get_contents($tetelekJson);
     $array_data = json_decode($current_data, true);
     array_push($array_data,$extraObj);
     $newData = json_encode($array_data, JSON_UNESCAPED_UNICODE);
-    file_put_contents($tetelek, $newData);
+    file_put_contents($tetelekJson, $newData);
+
+    // összeg hozzáadása a kategóriához
+    $current_data = file_get_contents($currentJson);
+    $savingsCurrent = json_decode($current_data, true);
+    $savingsCurrent[$_POST['tetel']] += $_POST['osszeg'];
+    $newData = json_encode($savingsCurrent, JSON_UNESCAPED_UNICODE);
+    file_put_contents($currentJson, $newData);
 
     // utolsó rögzítés idejének mentése
     $extraObj->date = date('Y. m. d.');
