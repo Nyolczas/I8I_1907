@@ -1,104 +1,168 @@
 <?php
 $current_data = file_get_contents('./data/savings/savingsCurrent.json');
 $savingsCurrent = json_decode($current_data, true);
+$current_data = file_get_contents('./data/savings/savings.json');
+$savings = json_decode($current_data, true);
+
+function uploadData($id) {
+    global $savings;
+    global $savingsCurrent;
+    $res = [];
+    foreach($savings as $saving){
+        array_push($res, $saving[$id]);
+    }
+    array_push($res, $savingsCurrent[$id]);
+    return $res;
+}
+
+function uploadAverageData($id) {
+    global $savings;
+    $res = [];
+    foreach($savings as $saving){
+        array_push($res, $saving[$id]);
+    }
+    array_push($res, null);
+    return $res;
+}
+
+function calcAverage($id) {
+    $res = null;
+    global $savings;
+    global $savingsCurrent;
+    $sum = 0;
+    $length = 12;
+    if(sizeof($savings) < 12) { 
+        global $length;
+        $length = sizeof($savings); 
+    }
+    for($i = sizeof($savings); $i > 0; $i--) {
+        $sum += $savings[$id];
+    }
+    $sum += $savingsCurrent[$id];
+    $dataCnt = sizeof($savings) + 1;
+    $res = $sum / $dataCnt;
+    return $res;
+}
 
 $foListaArray = [
     'merleg' => [
         'clr' => 'primary',
         'bjuti' => 'Mérleg',
-        'aktual' => $savingsCurrent['merleg'],
-        'atlag' =>  '(' . $savingsCurrent['merlegAvr'] . ')'
+        'aktual' => uploadData('merleg'),
+        'atlag' =>  uploadAverageData('merlegAvr'),
+        'atlagCurrent' => calcAverage('merleg')
     ], 'megtakaritas' => [
         'clr' => 'warning',
-        'bjuti' => 'Megtakarítás',
-        'aktual' => $savingsCurrent['megtakaritas'],
-        'atlag' =>  '(' . $savingsCurrent['megtakaritasAvr'] . ')'
+        'bjuti' => 'Megtakarítás', 
+        'aktual' => uploadData('megtakaritas'),
+        'atlag' =>  uploadAverageData('megtakaritasAvr'),
+        'atlagCurrent' => calcAverage('megtakaritas')
     ], 'kpAllomany' => [
         'clr' => 'info',
         'bjuti' => 'KP állomány',
-        'aktual' => $savingsCurrent['kpAllomany'],
-        'atlag' =>  '(' . $savingsCurrent['kpAllomanyAvr'] . ')'
+        'aktual' => uploadData('kpAllomany'),
+        'atlag' =>  uploadAverageData('kpAllomanyAvr'),
+        'atlagCurrent' => calcAverage('kpAllomany')
     ], 'bevetel' => [
         'clr' => 'success',
         'bjuti' => 'Bevétel',
-        'aktual' => $savingsCurrent['bevetel'],
-        'atlag' =>  '(' . $savingsCurrent['bevetelAvr'] . ')'
+        'aktual' => uploadData('bevetel'),
+        'atlag' =>  uploadAverageData('bevetelAvr'),
+        'atlagCurrent' => calcAverage('bevetel')
     ], 'kiadas' => [
         'clr' => 'danger',
         'bjuti' => 'Kiadás',
-        'aktual' => $savingsCurrent['kiadas'],
-        'atlag' =>  '(' . $savingsCurrent['kiadasAvr'] . ')'
+        'aktual' => uploadData('kiadas'),
+        'atlag' =>  uploadAverageData('kiadasAvr'),
+        'atlagCurrent' => calcAverage('kiadas')
     ]
 ];
 
 $osszetetelListaItemArray = [
     'bankKoltseg' => [
         'kategoria' => 'Bank költség',
-        'aktual' => $savingsCurrent['bankKoltseg'],
-        'atlag' =>  '(' . $savingsCurrent['bankKoltsegAvr'] . ')'
+        'aktual' => uploadData('bankKoltseg'),
+        'atlag' =>  uploadAverageData('bankKoltsegAvr'),
+        'atlagCurrent' => calcAverage('bankKoltseg')
     ], 'befektetesek' => [
         'kategoria' => 'Befektetések',
-        'aktual' => $savingsCurrent['befektetesek'],
-        'atlag' =>  '(' . $savingsCurrent['befektetesekAvr'] . ')'
+        'aktual' => uploadData('befektetesek'),
+        'atlag' =>  uploadAverageData('befektetesekAvr'),
+        'atlagCurrent' => calcAverage('befektetesek')
     ], 'lakasElotak' => [
         'kategoria' => 'Lakás előtakarékosság',
-        'aktual' => $savingsCurrent['lakasElotak'],
-        'atlag' =>  '(' . $savingsCurrent['lakasElotakAvr'] . ')'
+        'aktual' => uploadData('lakasElotak'),
+        'atlag' =>  uploadAverageData('lakasElotakAvr'),
+        'atlagCurrent' => calcAverage('lakasElotak')
     ], 'lakas' => [
         'kategoria' => 'Lakás, lakhatás',
-        'aktual' => $savingsCurrent['lakas'],
-        'atlag' =>  '(' . $savingsCurrent['lakasAvr'] . ')'
+        'aktual' => uploadData('lakas'),
+        'atlag' =>  uploadAverageData('lakasAvr'),
+        'atlagCurrent' => calcAverage('lakas')
     ], 'csalad' => [
         'kategoria' => 'Család',
-        'aktual' => $savingsCurrent['csalad'],
-        'atlag' =>  '(' . $savingsCurrent['csaladAvr'] . ')'
+        'aktual' => uploadData('csalad'),
+        'atlag' =>  uploadAverageData('csaladAvr'),
+        'atlagCurrent' => calcAverage('csalad')
     ], 'egeszseg' => [
         'kategoria' => 'Egészség, pihenés',
-        'aktual' => $savingsCurrent['egeszseg'],
-        'atlag' =>  '(' . $savingsCurrent['egeszsegAvr'] . ')'
+        'aktual' => uploadData('egeszseg'),
+        'atlag' =>  uploadAverageData('egeszsegAvr'),
+        'atlagCurrent' => calcAverage('egeszseg')
     ], 'szorakozas' => [
         'kategoria' => 'Szórakozás, ünnep',
-        'aktual' => $savingsCurrent['szorakozas'],
-        'atlag' =>  '(' . $savingsCurrent['szorakozasAvr'] . ')'
+        'aktual' => uploadData('szorakozas'),
+        'atlag' =>  uploadAverageData('szorakozasAvr'),
+        'atlagCurrent' => calcAverage('szorakozas')
     ], 'etkezes' => [
         'kategoria' => 'Étkezés',
-        'aktual' => $savingsCurrent['etkezes'],
-        'atlag' =>  '(' . $savingsCurrent['etkezesAvr'] . ')'
+        'aktual' => uploadData('etkezes'),
+        'atlag' =>  uploadAverageData('etkezesAvr'),
+        'atlagCurrent' => calcAverage('etkezes')
     ], 'ado' => [
         'kategoria' => 'Adó, könyvelés',
-        'aktual' => $savingsCurrent['ado'],
-        'atlag' =>  '(' . $savingsCurrent['adoAvr'] . ')'
+        'aktual' => uploadData('ado'),
+        'atlag' =>  uploadAverageData('adoAvr'),
+        'atlagCurrent' => calcAverage('ado')
     ], 'keszpenz' => [
         'kategoria' => 'Készpénzes költés',
-        'aktual' => $savingsCurrent['keszpenz'],
-        'atlag' =>  '(' . $savingsCurrent['keszpenzAvr'] . ')'
+        'aktual' => uploadData('keszpenz'),
+        'atlag' =>  uploadAverageData('keszpenzAvr'),
+        'atlagCurrent' => calcAverage('keszpenz')
     ], 'trade' => [
         'kategoria' => 'Tréd',
-        'aktual' => $savingsCurrent['trade'],
-        'atlag' =>  '(' . $savingsCurrent['tradeAvr'] . ')'
+        'aktual' => uploadData('trade'),
+        'atlag' =>  uploadAverageData('tradeAvr'),
+        'atlagCurrent' => calcAverage('trade')
     ], 'ajandek' => [
         'kategoria' => 'Ajándék',
-        'aktual' => $savingsCurrent['ajandek'],
-        'atlag' =>  '(' . $savingsCurrent['ajandekAvr'] . ')'
+        'aktual' => uploadData('ajandek'),
+        'atlag' =>  uploadAverageData('ajandekAvr'),
+        'atlagCurrent' => calcAverage('ajandek')
     ], 'kozlekedes' => [
         'kategoria' => 'Közlekedés, bringa, autó',
-        'aktual' => $savingsCurrent['kozlekedes'],
-        'atlag' =>  '(' . $savingsCurrent['kozlekedesAvr'] . ')'
+        'aktual' => uploadData('kozlekedes'),
+        'atlag' =>  uploadAverageData('kozlekedesAvr'),
+        'atlagCurrent' => calcAverage('kozlekedes')
     ], 'internet' => [
         'kategoria' => 'Internet, telefon, gép',
-        'aktual' => $savingsCurrent['internet'],
-        'atlag' =>  '(' . $savingsCurrent['internetAvr'] . ')'
+        'aktual' => uploadData('internet'),
+        'atlag' =>  uploadAverageData('internetAvr'),
+        'atlagCurrent' => calcAverage('internet')
     ], 'ruhazkodas' => [
         'kategoria' => 'Ruházkodás',
-        'aktual' => $savingsCurrent['ruhazkodas'],
-        'atlag' =>  '(' . $savingsCurrent['ruhazkodasAvr'] . ')'
+        'aktual' => uploadData('ruhazkodas'),
+        'atlag' =>  uploadAverageData('ruhazkodasAvr'),
+        'atlagCurrent' => calcAverage('ruhazkodas')
     ], 'onkepzes' => [
         'kategoria' => 'Önképzés, könyv',
-        'aktual' => $savingsCurrent['onkepzes'],
-        'atlag' =>  '(' . $savingsCurrent['onkepzesAvr'] . ')'
+        'aktual' => uploadData('onkepzes'),
+        'atlag' =>  uploadAverageData('onkepzesAvr'),
+        'atlagCurrent' => calcAverage('onkepzes')
     ], 'onmegvalositas' => [
         'kategoria' => 'Önmegvalósítás',
-        'aktual' => $savingsCurrent['onmegvalositas'],
-        'atlag' =>  '(' . $savingsCurrent['onmegvalositasAvr'] . ')'
+        'aktual' => uploadData('onmegvalositas'),
+        'atlag' =>  uploadAverageData('onmegvalositasAvr'),
+        'atlagCurrent' => calcAverage('onmegvalositas')
     ],
 ];

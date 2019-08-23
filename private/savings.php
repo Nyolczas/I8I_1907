@@ -5,16 +5,20 @@ $page = $menuArray[$pageNr]['pageName'];
 $title = $menuArray[$pageNr]['bjutiName'];
 include './includes/head.php';
 include './includes/navbar.php';
+
 include './includes/savings/osszetetelLista.php';
-require_once './includes/savings/processSavings.php';
+include './includes/savings/processSavings.php';
 
 $current_data = file_get_contents('./data/savings/tetelek.json');
 $tetelek = json_decode($current_data, true);
 $current_data = file_get_contents('./data/savings/utolsoRogzites.json');
 $lastData = json_decode($current_data, true);
+$current_data = file_get_contents('./data/savings/savings.json');
+$savings = json_decode($current_data, true);
 $current_data = file_get_contents('./data/savings/savingsCurrent.json');
 $savingsCurrent = json_decode($current_data, true);
-
+$lastOfArray = sizeof($savings);
+var_dump($foListaArray);
 ?>
 
 <div class="jumbotron">
@@ -36,8 +40,8 @@ $savingsCurrent = json_decode($current_data, true);
                                     <div class="clr-round align-middle"></div>
                                 </th>
                                 <td class="align-middle"><?php echo $value['bjuti']; ?></td>
-                                <td><strong><?php echo $value['aktual']; ?></strong> <br>
-                                    <small><?php echo $value['atlag']; ?></small>
+                                <td><strong><?php echo $value['aktual'][$lastOfArray]; ?></strong> <br>
+                                    <small><?php echo $value['atlagCurrent']; ?></small>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -137,8 +141,8 @@ $savingsCurrent = json_decode($current_data, true);
                                 <div class="clr clr-<?php echo $key; ?>"></div>
                             </div>
                             <div class="col-5 kategoria"><?php echo $value['kategoria']; ?></div>
-                            <div class="col-3 aktual"><?php echo $value['aktual']; ?></div>
-                            <div class="col-3 atlag"><?php echo $value['atlag']; ?></div>
+                            <div class="col-3 aktual"><?php echo $value['aktual'][$lastOfArray]; ?></div>
+                            <div class="col-3 atlag"><?php echo $value['atlagCurrent']; ?></div>
                         </div>
                         <?php endforeach; ?>
                     </div>
