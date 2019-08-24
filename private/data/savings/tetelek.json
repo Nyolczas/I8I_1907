@@ -1,1 +1,32 @@
-[]
+[
+    {
+        "datum": "2019 08",
+        "osszeg": "745899",
+        "tetel": "bevetel"
+    },
+    {
+        "datum": "2019 08",
+        "osszeg": "230000",
+        "tetel": "befektetesek"
+    },
+    {
+        "datum": "2019 08",
+        "osszeg": "-23000",
+        "tetel": "lakasElotak"
+    },
+    {
+        "datum": "2019 08",
+        "osszeg": "230000",
+        "tetel": "trade"
+    },
+    {
+        "datum": "2019 08",
+        "osszeg": "-780000",
+        "tetel": "befektetesek"
+    },
+    {
+        "datum": "2019 08",
+        "osszeg": "-18500",
+        "tetel": "szorakozas"
+    }
+]

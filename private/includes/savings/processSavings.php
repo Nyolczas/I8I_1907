@@ -12,14 +12,24 @@ if(isset($_POST['save'])) {
     $current_data = file_get_contents($tetelekJson);
     $array_data = json_decode($current_data, true);
     array_push($array_data,$extraObj);
-    $newData = json_encode($array_data, JSON_UNESCAPED_UNICODE);
+    $newData = json_encode($array_data, JSON_PRETTY_PRINT);
     file_put_contents($tetelekJson, $newData);
 
     // összeg hozzáadása a kategóriához
     $current_data = file_get_contents($currentJson);
     $savingsCurrent = json_decode($current_data, true);
     $savingsCurrent[$_POST['tetel']] += $_POST['osszeg'];
-    $newData = json_encode($savingsCurrent, JSON_UNESCAPED_UNICODE);
+    $savingsCurrent['merleg'] += $_POST['osszeg'];
+    $savingsCurrent['datum'] = $_POST['datum'];
+
+    // fő kategóriák számolása
+    if($_POST['tetel'] != 'bevetel') {
+        $savingsCurrent['kiadas'] += $_POST['osszeg'];
+    }
+    if($_POST['tetel'] == 'befektetesek' || $_POST['tetel'] == 'lakasElotak') {
+        $savingsCurrent['megtakaritas'] += $_POST['osszeg'];
+    }
+    $newData = json_encode($savingsCurrent, JSON_PRETTY_PRINT);
     file_put_contents($currentJson, $newData);
 
     // utolsó rögzítés idejének mentése

@@ -3,6 +3,7 @@ $current_data = file_get_contents('./data/savings/savingsCurrent.json');
 $savingsCurrent = json_decode($current_data, true);
 $current_data = file_get_contents('./data/savings/savings.json');
 $savings = json_decode($current_data, true);
+$kiadasokAktual = 0;
 
 function uploadData($id) {
     global $savings;
@@ -43,40 +44,6 @@ function calcAverage($id) {
     $res = $sum / $dataCnt;
     return $res;
 }
-
-$foListaArray = [
-    'merleg' => [
-        'clr' => 'primary',
-        'bjuti' => 'Mérleg',
-        'aktual' => uploadData('merleg'),
-        'atlag' =>  uploadAverageData('merlegAvr'),
-        'atlagCurrent' => calcAverage('merleg')
-    ], 'megtakaritas' => [
-        'clr' => 'warning',
-        'bjuti' => 'Megtakarítás', 
-        'aktual' => uploadData('megtakaritas'),
-        'atlag' =>  uploadAverageData('megtakaritasAvr'),
-        'atlagCurrent' => calcAverage('megtakaritas')
-    ], 'kpAllomany' => [
-        'clr' => 'info',
-        'bjuti' => 'KP állomány',
-        'aktual' => uploadData('kpAllomany'),
-        'atlag' =>  uploadAverageData('kpAllomanyAvr'),
-        'atlagCurrent' => calcAverage('kpAllomany')
-    ], 'bevetel' => [
-        'clr' => 'success',
-        'bjuti' => 'Bevétel',
-        'aktual' => uploadData('bevetel'),
-        'atlag' =>  uploadAverageData('bevetelAvr'),
-        'atlagCurrent' => calcAverage('bevetel')
-    ], 'kiadas' => [
-        'clr' => 'danger',
-        'bjuti' => 'Kiadás',
-        'aktual' => uploadData('kiadas'),
-        'atlag' =>  uploadAverageData('kiadasAvr'),
-        'atlagCurrent' => calcAverage('kiadas')
-    ]
-];
 
 $osszetetelListaItemArray = [
     'bankKoltseg' => [
@@ -165,4 +132,38 @@ $osszetetelListaItemArray = [
         'atlag' =>  uploadAverageData('onmegvalositasAvr'),
         'atlagCurrent' => calcAverage('onmegvalositas')
     ],
+];
+
+$foListaArray = [
+    'merleg' => [
+        'clr' => 'primary',
+        'bjuti' => 'Mérleg',
+        'aktual' => uploadData('merleg'),
+        'atlag' =>  uploadAverageData('merlegAvr'),
+        'atlagCurrent' => calcAverage('merleg')
+    ], 'megtakaritas' => [
+        'clr' => 'warning',
+        'bjuti' => 'Megtakarítás', 
+        'aktual' => uploadData('megtakaritas'),
+        'atlag' =>  uploadAverageData('megtakaritasAvr'),
+        'atlagCurrent' => calcAverage('megtakaritas')
+    ], 'kpAllomany' => [
+        'clr' => 'info',
+        'bjuti' => 'KP állomány',
+        'aktual' => uploadData('kpAllomany'),
+        'atlag' =>  uploadAverageData('kpAllomanyAvr'),
+        'atlagCurrent' => calcAverage('kpAllomany')
+    ], 'bevetel' => [
+        'clr' => 'success',
+        'bjuti' => 'Bevétel',
+        'aktual' => uploadData('bevetel'),
+        'atlag' =>  uploadAverageData('bevetelAvr'),
+        'atlagCurrent' => calcAverage('bevetel')
+    ], 'kiadas' => [
+        'clr' => 'danger',
+        'bjuti' => 'Kiadás',
+        'aktual' => uploadData('kiadas'),
+        'atlag' =>  uploadAverageData('kiadasAvr'),
+        'atlagCurrent' => calcAverage('kiadas')
+    ]
 ];

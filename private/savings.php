@@ -71,7 +71,7 @@ echo (null + 2);
                             <div class="form-group">
                                 <label for="tetel">Tétel:</label>
                                 <select class="form-control" name="tetel" id="tetel">
-                                    <option value="1">Bevétel</option>
+                                    <option value="bevetel">Bevétel</option>
                                     <?php foreach($osszetetelListaItemArray as $key => $value): ?>
                                     <option value="<?php echo $key; ?>"><?php echo $value['kategoria']; ?></option>
                                     <?php endforeach; ?>
