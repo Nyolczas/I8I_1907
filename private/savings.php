@@ -60,7 +60,7 @@ $lastOfArray = sizeof($savings);
                             <input type="hidden" name="position" value="">
                             <div class="form-group">
                                 <label for="datum">Gyűjtő hónap</label>
-                                <input type="text" name="datum" id="datum" class="form-control" value="<?php echo date('Y') . ' ' . date('m'); ?>">
+                                <input type="text" name="datum" id="datum" class="form-control" placeholder="<?php echo date('Y') . ' ' . date('m'); ?>">
                             </div>
                             <div class="form-group">
                                 <label for="osszeg">Összeg</label>
