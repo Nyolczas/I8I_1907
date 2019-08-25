@@ -19,14 +19,6 @@ $current_data = file_get_contents('./data/savings/savingsCurrent.json');
 $savingsCurrent = json_decode($current_data, true);
 $lastOfArray = sizeof($savings);
 
-function printArrayForCharts($arr) {
-    $res='[';
-    foreach($arr as $x) {
-        $res .= $x . ',';
-    }
-    $res .= ']';
-    return $res;
-}
 ?>
 
 <div class="jumbotron">
@@ -178,7 +170,33 @@ function printArrayForCharts($arr) {
             </div>
         </div>
     </div>
-
+    <?php 
+    function printArrayForCharts($arr, $isNega = false, $isString = false) {
+        $res='[';
+        $extra = ($isString ? '"' : '');
+        for($i = 0; $i < sizeof($arr); $i++) {
+            
+            if($i == 0) {
+                if($arr[$i] === null) { 
+                    $res .= 'null'; 
+                } else {
+                    if(!$isString){$arr[$i] = round($arr[$i]);} 
+                    $res .= $extra . ($isNega ? $arr[$i] * -1 : $arr[$i]) . $extra;
+                }
+                
+            } else {
+                if($arr[$i] === null) { 
+                    $res .= ', ' . 'null'; 
+                } else {
+                    if(!$isString){$arr[$i] = round($arr[$i]);}
+                    $res .= ', ' . $extra . ($isNega ? $arr[$i] * -1 : $arr[$i]) . $extra;
+                }
+            }
+        }
+        $res .= ']';
+        return $res;
+    }
+    ?>                            
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
     <script language="JavaScript" src="https://rhashemian.github.io/js/NumberFormat.js"></script>
     <script>
@@ -200,19 +218,19 @@ function printArrayForCharts($arr) {
             series: [{
                 name: 'Havi megtakarítás',
                 type: 'column',
-                data: <?php echo printArrayForCharts($foListaArray['megtakaritas']['aktual']); ?>
+                data: <?php echo printArrayForCharts($foListaArray['megtakaritas']['aktual'], true); ?>
             }, {
                 name: '12 havi átlag',
                 type: 'line',
-                data: <?php echo printArrayForCharts($foListaArray['megtakaritas']['atlag']); ?>
-            ,
+                data: <?php echo printArrayForCharts($foListaArray['megtakaritas']['atlag'], true); ?>
+            }],
             stroke: {
                 width: [0, 4]
             },
             title: {
                 text: 'Havi megtakarítások'
             },
-            labels: <?php echo printArrayForCharts($datumArray); ?>,
+            labels: <?php echo printArrayForCharts($datumArray, false, true); ?>,
             colors: ['#F39C12', '#212529'],
             xaxis: {
                 type: 'datetime'

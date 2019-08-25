@@ -20,11 +20,12 @@ function uploadData($id)
 function uploadAverageData($id)
 {
     global $savings;
+    global $savingsCurrent;
     $res = [];
     foreach ($savings as $saving) {
         array_push($res, $saving[$id]);
     }
-    array_push($res, null);
+    array_push($res, $savingsCurrent[$id]);
     return $res;
 }
 

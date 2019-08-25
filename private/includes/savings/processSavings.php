@@ -74,7 +74,7 @@ if (isset($_POST['saveMonth'])) {
 
     foreach ($current as $key => $value) {
         if (gettype($value) == 'string') {
-            $extraObj->$key = '';
+            $extraObj->$key = date('Y', 'mm');
         } else {
             $extraObj->$key = 0;
         }
