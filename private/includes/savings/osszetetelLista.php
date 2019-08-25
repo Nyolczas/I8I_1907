@@ -5,38 +5,41 @@ $current_data = file_get_contents('./data/savings/savings.json');
 $savings = json_decode($current_data, true);
 $kiadasokAktual = 0;
 
-function uploadData($id) {
+function uploadData($id)
+{
     global $savings;
     global $savingsCurrent;
     $res = [];
-    foreach($savings as $saving){
+    foreach ($savings as $saving) {
         array_push($res, $saving[$id]);
     }
     array_push($res, $savingsCurrent[$id]);
     return $res;
 }
 
-function uploadAverageData($id) {
+function uploadAverageData($id)
+{
     global $savings;
     $res = [];
-    foreach($savings as $saving){
+    foreach ($savings as $saving) {
         array_push($res, $saving[$id]);
     }
     array_push($res, null);
     return $res;
 }
 
-function calcAverage($id) {
+function calcAverage($id)
+{
     $res = 0;
     global $savings;
     global $savingsCurrent;
     $sum = 0;
     $length = 12;
-    if(sizeof($savings) < 12) { 
+    if (sizeof($savings) < 12) {
         global $length;
-        $length = sizeof($savings); 
+        $length = sizeof($savings);
     }
-    for($i = 0; $i < $length; $i++) {
+    for ($i = 0; $i < $length; $i++) {
         $sum += $savings[$i][$id];
     }
     $sum += $savingsCurrent[$id];
@@ -143,7 +146,7 @@ $foListaArray = [
         'atlagCurrent' => calcAverage('merleg')
     ], 'megtakaritas' => [
         'clr' => 'warning',
-        'bjuti' => 'Megtakarítás', 
+        'bjuti' => 'Megtakarítás',
         'aktual' => uploadData('megtakaritas'),
         'atlag' =>  uploadAverageData('megtakaritasAvr'),
         'atlagCurrent' => calcAverage('megtakaritas')
@@ -167,3 +170,34 @@ $foListaArray = [
         'atlagCurrent' => calcAverage('kiadas')
     ]
 ];
+$currentJson = file_get_contents('./data/savings/savingsCurrent.json');
+$savingsCurrent = json_decode($currentJson, true);
+
+// átlagok visszaírása jsonba
+$savingsCurrent['merlegAvr'] = calcAverage('merleg');
+$savingsCurrent['megtakaritasAvr'] = calcAverage('megtakaritas');
+$savingsCurrent['kpAllomanyAvr'] = calcAverage('kpAllomany');
+$savingsCurrent['bevetelAvr'] = calcAverage('bevetel');
+$savingsCurrent['kiadasAvr'] = calcAverage('kiadas');
+$savingsCurrent['bankKoltsegAvr'] = calcAverage('bankKoltseg');
+$savingsCurrent['befektetesekAvr'] = calcAverage('befektetesek');
+$savingsCurrent['lakasElotakAvr'] = calcAverage('lakasElotak');
+$savingsCurrent['lakasAvr'] = calcAverage('lakas');
+$savingsCurrent['csaladAvr'] = calcAverage('csalad');
+$savingsCurrent['egeszsegAvr'] = calcAverage('egeszseg');
+$savingsCurrent['szorakozasAvr'] = calcAverage('szorakozas');
+$savingsCurrent['etkezesAvr'] = calcAverage('etkezes');
+$savingsCurrent['adoAvr'] = calcAverage('ado');
+$savingsCurrent['keszpenzAvr'] = calcAverage('keszpenz');
+$savingsCurrent['tradeAvr'] = calcAverage('trade');
+$savingsCurrent['ajandekAvr'] = calcAverage('ajandek');
+$savingsCurrent['kozlekedesAvr'] = calcAverage('kozlekedes');
+$savingsCurrent['internetAvr'] = calcAverage('internet');
+$savingsCurrent['ruhazkodasAvr'] = calcAverage('ruhazkodas');
+$savingsCurrent['onkepzesAvr'] = calcAverage('onkepzes');
+$savingsCurrent['onmegvalositasAvr'] = calcAverage('onmegvalositas');
+
+$newData = json_encode($savingsCurrent, JSON_UNESCAPED_UNICODE);
+file_put_contents('./data/savings/savingsCurrent.json', $newData);
+
+

@@ -21,7 +21,7 @@ if (isset($_POST['save'])) {
     $savingsCurrent[$_POST['tetel']] += $_POST['osszeg'];
     $savingsCurrent['merleg'] += $_POST['osszeg'];
     if ($_POST['datum'] != '') {
-        $savingsCurrent['datum']->datum = $_POST['datum'];
+        $savingsCurrent['datum'] = $_POST['datum'];
     }
 
     // fő kategóriák számolása
@@ -47,9 +47,9 @@ if (isset($_POST['saveKeszpenz'])) {
     // összeg hozzáadása a kategóriához
     $current_data = file_get_contents($currentJson);
     $savingsCurrent = json_decode($current_data, true);
-    $savingsCurrent['kpAllomany'] = $_POST['keszpenzall'];
+    $savingsCurrent['kpAllomany'] = (int)$_POST['keszpenzall'];
 
-    $newData = json_encode($savingsCurrent, JSON_PRETTY_PRINT);
+    $newData = json_encode($savingsCurrent, JSON_UNESCAPED_UNICODE);
     file_put_contents($currentJson, $newData);
 
     header("location:../../savings.php");
@@ -63,7 +63,7 @@ if (isset($_POST['saveMonth'])) {
     $current_data = file_get_contents($currentJson);
     $current = json_decode($current_data, true);
     array_push($savingsArray, $current);
-    $newData = json_encode($savingsArray, JSON_PRETTY_PRINT);
+    $newData = json_encode($savingsArray, JSON_UNESCAPED_UNICODET);
     file_put_contents($savingsJson, $newData);
     fclose($currentJson);
     fclose($savingsJson);
@@ -80,11 +80,11 @@ if (isset($_POST['saveMonth'])) {
         }
     }
 
-    $newData = json_encode($extraObj, JSON_PRETTY_PRINT);
+    $newData = json_encode($extraObj, JSON_UNESCAPED_UNICODE);
     file_put_contents($currentJson, $newData);
 
     // a tételek ürítése
-    $newData = json_encode([], JSON_PRETTY_PRINT);
+    $newData = json_encode([], JSON_UNESCAPED_UNICODE);
     file_put_contents($tetelekJson, $newData);
 
     header("location:../../savings.php");

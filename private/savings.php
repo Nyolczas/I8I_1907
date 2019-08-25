@@ -7,7 +7,7 @@ include './includes/head.php';
 include './includes/navbar.php';
 
 include './includes/savings/processSavings.php';
-include './includes/savings/osszetetelLista.php';
+require './includes/savings/osszetetelLista.php';
 
 $current_data = file_get_contents('./data/savings/tetelek.json');
 $tetelek = json_decode($current_data, true);
@@ -39,8 +39,8 @@ $lastOfArray = sizeof($savings);
                                     <div class="clr-round align-middle"></div>
                                 </th>
                                 <td class="align-middle"><?php echo $value['bjuti']; ?></td>
-                                <td><strong><?php echo $value['aktual'][$lastOfArray]; ?></strong> <br>
-                                    <small><?php echo $value['atlagCurrent']; ?></small>
+                                <td><strong><?php echo number_format($value['aktual'][$lastOfArray],0," "," "); ?></strong> <br>
+                                    <small><?php echo number_format($value['atlagCurrent'],0," "," "); ?></small>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
