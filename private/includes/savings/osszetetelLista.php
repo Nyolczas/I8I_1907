@@ -48,6 +48,8 @@ function calcAverage($id)
     return $res;
 }
 
+$datumArray = uploadData('datum');
+
 $osszetetelListaItemArray = [
     'bankKoltseg' => [
         'kategoria' => 'Bank költség',

@@ -57,7 +57,8 @@ svg.selectAll("rect") // Build the chart.
 svg.selectAll("text").data(bevetelKiadasDataset).enter()
     .append("text")
     .text(function (d) {
-        return d;
+        return FormatNumberBy3(Math.round(d), ",", " ");
+        
     })
     .attr({
         "text-anchor": "middle",

@@ -18,6 +18,15 @@ $savings = json_decode($current_data, true);
 $current_data = file_get_contents('./data/savings/savingsCurrent.json');
 $savingsCurrent = json_decode($current_data, true);
 $lastOfArray = sizeof($savings);
+
+function printArrayForCharts($arr) {
+    $res='[';
+    foreach($arr as $x) {
+        $res .= $x . ',';
+    }
+    $res .= ']';
+    return $res;
+}
 ?>
 
 <div class="jumbotron">
@@ -171,9 +180,11 @@ $lastOfArray = sizeof($savings);
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-
+    <script language="JavaScript" src="https://rhashemian.github.io/js/NumberFormat.js"></script>
     <script>
-        var bevetelKiadasDataset = [380000, 250000, 0, 580000, 650000];
+        
+        var bevetelKiadasDataset = [<?php 
+        echo $foListaArray['kiadas']['atlagCurrent'] * -1 . ',' . $foListaArray['kiadas']['aktual'][$lastOfArray] * -1 .', 0,' . $foListaArray['bevetel']['atlagCurrent'] . ',' . $foListaArray['bevetel']['aktual'][$lastOfArray]?>];
     </script>
     <script src="js/bevetelkiadasBars.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
@@ -189,27 +200,19 @@ $lastOfArray = sizeof($savings);
             series: [{
                 name: 'Havi megtakarítás',
                 type: 'column',
-                data: [270600, 300600, 105600, 243841, 97993, 165600, 210516, 240718, 276881, 156872,
-                    120750, 135750, 80600, 80600, 40300, -331487, 20150, 20150, 20150
-                ]
+                data: <?php echo printArrayForCharts($foListaArray['megtakaritas']['aktual']); ?>
             }, {
                 name: '12 havi átlag',
                 type: 'line',
-                data: [null, null, null, null, null, null, null, null, null, null, null, 193810, 177977,
-                    159643, 154202, 106258, 99771, 87650, 71786
-                ]
-            }],
+                data: <?php echo printArrayForCharts($foListaArray['megtakaritas']['atlag']); ?>
+            ,
             stroke: {
                 width: [0, 4]
             },
             title: {
                 text: 'Havi megtakarítások'
             },
-            labels: [
-                '2018 01', '2018 02', '2018 03', '2018 04', '2018 05', '2018 06', '2018 07', '2018 08',
-                '2018 09', '2018 10', '2018 11', '2018 12', '2019 01', '2019 02', '2019 03', '2019 04',
-                '2019 05', '2019 06', '2019 07'
-            ],
+            labels: <?php echo printArrayForCharts($datumArray); ?>,
             colors: ['#F39C12', '#212529'],
             xaxis: {
                 type: 'datetime'
