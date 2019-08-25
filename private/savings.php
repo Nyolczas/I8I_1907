@@ -18,7 +18,6 @@ $savings = json_decode($current_data, true);
 $current_data = file_get_contents('./data/savings/savingsCurrent.json');
 $savingsCurrent = json_decode($current_data, true);
 $lastOfArray = sizeof($savings);
-echo (null + 2);
 ?>
 
 <div class="jumbotron">
@@ -89,9 +88,8 @@ echo (null + 2);
                 <div class="card card border-secondary">
                     <div class="card-header bg-primary text-white d-flex justify-content-between">
                         <h4>19 / Szeptember</h4>
-                        <div class="icon-check"></div>
                     </div>
-                    <div class="kiadasok-lista-wrapper">
+                    <div class="kiadasok-lista-wrapper flex-grow-1">
                         <ul class="list-group">
                             <?php 
                             if(sizeof($tetelek) == 0):
@@ -116,6 +114,28 @@ echo (null + 2);
                             <?php endif; ?>
                         </ul>
                     </div>
+                    <form action="./includes/savings/processSavings.php" method="POST" class="card bg-light">
+                        <fieldset class="p-3">
+                            <legend class="pt-3">Készpénz állomány rögzítése</legend>
+                            <div class="form-group">
+                                <label for="keszpenzall">Készpénz</label>
+                                <input type="text" name="keszpenzall" id="keszpenzall" class="form-control" value=""
+                                    placeholder="8 888 888">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" name="saveKeszpenz"
+                                    class="btn btn-secondary btn-lg btn-block my-4">Készpénz mentése</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <form action="./includes/savings/processSavings.php" method="POST" class="card bg-primary">
+                        <fieldset class="p-3">
+                            <div class="form-group">
+                                <button type="submit" name="saveMonth"
+                                    class="btn btn-secondary btn-lg btn-block my-4 d-flex justify-content-center align-items-center"><div>A hónap mentése</div><div class="icon-check ml-3"></div></button>
+                            </div>
+                        </fieldset>
+                    </form>
                </div>
             </div>
             <div class="col-12 col-lg-4 col-xl-6 oszlop oszlop-3 mb-4">

@@ -39,3 +39,15 @@ if(isset($_POST['save'])) {
 
     header("location:../../savings.php");
 }
+if(isset($_POST['saveKeszpenz'])) {
+
+    // összeg hozzáadása a kategóriához
+    $current_data = file_get_contents($currentJson);
+    $savingsCurrent = json_decode($current_data, true);
+    $savingsCurrent['kpAllomany'] = $_POST['keszpenzall'];
+
+    $newData = json_encode($savingsCurrent, JSON_PRETTY_PRINT);
+    file_put_contents($currentJson, $newData);
+
+    header("location:../../savings.php");
+}

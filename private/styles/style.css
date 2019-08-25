@@ -160,6 +160,7 @@ td:last-child {
   height: 32px;
   background-repeat: no-repeat;
   background-image: url(../img/check-circle.svg);
+  display: inline-block;
 }
 
 .icon-trash {
