@@ -57,7 +57,7 @@ function modalWeb($dir, $names, $title, $descr, $sizeClass, $images){
 function videoModal($names, $sizeClass, $title, $descr, $link) {
     modalHead($names, $sizeClass, $title, $descr);
     echo '<div class="embed-responsive embed-responsive-16by9">
-        <iframe class="class="embed-responsive-item" id="' . $names . 'Video"  src="' . $link . '?autoplay=1" frameborder="0"
+        <iframe class="class="embed-responsive-item" id="' . $names . 'Video"  src="' . $link . '?autoplay=0" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
         </div>'; 
