@@ -20,7 +20,7 @@ include './includes/head.php';
             <div class="col-sm-10">
                 <p>Erős frontend fejlesztő ismeretekkel rendelkezem és a szerver oldali programozástól sem riadok vissza. 
                     <br> Profi grafikusként örömömet lelem a webdesign készítésben.<br>
-                <span class="strong">A tervezéstől kezdve, a frontend fejlesztésen keresztül a backend programozásig</span> koplett módon elkészítek egy weboldalt, vagy egy egyszerű webes applikációt.</p>
+                <span class="strong">A tervezéstől kezdve, a frontend fejlesztésen keresztül a backend programozásig</span> komplett módon elkészítek egy weboldalt, vagy egy egyszerű webes applikációt.</p>
                 <p>Ismereteimet folyamatosan bővítem, napi rendszerességgel tanulok. <br>
                  A célom, hogy tudásom a legújabb webes technológiákból, mindig naprakész legyen.</p>
                 <p>Főbb készségek: <span class="strong">Sass, Javascript, JQuery, AJAX, JSON, MySQL, Node.js, React, Php, Laravel, Asp.Net, MVC, Bootstrap, Html, Css, Git, SVN</span></p>
