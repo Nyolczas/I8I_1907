@@ -1,6 +1,25 @@
 <?php
 $webArr = [
     [
+        'name' => ['novopayment'],
+        'isImage' => false, 
+        'path' => 'https://novopayment.hu/',
+        'title' => 'Novopayment.hu',
+        'desc' => 'webdesign, sitebuild, frontend fejlesztés'
+    ],[
+        'name' => ['mabisz'],
+        'isImage' => false, 
+        'path' => 'https://jovotervezes.mabisz.hu/',
+        'title' => 'Mabisz Jövőtervezés',
+        'desc' => 'sitebuild, frontend fejlesztés'
+    ],[
+        'name' => ['e-sports'],
+        'isImage' => false, 
+        'path' => 'https://e-sports.hu/',
+        'title' => 'e-sports.hu',
+        'desc' => 'sitebuild, frontend fejlesztés'
+    ],
+    [
         'name' => ['bijo'],
         'isImage' => true,
         'path' => 'web/bijo',
@@ -148,7 +167,7 @@ $webArr = [
                 'width' => '1600',
             ]
         ],
-        'title' => 'Bijo webáruház',
+        'title' => 'Sugar fondant',
         'desc' => 'webdesign'
     ],[
         'name' => ['pig'],

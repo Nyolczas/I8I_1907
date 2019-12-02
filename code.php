@@ -23,8 +23,7 @@ include './includes/head.php';
                 <span class="strong">A tervezéstől kezdve, a frontend fejlesztésen keresztül a backend programozásig</span> koplett módon elkészítek egy weboldalt, vagy egy egyszerű webes applikációt.</p>
                 <p>Ismereteimet folyamatosan bővítem, napi rendszerességgel tanulok. <br>
                  A célom, hogy tudásom a legújabb webes technológiákból, mindig naprakész legyen.</p>
-                <p>Főbb készségek: <span class="strong">Php, Sass, Javascript, JQuery, AJAX, JSON, MySQL, Node.js, Asp.Net, MVC, Bootstrap, Html, Css, Git, SVN</span></p>
-                <p>Ha gyorsan kell valami, akkor: <span class="strong">WordPress, Elementor</span></p>
+                <p>Főbb készségek: <span class="strong">Sass, Javascript, JQuery, AJAX, JSON, MySQL, Node.js, React, Php, Laravel, Asp.Net, MVC, Bootstrap, Html, Css, Git, SVN</span></p>
             </div>
             <?php include './includes/callToAction.php'; ?>
         </div>

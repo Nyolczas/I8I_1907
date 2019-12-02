@@ -52,7 +52,7 @@ if (isset($_REQUEST['email'])) {
       <textarea class="form-control" id="message" name="message" rows="3" style="margin-top: 0px; margin-bottom: 0px; height: 140px;"></textarea>
     </div>
    
-    <button type="submit" class="btn btn-success btn-lg btn-block">Küldés<i class="fa fa-paper-plane ml-3"></i></button>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Küldés<i class="fa fa-paper-plane ml-3"></i></button>
     </fieldset>
     <h5 class="text-primary my-5">Vagy telefonálj: <i class="fa fa-phone-square mx-3"></i><a  href="tel:06703258987">70 325 89 87</a></h5>
 </form>';
