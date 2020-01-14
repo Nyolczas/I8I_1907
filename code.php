@@ -18,6 +18,7 @@ include './includes/head.php';
         <h3 class="mb-4 text-primary"><?php echo $menuArray[$pageNr]['slogan'];?></h3>
         <div class="row my-4">
             <div class="col-sm-10">
+              <div id="chart"></div>
                 <p>Erős frontend fejlesztő ismeretekkel rendelkezem és a szerver oldali programozástól sem riadok vissza. 
                     <br> Profi grafikusként örömömet lelem a webdesign készítésben.<br>
                 <span class="strong">A tervezéstől kezdve, a frontend fejlesztésen keresztül a backend programozásig</span> komplett módon elkészítek egy weboldalt, vagy egy egyszerű webes applikációt.</p>
@@ -27,7 +28,7 @@ include './includes/head.php';
             </div>
             <?php include './includes/callToAction.php'; ?>
         </div>
-        <h3 class="mb-4 text-primary">Webes referenciák</h3>
+        <h3 class="mb-4 text-primary">Referenciák</h3>
         <div class="row mb-4">
             <!-- Button trigger modals -->
             <?php
@@ -49,7 +50,7 @@ include './includes/head.php';
     <?php include './includes/footer.php'; ?>
 </div>
 
-
-
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="js/webchart.js"></script> 
 </body>
 </html>
