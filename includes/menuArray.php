@@ -6,7 +6,7 @@ $menuArray = [
     ],[
         "pageName" => "code",
         "bjutiName" => "Webfejlesztés",
-        "slogan" => "Webdesign, webfejlesztés, sitebuild"
+        "slogan" => "Webdesign, webfejlesztés"
     ],[
         "pageName" => "anim",
         "bjutiName" => "Animáció",
