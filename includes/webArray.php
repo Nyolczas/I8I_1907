@@ -28,12 +28,26 @@ $webArr = [
         'title' => 'Hello Mastercard',
         'desc' => 'webdesign, sitebuild, frontend fejlesztés, 2D és 3D animációk'
     ],
+    /*
     [
         'name' => ['mogacs'],
         'isImage' => false, 
         'path' => 'https://mogacs.hu/',
         'title' => 'Mogács Dániel weboldala',
         'desc' => 'sitebuild, frontend fejlesztés, 2D animáció'
+    ],*/
+    [
+      'name' => ['mogacs'],
+      'isImage' => true,
+      'path' => 'web/mogacs',
+      'images' => [
+          [
+              'name' => 'mogacs',
+              'width' => '1920',
+          ]
+      ],
+      'title' => 'Mogács Dániel weboldala',
+      'desc' => 'sitebuild, frontend fejlesztés, 2D animáció'
     ],
     [
       'name' => ['tigaz'],
