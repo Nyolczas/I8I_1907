@@ -100,7 +100,8 @@ chart: {
   type: 'bar',
   toolbar: {
     show: false
-  }
+  },
+  height: '100%'
 },
 series: [{
   name: 'gyakorlat',
