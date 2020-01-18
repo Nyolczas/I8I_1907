@@ -1,6 +1,6 @@
 var kompetenciak = [{
   key: 'Design',
-  value: 110
+  value: 100
 },
 {
   key: 'Animáció',
@@ -100,7 +100,8 @@ chart: {
   type: 'bar',
   toolbar: {
     show: false
-  }
+  },
+  height: 600
 },
 series: [{
   name: 'gyakorlat',
