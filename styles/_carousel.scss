@@ -64,3 +64,9 @@
     border-radius: 100%;
     background-position: center;
 }
+
+.carousel-item {
+    > img {
+        max-width: 100%;
+    }
+}
