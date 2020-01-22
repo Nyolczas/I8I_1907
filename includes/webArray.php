@@ -1,11 +1,39 @@
 <?php
 $webArr = [
     [
+        'name' => ['novopayment'],
+        'isImage' => false, 
+        'path' => 'https://novopayment.hu/',
+        'title' => 'Novopayment.hu',
+        'desc' => 'webdesign, sitebuild, frontend fejlesztés, interaktív animációk'
+    ],
+    [
+        'name' => ['mabisz'],
+        'isImage' => false, 
+        'path' => 'https://jovotervezes.mabisz.hu/',
+        'title' => 'Mabisz Jövőtervezés',
+        'desc' => 'sitebuild, frontend fejlesztés, 2D animációk'
+    ],
+    [
+        'name' => ['e-sports'],
+        'isImage' => false, 
+        'path' => 'https://e-sports.hu/',
+        'title' => 'e-sports.hu',
+        'desc' => 'sitebuild, frontend fejlesztés'
+    ],
+    [
         'name' => ['sport4life'],
         'isImage' => false, 
         'path' => 'http://sport4life.hu/',
         'title' => 'Sport 4 Life weboldal',
         'desc' => 'webdesign, logóterv, sitebuild, frontend fejlesztés'
+    ],
+    [
+        'name' => ['sajtostejfolos'],
+        'isImage' => false, 
+        'path' => 'http://nyolczas.hu/sajtostejfolos/',
+        'title' => 'Sajtos Tejfölös Büfé - fiktív weboldal',
+        'desc' => 'logóterv, webdesign, sitebuild, frontend fejlesztés'
     ],
     [
         'name' => ['optowit'],
@@ -99,34 +127,6 @@ $webArr = [
       'desc' => 'webdesign'
   ],
     [
-        'name' => ['novopayment'],
-        'isImage' => false, 
-        'path' => 'https://novopayment.hu/',
-        'title' => 'Novopayment.hu',
-        'desc' => 'webdesign, sitebuild, frontend fejlesztés, interaktív animációk'
-    ],
-    [
-        'name' => ['mabisz'],
-        'isImage' => false, 
-        'path' => 'https://jovotervezes.mabisz.hu/',
-        'title' => 'Mabisz Jövőtervezés',
-        'desc' => 'sitebuild, frontend fejlesztés, 2D animációk'
-    ],
-    [
-        'name' => ['e-sports'],
-        'isImage' => false, 
-        'path' => 'https://e-sports.hu/',
-        'title' => 'e-sports.hu',
-        'desc' => 'sitebuild, frontend fejlesztés'
-    ],
-    [
-        'name' => ['sajtostejfolos'],
-        'isImage' => false, 
-        'path' => 'http://nyolczas.hu/sajtostejfolos/',
-        'title' => 'Sajtos Tejfölös Büfé - fiktív weboldal',
-        'desc' => 'logóterv, webdesign, sitebuild, frontend fejlesztés'
-    ],
-    [
         'name' => ['bijo'],
         'isImage' => true,
         'path' => 'web/bijo',
@@ -172,13 +172,6 @@ $webArr = [
         'desc' => 'webdesign'
     ],
     [
-        'name' => ['ue'],
-        'isImage' => false, 
-        'path' => 'http://utasellatokavehaz.hu/',
-        'title' => 'Utasellátó Kávéház',
-        'desc' => 'Weboldal - webdesign és sitebuild'
-    ],
-    [
         'name' => ['rap'],
         'isImage' => false, 
         'path' => 'https://www.rapcity.hu/',
@@ -212,6 +205,13 @@ $webArr = [
         'path' => 'http://hellopinky.hu/',
         'title' => 'Hello Pinky',
         'desc' => 'Weboldal karbantartás'
+    ],
+    [
+        'name' => ['ue'],
+        'isImage' => false, 
+        'path' => 'http://utasellatokavehaz.hu/',
+        'title' => 'Utasellátó Kávéház',
+        'desc' => 'Weboldal - webdesign és sitebuild'
     ],
     [
         'name' => ['priceCalc'],
