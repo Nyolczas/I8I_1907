@@ -32,15 +32,15 @@ var kompetenciak = [{
 },
 {
   key: 'JQuery',
-  value: 75
-},
-{
-  key: 'Laravel',
-  value: 73
+  value: 80
 },
 {
   key: 'PHP',
-  value: 68
+  value: 80
+},
+{
+  key: 'Laravel',
+  value: 75
 },
 {
   key: 'React.js',
