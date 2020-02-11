@@ -24,14 +24,14 @@ $webArr = [
     [
         'name' => ['sport4life'],
         'isImage' => false, 
-        'path' => 'http://sport4life.hu/',
+        'path' => 'https://sport4life.hu/',
         'title' => 'Sport 4 Life weboldal',
         'desc' => 'webdesign, logóterv, sitebuild, frontend fejlesztés'
     ],
     [
         'name' => ['sajtostejfolos'],
         'isImage' => false, 
-        'path' => 'http://nyolczas.hu/sajtostejfolos/',
+        'path' => 'https://nyolczas.hu/sajtostejfolos/',
         'title' => 'Sajtos Tejfölös Büfé - fiktív weboldal',
         'desc' => 'logóterv, webdesign, sitebuild, frontend fejlesztés'
     ],
@@ -52,7 +52,7 @@ $webArr = [
     [
         'name' => ['helloMastercard'],
         'isImage' => false, 
-        'path' => 'helloMastercard/',
+        'path' => 'https://nyolczas.hu/helloMastercard/',
         'title' => 'Hello Mastercard',
         'desc' => 'webdesign, sitebuild, frontend fejlesztés, 2D és 3D animációk'
     ],
@@ -202,14 +202,14 @@ $webArr = [
     [
         'name' => ['hellopinky'],
         'isImage' => false, 
-        'path' => 'http://hellopinky.hu/',
+        'path' => 'https://hellopinky.hu/',
         'title' => 'Hello Pinky',
         'desc' => 'Weboldal karbantartás'
     ],
     [
         'name' => ['ue'],
         'isImage' => false, 
-        'path' => 'http://utasellatokavehaz.hu/',
+        'path' => 'https://utasellatokavehaz.hu/',
         'title' => 'Utasellátó Kávéház',
         'desc' => 'Weboldal - webdesign és sitebuild'
     ],
