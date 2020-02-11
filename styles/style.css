@@ -599,4 +599,8 @@ h1, h2, h3, h4, h5, h6 {
 .apexcharts-datalabels {
   display: none;
 }
+
+.apexcharts-yaxis-label {
+  fill: #2A9FD6;
+}
 /*# sourceMappingURL=style.css.map */

@@ -132,6 +132,7 @@ xaxis: {
 },
 yaxis: {
   max: 100,
+  categories: seriesCategories,
   labels: {
     style: {
       color: '#2A9FD6'
