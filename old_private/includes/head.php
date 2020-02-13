@@ -1,4 +1,4 @@
-<?php
+<?php 
 include './includes/roots.php';
 session_start();
 if(isset($_SESSION['name'])) {
@@ -17,18 +17,17 @@ if(isset($_SESSION['name'])) {
 } else {
     header("location:login.php");
 }
-
 ?>
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Privát</title>
+    <title><?php echo $title; ?></title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/style.css">
   </head>
-  
+  <body>
