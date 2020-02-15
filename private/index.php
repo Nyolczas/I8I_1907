@@ -12,7 +12,7 @@ include 'includes/head.php';
            <select id="TF_high" onchange="loadImages()" class="ml-auto">
                <option value="43200">Havi</option>
                <option value="10080">Heti</option>
-               <option value="1440">Napi</option>
+               <option value="1440" selected="selected">Napi</option>
                <option value="240">H4</option>
                <option value="60">H1</option>
                <option value="15">M15</option>
@@ -24,7 +24,7 @@ include 'includes/head.php';
                <option value="43200">Havi</option>
                <option value="10080">Heti</option>
                <option value="1440">Napi</option>
-               <option value="240">H4</option>
+               <option value="240" selected="selected">H4</option>
                <option value="60">H1</option>
                <option value="15">M15</option>
                <option value="5">M5</option>
@@ -36,7 +36,7 @@ include 'includes/head.php';
                <option value="10080">Heti</option>
                <option value="1440">Napi</option>
                <option value="240">H4</option>
-               <option value="60">H1</option>
+               <option value="60" selected="selected">H1</option>
                <option value="15">M15</option>
                <option value="5">M5</option>
            </select>
