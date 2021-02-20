@@ -16,8 +16,8 @@ include './includes/head.php';
         <div class="container">
             <div class="message">
                 <div class="message-txt">
-                    <h6> Helló, a nevem <strong class="text-warning">Nyolczas István</strong>, vizuális szakember vagyok.</h6>
-                    <h1>Miben segíthetek?</h1>
+                    <h1>Nyolczas István</h1>
+                    <h2 class="h6"><strong>vizuális szakember</strong>, grafikus, programozó, művészeti vezető</h2>
                 </div>
                 <div class="message-img-wrapper">
                     <div class="portre"></div>
